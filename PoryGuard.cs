@@ -17,15 +17,9 @@ namespace PoryGuard
         public PoryGuard()
         { 
             InitializeComponent();
-
+            
             ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"SELECT * FROM Win32_VideoController");
-
-            foreach (ManagementObject obj in searcher.Get())
-            {
-                Console.WriteLine($"Monitor: {obj["Name"]}");
-                Console.WriteLine($"Taxa de atualização: {obj["CurrentRefreshRate"]} Hz");
-            }
-
+            /*
             foreach (Screen screen in Screen.AllScreens)
             {
                 Console.WriteLine($"Monitor: {screen.DeviceName}");
@@ -42,7 +36,8 @@ namespace PoryGuard
                 Console.WriteLine($"- Green: {pixelColor.G}");
                 Console.WriteLine($"- Blue: {pixelColor.B}");
                 Console.WriteLine($"- Alpha: {pixelColor.A}");
-            }
+            }*/
+            Monitor monitor = new Monitor();
         }
     }
 }

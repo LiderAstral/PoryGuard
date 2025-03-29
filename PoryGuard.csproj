@@ -107,7 +107,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Monitor.cs" />
+    <Compile Include="Controller\CapturaDeTela.cs" />
+    <Compile Include="Model\Monitor.cs" />
     <Compile Include="PoryGuard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,5 +140,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

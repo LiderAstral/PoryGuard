@@ -1,80 +1,131 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
+using System.IO;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace PoryGuard.Controller
 {
     class CapturaDeTela
     {
-        int altura;
-        int largura;
-        int frameRate;
-        int boundsX;
-        int boundsY;
-        int aux_timer = 0;
-        Size size;
-        Timer timer;
-        List<Thread> coletor = new List<Thread>(); //Instancia uma lista de threads que coletarão bitmaps da tela
+        private int altura;
+        private int largura;
+        private int frameRate;
+        private int boundsX;
+        private int boundsY;
+        private Size size;
+        private bool rodando;
+        private Thread capturaThread;
+        private Thread salvamentoThread;
+        private static readonly object lockObject = new object();
+        private ConcurrentQueue<(Bitmap, int)> filaDeImagens = new ConcurrentQueue<(Bitmap, int)>(); // Fila para salvar os bitmaps
 
-        public CapturaDeTela() 
+        public CapturaDeTela()
         {
             Monitor monitor = new Monitor();
-            ColetaBitmap(monitor);
-        }
-        private void ColetaBitmap(Monitor monitor)
-        {
-            //Armazena os valores relevantes do monitor instanciado em variáveis locais
+            ConfigurarMonitor(monitor);
+            rodando = true;
 
+            // Thread que captura as imagens sem bloqueio
+            capturaThread = new Thread(GerenciarCapturas);
+            capturaThread.IsBackground = true;
+            capturaThread.Start();
+
+            // Thread que salva as imagens separadamente
+            salvamentoThread = new Thread(SalvarImagens);
+            salvamentoThread.IsBackground = true;
+            salvamentoThread.Start();
+        }
+
+        private void ConfigurarMonitor(Monitor monitor)
+        {
             altura = monitor.GetAltura();
             largura = monitor.GetLargura();
-            frameRate = monitor.GetFrameRate(); 
+            frameRate = 20; // Definir para 30 FPS exatos
+            //frameRate = monitor.GetFrameRate();
             boundsX = monitor.GetBoundsX();
             boundsY = monitor.GetBoundsY();
             size = new Size(largura, altura);
-            timer = new Timer(CriaThread, null, 0, (Int32)(1000 / frameRate)); //timer para que a criação das threads
-        }                                                                      //tenha a cadência da frameHate
-        public void ColetaFrame(int i)
+        }
+
+        private void GerenciarCapturas()
         {
+            int contador = 0;
             Stopwatch sw = new Stopwatch();
-            while (true)
+            sw.Start();
+            long tempoInicio = sw.ElapsedMilliseconds;
+
+            while (rodando)
             {
-                sw.Restart();
-                using (Bitmap bitmap = new Bitmap(largura, altura))
+                long tempoAlvo = tempoInicio + (contador * (1000 / frameRate));
+
+                CapturaFrame(contador);
+
+                contador = (contador + 1) % frameRate;
+
+                // Espera até o próximo tempo-alvo sem usar Thread.Sleep() direto
+                while (sw.ElapsedMilliseconds < tempoAlvo)
                 {
+                    Thread.SpinWait(1); // Usa um pequeno loop de espera ativa para maior precisão
+                }
+
+                Console.WriteLine($"Frame {contador} capturado em {sw.ElapsedMilliseconds - tempoInicio} ms");
+            }
+        }
+
+        private void CapturaFrame(int contador)
+        {
+            try
+            {
+                Bitmap bitmap;
+                lock (lockObject) // Evita conflito no acesso ao buffer de tela
+                {
+                    bitmap = new Bitmap(largura, altura);
                     using (Graphics g = Graphics.FromImage(bitmap))
                     {
                         g.CopyFromScreen(boundsX, boundsY, 0, 0, size, CopyPixelOperation.SourceCopy);
-                        
                     }
-                    bitmap.Save(i.ToString()+"screenshot.png", System.Drawing.Imaging.ImageFormat.Png);
                 }
-                sw.Stop();
-                if (sw.ElapsedMilliseconds < 1000)
-                    Thread.Sleep(1000 - (Int32)sw.ElapsedMilliseconds);
-                Console.WriteLine(sw.ElapsedMilliseconds);
+
+                // Adiciona o bitmap à fila para ser salvo posteriormente
+                filaDeImagens.Enqueue((bitmap, contador));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao capturar tela: {ex.Message}");
             }
         }
-        public void CriaThread(object obj) //Função invocada pelo Timer
+
+        private void SalvarImagens()
         {
-            Thread.Sleep(5000); //pausa para sincronização das threads
-            int i = aux_timer;
-            if (i >= frameRate)
+            while (rodando || !filaDeImagens.IsEmpty)
             {
-                timer.Dispose();
-                return;
+                if (filaDeImagens.TryDequeue(out var item))
+                {
+                    var (bitmap, contador) = item;
+                    try
+                    {
+                        bitmap.Save($"{contador}_screenshot.png", System.Drawing.Imaging.ImageFormat.Png);
+                        bitmap.Dispose(); // Libera memória após salvar
+                    }
+                    catch (IOException ex)
+                    {
+                        Console.WriteLine($"Erro ao salvar imagem: {ex.Message}");
+                    }
+                }
+                else
+                {
+                    Thread.Sleep(1); // Pequeno delay para evitar loop desnecessário
+                }
             }
-            Thread t = new Thread(() => ColetaFrame(i));
-            coletor.Add(t);
-            t.IsBackground = true;
-            t.Start();
-            aux_timer++;
+        }
+
+        public void PararCaptura()
+        {
+            rodando = false;
+            capturaThread.Join();
+            salvamentoThread.Join();
         }
     }
 }

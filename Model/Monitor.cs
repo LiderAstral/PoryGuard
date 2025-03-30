@@ -10,7 +10,6 @@ namespace PoryGuard
 {
     class Monitor
     {
-        private int id;
         private string nome;
         private int frameRate;
         private int altura;
@@ -20,24 +19,18 @@ namespace PoryGuard
         
         public Monitor() 
         { 
-            Screen screen = Screen.AllScreens[0];
-            ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"SELECT * FROM Win32_VideoController");
-            id = 0;
-            foreach (ManagementObject obj in searcher.Get())
+            foreach(Screen screen in Screen.AllScreens)
             {
-                frameRate = int.Parse(obj["CurrentRefreshRate"].ToString());
-                break;
-                id++;
+                if (screen.Primary)
+                {
+                    nome = screen.DeviceName;
+                    frameRate = 30; // Definir para 30 FPS para fins de latência e precisão científica
+                    altura = screen.Bounds.Height;
+                    largura = screen.Bounds.Width;
+                    boundsX = screen.Bounds.X;
+                    boundsY = screen.Bounds.Y;
+                }
             }
-            nome = screen.DeviceName;
-            altura = screen.Bounds.Height;
-            largura = screen.Bounds.Width;
-            boundsX = screen.Bounds.X;
-            boundsY = screen.Bounds.Y;
-        }
-        public int GetId()
-        { 
-            return id; 
         }
         public string GetNome()
         {

@@ -13,6 +13,7 @@ namespace PoryGuard.Controller
         //variáveis do monitor
         private int altura;
         private int largura;
+        private float proporcao;
         private int frameRate;
         private int boundsX;
         private int boundsY;
@@ -46,6 +47,7 @@ namespace PoryGuard.Controller
         {
             altura = monitor.GetAltura();
             largura = monitor.GetLargura();
+            proporcao = monitor.GetProporcao();
             frameRate = monitor.GetFrameRate();
             boundsX = monitor.GetBoundsX();
             boundsY = monitor.GetBoundsY();
@@ -70,7 +72,7 @@ namespace PoryGuard.Controller
                     Thread.SpinWait(1); //Melhor que Thread.Sleep()
                 }
 
-                Console.WriteLine($"Frame {contador} capturado em {sw.ElapsedMilliseconds} ms");
+                //Console.WriteLine($"Frame {contador} capturado em {sw.ElapsedMilliseconds} ms");
             }
         }
 
@@ -109,11 +111,12 @@ namespace PoryGuard.Controller
                 {
                     var (bitmap, contador) = item;
                     bitmaps[contador] = bitmap;
+                    AnaliseDeCapturas.AnalisarCapturas(bitmap, proporcao);
                     bitmap.Dispose(); // Libera memória após salvar
                 }
                 else
                 {
-                    Thread.Sleep(1); // Pequeno delay para evitar loop desnecessário
+                    Thread.Sleep(1); // Pequeno delay para evitar consumo de recursos desnecessário
                 }
             }
         }

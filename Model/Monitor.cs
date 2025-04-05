@@ -16,7 +16,7 @@ namespace PoryGuard
         private int largura;
         private int boundsX;
         private int boundsY;
-        
+        private float proporcao;
         public Monitor() 
         { 
             foreach(Screen screen in Screen.AllScreens)
@@ -29,6 +29,7 @@ namespace PoryGuard
                     largura = screen.Bounds.Width;
                     boundsX = screen.Bounds.X;
                     boundsY = screen.Bounds.Y;
+                    proporcao = (float)largura / (float)altura;
                 }
             }
         }
@@ -55,6 +56,10 @@ namespace PoryGuard
         public int GetBoundsY()
         {
             return boundsY;
+        }
+        public float GetProporcao()
+        {
+            return proporcao;
         }
     }
 }

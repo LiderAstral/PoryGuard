@@ -107,6 +107,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AnaliseDeCapturas.cs" />
     <Compile Include="Controller\CapturaDeTela.cs" />
     <Compile Include="Model\Monitor.cs" />
     <Compile Include="PoryGuard.cs">

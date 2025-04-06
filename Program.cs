@@ -19,6 +19,8 @@ namespace PoryGuard
         [STAThread]
         static void Main()
         {
+            // Necessário para garantir o funcionamento do método Screen para telas
+            // com diferentes resoluções
             SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

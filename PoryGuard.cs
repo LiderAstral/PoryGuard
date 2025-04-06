@@ -12,6 +12,7 @@ namespace PoryGuard
 {
     public partial class PoryGuard: Form
     {
+
         public PoryGuard()
         {
             InitializeComponent();

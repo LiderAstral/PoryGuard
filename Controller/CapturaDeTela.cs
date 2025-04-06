@@ -26,12 +26,14 @@ namespace PoryGuard.Controller
         private ConcurrentQueue<(Bitmap, int)> filaDeImagens = new ConcurrentQueue<(Bitmap, int)>();
         //Array para armazenar os bitmaps capturados localmente
         private Bitmap[] bitmaps;
+        //Classe para enviar as imagens para análise
+        private AnaliseDeCapturas analiseDeCapturas;
 
         public CapturaDeTela()
         {
             Monitor monitor = new Monitor();
             ConfigurarMonitor(monitor);
-
+            analiseDeCapturas = new AnaliseDeCapturas(frameRate, proporcao);
             // Thread que captura as imagens sem bloqueio
             capturaThread = new Thread(GerenciarCapturas);
             capturaThread.IsBackground = true;
@@ -59,7 +61,7 @@ namespace PoryGuard.Controller
         {
             int contador = 0;
             Stopwatch sw = new Stopwatch();
-            long tempoAlvo = 1000 / frameRate;
+            int tempoAlvo = 1000 / frameRate;
             while (true)
             {
                 sw.Restart();   
@@ -111,8 +113,10 @@ namespace PoryGuard.Controller
                 {
                     var (bitmap, contador) = item;
                     bitmaps[contador] = bitmap;
-                    AnaliseDeCapturas.AnalisarCapturas(bitmap, proporcao);
-                    bitmap.Dispose(); // Libera memória após salvar
+                    analiseDeCapturas.InserirFrame(bitmap, contador);
+                    GC.Collect();
+                    GC.WaitForPendingFinalizers();
+                    //bitmap.Dispose(); // Libera memória após salvar
                 }
                 else
                 {

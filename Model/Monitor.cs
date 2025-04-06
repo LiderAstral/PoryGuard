@@ -21,7 +21,7 @@ namespace PoryGuard
         { 
             foreach(Screen screen in Screen.AllScreens)
             {
-                if (screen.Primary)
+                if (screen.Primary) //Captura informações apenas do monitor principal, inicialmente
                 {
                     nome = screen.DeviceName;
                     frameRate = 30; // Definir para 30 FPS para fins de latência e precisão científica

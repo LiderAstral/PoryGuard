@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PoryGuard.Model;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -12,11 +13,14 @@ namespace PoryGuard.Controller
         private bool liberado = false;
         private int frameRate;
         private float proporcao;
+        private int variacao = 200; // Valor de tolerância na variação de intensidade de vermelho
         private Bitmap[] bitmaps;
         int subdivisoes = 30; // Número de subdivisões da maior dimensão para a análise
+        private OverlayCensura overlayCensura = new OverlayCensura();
 
         public AnaliseDeCapturas(int frameRate, float proporcao)
         {
+            overlayCensura.Show();
             this.frameRate = frameRate;
             bitmaps = new Bitmap[frameRate];
             this.proporcao = proporcao;
@@ -42,12 +46,12 @@ namespace PoryGuard.Controller
                 {
                     for (int j = 0; j < subAltura; j++)
                     {
-                        for (int aux = 0; aux < 10; aux++)
+                        for (int aux = 0; aux < 30; aux++)
                         {
                             if (--contadorAux == -1)
                                 contadorAux = frameRate - 1;
                         
-                            if (bitmaps[contador].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R - bitmaps[contadorAux].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R >= 200  && i == 0 && j == 0)
+                            if (Math.Abs(bitmaps[contador].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R - bitmaps[contadorAux].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R) >= variacao  && i == 0 && j == 0)
                                 Console.WriteLine("Diferença de cor detectada entre os frames " + contador + " e " + contadorAux);
                         }
                         //int a = bitmap.GetPixel(i*pixelsPorLargura, j*pixelsPorLargura).R;

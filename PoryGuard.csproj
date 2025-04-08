@@ -109,7 +109,14 @@
   <ItemGroup>
     <Compile Include="Controller\AnaliseDeCapturas.cs" />
     <Compile Include="Controller\CapturaDeTela.cs" />
+    <Compile Include="Controller\Censura.cs" />
     <Compile Include="Model\Monitor.cs" />
+    <Compile Include="Model\OverlayCensura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\OverlayCensura.Designer.cs">
+      <DependentUpon>OverlayCensura.cs</DependentUpon>
+    </Compile>
     <Compile Include="PoryGuard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +125,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Model\OverlayCensura.resx">
+      <DependentUpon>OverlayCensura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -16,11 +16,10 @@ namespace PoryGuard.Controller
         private int variacao = 200; // Valor de tolerância na variação de intensidade de vermelho
         private Bitmap[] bitmaps;
         int subdivisoes = 30; // Número de subdivisões da maior dimensão para a análise
-        private OverlayCensura overlayCensura = new OverlayCensura();
-
+        private Censura censura;
         public AnaliseDeCapturas(int frameRate, float proporcao)
         {
-            overlayCensura.Show();
+            censura = new Censura();
             this.frameRate = frameRate;
             bitmaps = new Bitmap[frameRate];
             this.proporcao = proporcao;
@@ -46,17 +45,21 @@ namespace PoryGuard.Controller
                 {
                     for (int j = 0; j < subAltura; j++)
                     {
-                        for (int aux = 0; aux < 30; aux++)
+                        for (int aux = 0; aux < frameRate; aux++)
                         {
                             if (--contadorAux == -1)
                                 contadorAux = frameRate - 1;
-                        
-                            if (Math.Abs(bitmaps[contador].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R - bitmaps[contadorAux].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R) >= variacao  && i == 0 && j == 0)
-                                Console.WriteLine("Diferença de cor detectada entre os frames " + contador + " e " + contadorAux);
+
+                            if (Math.Abs(bitmaps[contador].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R - bitmaps[contadorAux].GetPixel(i * pixelsPorLargura, j * pixelsPorAltura).R) >= variacao)  //&& i == 0 && j == 0)
+                                censura.AddRectangle(i * pixelsPorAltura, j * pixelsPorAltura, pixelsPorLargura, pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
+                                //Console.WriteLine("Diferença de cor detectada entre os frames " + contador + " e " + contadorAux);
+                            else
+                                censura.AddRectangle(i * pixelsPorAltura, j * pixelsPorAltura, pixelsPorLargura, pixelsPorAltura, Color.FromArgb(0, 0, 0, 0));
                         }
                         //int a = bitmap.GetPixel(i*pixelsPorLargura, j*pixelsPorLargura).R;
                     }
                 }
+                censura.ClearRectangles();
             }
             else
             {

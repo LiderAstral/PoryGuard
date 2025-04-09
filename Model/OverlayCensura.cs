@@ -22,30 +22,66 @@ namespace PoryGuard.Model
         const int GWL_EXSTYLE = -20;
         const uint WS_EX_LAYERED = 0x80000;
         const uint WS_EX_TRANSPARENT = 0x20;
+        private static readonly object lockObject = new object();
+
+        // Lista de retângulos coloridos
+        private List<(Rectangle rect, Color color)> rectangles = new List<(Rectangle rect, Color color)>();
+
         public OverlayCensura()
         {
-            InitializeComponent();
             FormBorderStyle = FormBorderStyle.None;
             TopMost = true;
             ShowInTaskbar = false;
             BackColor = Color.Magenta;
             TransparencyKey = Color.Magenta;
 
-            // Cobre a tela inteira
             Bounds = Screen.PrimaryScreen.Bounds;
 
             Load += (s, e) =>
             {
-                // Torna a janela clicável
                 uint exStyle = GetWindowLong(this.Handle, GWL_EXSTYLE);
                 SetWindowLong(this.Handle, GWL_EXSTYLE, exStyle | WS_EX_LAYERED | WS_EX_TRANSPARENT);
             };
         }
+
         protected override void OnPaint(PaintEventArgs e)
         {
-            // Desenha um pixel (como um quadrado pequeno) em (50,50) com cor preta
-            e.Graphics.FillRectangle(Brushes.Black, 50, 50, 50, 50);
+            lock (lockObject)
+            {
+                foreach (var (rect, color) in rectangles)
+                {
+                    using (SolidBrush brush = new SolidBrush(color))
+                    {
+                        e.Graphics.FillRectangle(brush, rect);
+                    }
+                }
+            }
+
             base.OnPaint(e);
+        }
+
+        /// <summary>
+        /// Adiciona um novo retângulo para ser desenhado.
+        /// </summary>
+        public void AddRectangle(int x, int y, int width, int height, Color color)
+        {
+            lock (lockObject)
+            {
+                rectangles.Add((new Rectangle(x, y, width, height), color));
+            }
+            Invalidate(); // Solicita redesenho
+        }
+
+        /// <summary>
+        /// Limpa todos os retângulos desenhados.
+        /// </summary>
+        public void ClearRectangles()
+        {
+            lock (lockObject)
+            {
+                rectangles.Clear();
+            }
+            Invalidate(); // Limpa a tela
         }
     }
 }

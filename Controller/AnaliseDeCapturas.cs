@@ -39,8 +39,8 @@ namespace PoryGuard.Controller
             if (proporcao >= 1.0f)
             {
                 int subAltura = (bitmaps[contador].Height * subdivisoes) / bitmaps[contador].Width;
-                int pixelsPorAltura = bitmaps[contador].Height / subAltura;
-                int pixelsPorLargura = bitmaps[contador].Width / subdivisoes;
+                int pixelsPorAltura = (int)Math.Ceiling((double)(bitmaps[contador].Height / subAltura));
+                int pixelsPorLargura = (int)Math.Ceiling((double)(bitmaps[contador].Width / subdivisoes));
                 for (int i = 0; i < subdivisoes; i++)
                 {
                     for (int j = 0; j < subAltura; j++)
@@ -59,6 +59,7 @@ namespace PoryGuard.Controller
                         //int a = bitmap.GetPixel(i*pixelsPorLargura, j*pixelsPorLargura).R;
                     }
                 }
+                censura.Redesenhar();
                 censura.ClearRectangles();
             }
             else

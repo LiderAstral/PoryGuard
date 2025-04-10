@@ -69,7 +69,7 @@ namespace PoryGuard.Model
             {
                 rectangles.Add((new Rectangle(x, y, width, height), color));
             }
-            Invalidate(); // Solicita redesenho
+            //Invalidate(); // Solicita redesenho
         }
 
         /// <summary>
@@ -81,7 +81,11 @@ namespace PoryGuard.Model
             {
                 rectangles.Clear();
             }
-            Invalidate(); // Limpa a tela
+            //Invalidate(); // Limpa a tela
+        }
+        public void Redesenhar()
+        {
+            Invalidate();
         }
     }
 }

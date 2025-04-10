@@ -27,5 +27,9 @@ namespace PoryGuard.Controller
         {
             overlayCensura.ClearRectangles();
         }
+        public void Redesenhar()
+        {
+            overlayCensura.Redesenhar();
+        }
     }
 }

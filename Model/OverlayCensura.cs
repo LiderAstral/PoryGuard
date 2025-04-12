@@ -18,10 +18,15 @@ namespace PoryGuard.Model
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern uint GetWindowLong(IntPtr hWnd, int nIndex);
+        [DllImport("user32.dll")]
+        static extern bool SetWindowDisplayAffinity(IntPtr hWnd, uint dwAffinity);
 
         const int GWL_EXSTYLE = -20;
         const uint WS_EX_LAYERED = 0x80000;
         const uint WS_EX_TRANSPARENT = 0x20;
+        const uint WS_EX_TOOLWINDOW = 0x00000080;
+
+        const uint WDA_EXCLUDEFROMCAPTURE = 0x11;
         private static readonly object lockObject = new object();
 
         // Lista de retângulos coloridos
@@ -41,6 +46,9 @@ namespace PoryGuard.Model
             {
                 uint exStyle = GetWindowLong(this.Handle, GWL_EXSTYLE);
                 SetWindowLong(this.Handle, GWL_EXSTYLE, exStyle | WS_EX_LAYERED | WS_EX_TRANSPARENT);
+
+                // Oculta da captura de tela
+                SetWindowDisplayAffinity(this.Handle, WDA_EXCLUDEFROMCAPTURE);
             };
         }
 
@@ -85,7 +93,10 @@ namespace PoryGuard.Model
         }
         public void Redesenhar()
         {
-            Invalidate();
+            lock (lockObject)
+            {
+                Invalidate();
+            }
         }
     }
 }

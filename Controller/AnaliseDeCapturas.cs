@@ -14,11 +14,12 @@ namespace PoryGuard.Controller
     class AnaliseDeCapturas
     {
         private int R = 0, G = 0, B = 0, Raux = 0, Gaux = 0, Baux = 0;
-        private double luminanciaRelativa, luminanciaRelativaAux;
+        private double luminanciaRelativa, luminanciaRelativaAux, vermelhoCritico, vermelhoCriticoAux;
         private double[] luminanciaMedia;
         private bool liberado = false;
         private int frameRate;
         private float proporcao;
+        private int limiarVermelho = 20; // Limiar de desvio de vermelho para considerar um quadrante como "flash"
         private int variacao = 20; // Valor de tolerância na variação de intensidade luminosa
         private int limiarLuminancia = 10; // Limiar de desvio de luminancia para considerar um quadrante como "flash"
         private Bitmap[] bitmaps;
@@ -68,19 +69,27 @@ namespace PoryGuard.Controller
                         {
                             if (--contadorAux == -1)
                                 contadorAux = frameRate - 1;
+                            // Verifica se a diferença de luminância entre os frames é maior que o limiar
                             if (Math.Abs(luminanciaMedia[contador] - luminanciaMedia[contadorAux]) >= limiarLuminancia)
                             {
+                                //Calcula o vermelho crítico do pixel, e sua luminância relativa, e compara com o frame anterior
                                 R = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R;
                                 G = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G;
                                 B = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B;
+                                vermelhoCritico = (bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R - bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G - bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B) * 320 / 255f;
+                                if (vermelhoCritico < 0)
+                                    vermelhoCritico = 0;
                                 luminanciaRelativa = 0.2126 * R + 0.7152 * G + 0.0722 * B;
                                 Raux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R;
                                 Gaux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G;
                                 Baux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B;
+                                vermelhoCriticoAux = (bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R - bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G - bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B) * 320/255f;
+                                if (vermelhoCriticoAux < 0)
+                                    vermelhoCriticoAux = 0;
                                 luminanciaRelativaAux = 0.2126 * Raux + 0.7152 * Gaux + 0.0722 * Baux;
                                 double desvio = Math.Abs(luminanciaRelativa - luminanciaRelativaAux);
                                 desvios.Add(desvio);
-                                if (Math.Abs(luminanciaRelativa - luminanciaRelativaAux) >= variacao)
+                                if (Math.Abs(luminanciaRelativa - luminanciaRelativaAux) >= variacao || Math.Abs(vermelhoCritico-vermelhoCriticoAux) >= limiarVermelho)
                                 {
                                     flashes++;
                                 }

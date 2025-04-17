@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "OverlayCensura";
             this.Text = "OverlayCensura";
+            this.Load += new System.EventHandler(this.OverlayCensura_Load);
             this.ResumeLayout(false);
 
         }

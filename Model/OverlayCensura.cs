@@ -32,6 +32,35 @@ namespace PoryGuard.Model
         // Lista de retângulos coloridos
         private List<(Rectangle rect, Color color)> rectangles = new List<(Rectangle rect, Color color)>();
 
+        // Garante que a janela não apareça no Alt+Tab
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var cp = base.CreateParams;
+                cp.ExStyle |= (int)(WS_EX_TOOLWINDOW);
+                return cp;
+            }
+        }
+
+        // Ignora qualquer tentativa de fechar a janela
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            e.Cancel = true; // Impede que o usuário feche
+        }
+
+        // Também ignora mensagens de encerramento (Alt+F4)
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_SYSCOMMAND = 0x0112;
+            const int SC_CLOSE = 0xF060;
+
+            if (m.Msg == WM_SYSCOMMAND && (m.WParam.ToInt32() & 0xFFF0) == SC_CLOSE)
+                return; // Ignora o Alt+F4
+
+            base.WndProc(ref m);
+        }
+
         public OverlayCensura()
         {
             FormBorderStyle = FormBorderStyle.None;
@@ -97,6 +126,11 @@ namespace PoryGuard.Model
             {
                 Invalidate();
             }
+        }
+
+        private void OverlayCensura_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Threading;
 
@@ -116,6 +117,7 @@ namespace PoryGuard.Controller
                     analiseDeCapturas.InserirFrame(bitmap, contador);
                     GC.Collect();
                     GC.WaitForPendingFinalizers();
+                    //Console.WriteLine($"{bitmap.GetPixel(100, 100)}");
                     //bitmap.Dispose(); // Libera memória após salvar
                 }
                 else

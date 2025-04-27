@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Emgu.CV;
 
 namespace PoryGuard.Model
 {
@@ -54,10 +55,8 @@ namespace PoryGuard.Model
         {
             const int WM_SYSCOMMAND = 0x0112;
             const int SC_CLOSE = 0xF060;
-
             if (m.Msg == WM_SYSCOMMAND && (m.WParam.ToInt32() & 0xFFF0) == SC_CLOSE)
                 return; // Ignora o Alt+F4
-
             base.WndProc(ref m);
         }
 
@@ -68,7 +67,7 @@ namespace PoryGuard.Model
             ShowInTaskbar = false;
             BackColor = Color.Magenta;
             TransparencyKey = Color.Magenta;
-
+            WindowState = FormWindowState.Maximized;
             Bounds = Screen.PrimaryScreen.Bounds;
 
             Load += (s, e) =>
@@ -96,29 +95,21 @@ namespace PoryGuard.Model
 
             base.OnPaint(e);
         }
-
-        /// <summary>
         /// Adiciona um novo retângulo para ser desenhado.
-        /// </summary>
         public void AddRectangle(int x, int y, int width, int height, Color color)
         {
             lock (lockObject)
             {
                 rectangles.Add((new Rectangle(x, y, width, height), color));
             }
-            //Invalidate(); // Solicita redesenho
         }
-
-        /// <summary>
-        /// Limpa todos os retângulos desenhados.
-        /// </summary>
+        // Limpa todos os retângulos desenhados.
         public void ClearRectangles()
         {
             lock (lockObject)
             {
                 rectangles.Clear();
             }
-            //Invalidate(); // Limpa a tela
         }
         public void Redesenhar()
         {

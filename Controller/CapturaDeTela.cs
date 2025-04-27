@@ -117,8 +117,6 @@ namespace PoryGuard.Controller
                     analiseDeCapturas.InserirFrame(bitmap, contador);
                     GC.Collect();
                     GC.WaitForPendingFinalizers();
-                    //Console.WriteLine($"{bitmap.GetPixel(100, 100)}");
-                    //bitmap.Dispose(); // Libera memória após salvar
                 }
                 else
                 {

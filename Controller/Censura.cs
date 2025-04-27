@@ -19,10 +19,7 @@ namespace PoryGuard.Controller
         {
             overlayCensura.AddRectangle(x, y, width, height, color);
         }
-
-        /// <summary>
         /// Limpa todos os retângulos desenhados.
-        /// </summary>
         public void ClearRectangles()
         {
             overlayCensura.ClearRectangles();

@@ -15,13 +15,13 @@ namespace PoryGuard.Controller
     {
         private int R = 0, G = 0, B = 0, Raux = 0, Gaux = 0, Baux = 0;
         private double luminanciaRelativa, luminanciaRelativaAux, vermelhoCritico, vermelhoCriticoAux;
-        private double[] luminanciaMedia;
+        private double[] luminanciaMedia, vermelhoCriticoMedio;
         private bool liberado = false;
         private int frameRate;
         private float proporcao;
         private int limiarVermelho = 20; // Limiar de desvio de vermelho para considerar um quadrante como "flash"
-        private int variacao = 20; // Valor de tolerância na variação de intensidade luminosa
-        private int limiarLuminancia = 10; // Limiar de desvio de luminancia para considerar um quadrante como "flash"
+        private int variacao = 30; // Valor de tolerância na variação de intensidade luminosa
+        private int limiarLuminancia = 20; // Limiar de desvio de luminancia para considerar um quadrante como "flash"
         private Bitmap[] bitmaps;
         int subdivisoes = 30; // Número de subdivisões da maior dimensão para a análise
         private Censura[] censura;
@@ -35,6 +35,7 @@ namespace PoryGuard.Controller
             bitmaps = new Bitmap[frameRate];
             this.proporcao = proporcao;
             luminanciaMedia = new double[frameRate];
+            vermelhoCriticoMedio = new double[frameRate];
         }
         public void InserirFrame(Bitmap bitmap, int contador)
         {
@@ -43,7 +44,7 @@ namespace PoryGuard.Controller
             bitmaps[contador] = new Bitmap(bitmap);
             Color cores = CalcularMediaRGB(bitmaps[contador]);
             luminanciaMedia[contador] = 0.2126 * cores.R + 0.7152 * cores.G + 0.0722 * cores.B;
-            Console.WriteLine(luminanciaMedia[contador]);
+            vermelhoCriticoMedio[contador] = (cores.R - cores.G - cores.B) * 320 / 255f;
             if (contador % 15 == 0)
                 AnalisarFrames(contador);
         }
@@ -51,7 +52,6 @@ namespace PoryGuard.Controller
         {
             if (!liberado)
                 return;
-            List<double> desvios = new List<double>();
             censura[contador%2].ClearRectangles();
             int contadorAux = contador;
             if (proporcao >= 1.0f)
@@ -70,25 +70,23 @@ namespace PoryGuard.Controller
                             if (--contadorAux == -1)
                                 contadorAux = frameRate - 1;
                             // Verifica se a diferença de luminância entre os frames é maior que o limiar
-                            if (Math.Abs(luminanciaMedia[contador] - luminanciaMedia[contadorAux]) >= limiarLuminancia)
+                            if (Math.Abs(luminanciaMedia[contador] - luminanciaMedia[contadorAux]) >= limiarLuminancia || Math.Abs(vermelhoCriticoMedio[contador] - vermelhoCriticoMedio[contadorAux]) >= limiarVermelho)
                             {
                                 //Calcula o vermelho crítico do pixel, e sua luminância relativa, e compara com o frame anterior
                                 R = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R;
                                 G = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G;
                                 B = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B;
-                                vermelhoCritico = (bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R - bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G - bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B) * 320 / 255f;
+                                vermelhoCritico = (R - G - B) * 320 / 255f;
                                 if (vermelhoCritico < 0)
                                     vermelhoCritico = 0;
                                 luminanciaRelativa = 0.2126 * R + 0.7152 * G + 0.0722 * B;
                                 Raux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R;
                                 Gaux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G;
                                 Baux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B;
-                                vermelhoCriticoAux = (bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R - bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G - bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B) * 320/255f;
+                                vermelhoCriticoAux = (Raux - Gaux - Baux) * 320/255f;
                                 if (vermelhoCriticoAux < 0)
                                     vermelhoCriticoAux = 0;
                                 luminanciaRelativaAux = 0.2126 * Raux + 0.7152 * Gaux + 0.0722 * Baux;
-                                double desvio = Math.Abs(luminanciaRelativa - luminanciaRelativaAux);
-                                desvios.Add(desvio);
                                 if (Math.Abs(luminanciaRelativa - luminanciaRelativaAux) >= variacao || Math.Abs(vermelhoCritico-vermelhoCriticoAux) >= limiarVermelho)
                                 {
                                     flashes++;
@@ -97,15 +95,12 @@ namespace PoryGuard.Controller
                             if (--contador == -1)
                                 contador = frameRate - 1;
                         }
-                        //Color media = CalcularMediaRGB(bitmaps[contador]);
-                        if (flashes >= 4)
-                            //censura[contador % 2].AddRectangle(i * pixelsPorLargura, j * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
+                        if (flashes >= 6)
                             quadrantes[i, j] = true;
                         else
                             quadrantes[i, j] = false;
                     }
                 }
-
                 DetectarBlocosDeFlashes(quadrantes, pixelsPorLargura, pixelsPorAltura, contador);
                 censura[contador % 2].Redesenhar();
             }

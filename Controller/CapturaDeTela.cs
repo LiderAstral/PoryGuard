@@ -124,5 +124,15 @@ namespace PoryGuard.Controller
                 }
             }
         }
+        public void PararCaptura()
+        {
+            analiseDeCapturas.PararAnalise();
+            capturaThread.Abort();
+            salvamentoThread.Abort();
+            foreach (var bitmap in bitmaps)
+            {
+                bitmap?.Dispose(); // Libera os recursos dos bitmaps
+            }
+        }
     }
 }

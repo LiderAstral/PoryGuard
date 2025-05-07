@@ -150,6 +150,9 @@
     <EmbeddedResource Include="Model\OverlayCensura.resx">
       <DependentUpon>OverlayCensura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PoryGuard.resx">
+      <DependentUpon>PoryGuard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

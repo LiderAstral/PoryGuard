@@ -28,5 +28,9 @@ namespace PoryGuard.Controller
         {
             overlayCensura.Redesenhar();
         }
+        public void EncerraCensura()
+        {
+            overlayCensura.Close();
+        }   
     }
 }

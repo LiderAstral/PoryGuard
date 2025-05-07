@@ -12,7 +12,7 @@ namespace PoryGuard
 {
     public partial class PoryGuard: Form
     {
-
+        CapturaDeTela capturaDeTela;
         public PoryGuard()
         {
             InitializeComponent();
@@ -20,8 +20,20 @@ namespace PoryGuard
         }
         private void IniciaExecucao()
         {
-            CapturaDeTela capturaDeTela = new CapturaDeTela();
+            
         }
 
+        private void cbxLigado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxLigado.Checked)
+            {
+                capturaDeTela = new CapturaDeTela();
+            }
+            else
+            {
+                capturaDeTela.PararCaptura();
+                capturaDeTela = null;
+            }
+        }
     }
 }

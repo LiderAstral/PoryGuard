@@ -176,5 +176,24 @@ namespace PoryGuard.Controller
                 return reduzido.GetPixel(0, 0); // Contém a média
             }
         }
+        public void PararAnalise()
+        {
+            for (int i = 0; i < bitmaps.Length; i++)
+            {
+                if (!bitmaps[i].Equals(null))
+                {
+                    bitmaps[i].Dispose();
+                    bitmaps[i] = null;
+                }
+            }
+            for (int i = 0; i < censura.Length; i++)
+            {
+                if (!censura[i].Equals(null))
+                {
+                    censura[i].EncerraCensura();
+                    censura[i] = null;
+                }
+            }
+        }
     }
 }

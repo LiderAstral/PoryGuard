@@ -30,7 +30,7 @@ namespace PoryGuard.Controller
         }
         public void EncerraCensura()
         {
-            overlayCensura.Close();
+            overlayCensura.EncerraCensura();
         }   
     }
 }

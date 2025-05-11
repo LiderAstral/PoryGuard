@@ -118,6 +118,15 @@ namespace PoryGuard.Model
                 Invalidate();
             }
         }
+        public void EncerraCensura()
+        {
+            ClearRectangles();
+            Redesenhar();
+            lock (lockObject)
+            {
+                this.Close();
+            }
+        }
 
         private void OverlayCensura_Load(object sender, EventArgs e)
         {

@@ -23,7 +23,7 @@ namespace PoryGuard.Controller
         private int variacao = 30; // Valor de tolerância na variação de intensidade luminosa
         private int limiarLuminancia = 20; // Limiar de desvio de luminancia para considerar um quadrante como "flash"
         private Bitmap[] bitmaps;
-        int subdivisoes = 50; // Número de subdivisões da maior dimensão para a análise
+        int subdivisoes = 30; // Número de subdivisões da maior dimensão para a análise
         private Censura[] censura;
 
         public AnaliseDeCapturas(int frameRate, float proporcao)

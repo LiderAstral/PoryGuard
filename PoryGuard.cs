@@ -20,20 +20,25 @@ namespace PoryGuard
         }
         private void IniciaExecucao()
         {
-            
+            VerificaLigado();
         }
-
-        private void cbxLigado_CheckedChanged(object sender, EventArgs e)
+        private void VerificaLigado()
         {
             if (cbxLigado.Checked)
             {
+                AtivarInterface(false);
                 capturaDeTela = new CapturaDeTela();
             }
             else
             {
-                capturaDeTela.PararCaptura();
+                capturaDeTela?.PararCaptura();
                 capturaDeTela = null;
+                AtivarInterface(true);
             }
+        }
+        private void cbxLigado_CheckedChanged(object sender, EventArgs e)
+        {
+            VerificaLigado();
         }
 
         private void nudMinimo_ValueChanged(object sender, EventArgs e)
@@ -82,6 +87,19 @@ namespace PoryGuard
         private void nudQuadrantes_ValueChanged(object sender, EventArgs e)
         {
             tcbQuadrantes.Value = (int)nudQuadrantes.Value;
+        }
+        private void AtivarInterface(bool ativar)
+        {
+            nudMinimo.Enabled = ativar;
+            nudMaximo.Enabled = ativar;
+            tcbLuminosidadeTela.Enabled = ativar;
+            nudLuminosidadeTela.Enabled = ativar;
+            tcbLuminosidadeQuadrante.Enabled = ativar;
+            nudLuminosidadeQuadrante.Enabled = ativar;
+            tcbQuadrantes.Enabled = ativar;
+            nudQuadrantes.Enabled = ativar;
+            tcbVermelhoCritico.Enabled = ativar;
+            nudVermelhoCritico.Enabled = ativar;
         }
     }
 }

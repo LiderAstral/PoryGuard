@@ -69,6 +69,8 @@
             // cbxLigado
             // 
             this.cbxLigado.AutoSize = true;
+            this.cbxLigado.Checked = true;
+            this.cbxLigado.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxLigado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxLigado.Location = new System.Drawing.Point(71, 58);
             this.cbxLigado.Name = "cbxLigado";

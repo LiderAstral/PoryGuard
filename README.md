@@ -4,10 +4,20 @@
 
 ## ⚙️ Funcionalidades
 
-- 📸 Captura de tela em tempo real
-- 🧠 Análise de padrões visuais (ex: flashes intensos)
-- 🛡️ Censura automática sobre áreas perigosas
+- 📸 Captura contínua da tela em tempo real com múltiplas threads
+- 🧠 Análise inteligente de padrões visuais (luminância, variação de cor e vermelho crítico)
+- 🔲 Detecção de quadrantes perigosos
+- 🛡️ Censura automática com sobreposição visual personalizada
+- 🔁 Persistência de configurações em JSON
+- 🖱️ Interface gráfica em Windows Forms
 - 🧪 Baseado em critérios clínicos de risco para estímulos fotossensíveis
+
+## 🧪 Critérios de Análise Clínica
+
+- Limiar de luminosidade e variação de vermelho crítico baseados em literatura médica
+- Análise segmentada em múltiplos quadrantes para maior precisão
+- Frequência mínima e máxima de flashes configuráveis
+- Identificação de "flashes perigosos" por contraste súbito ou excesso de vermelho
 
 ## 🖥️ Tecnologias Utilizadas
 
@@ -17,14 +27,19 @@
 
 ## 📁 Estrutura do Projeto
 
-PoryGuard/  
-├── Controller/           → Lógica de controle  
-├── Model/                → Estruturas de dados  
-├── Properties/           → Configurações do projeto  
-├── App.config            → Configurações da aplicação  
-├── PoryGuard.cs          → Interface principal  
-├── Program.cs            → Ponto de entrada  
-└── PoryGuard.sln         → Solução do Visual Studio  
+PoryGuard/
+├── Controller/               # Captura de tela, análise e censura
+│   ├── CapturaDeTela.cs
+│   ├── AnaliseDeCapturas.cs
+│   └── Censura.cs
+├── Model/                    # Estruturas de dados e sobreposição
+│   ├── Monitor.cs
+│   └── OverlayCensura.cs
+├── Properties/               # Metadados e configurações
+├── App.config
+├── PoryGuard.cs              # Interface principal (UI)
+├── Program.cs                # Ponto de entrada
+└── ConfiguraçãoPersistente.json
 
 ## 🚀 Como Executar
 
@@ -44,7 +59,7 @@ PoryGuard/
 
 ## 🔬 Objetivo
 
-O projeto visa mitigar os riscos causados por estímulos visuais perigosos — como flashes rápidos e contrastes altos — a indivíduos com epilepsia fotossensível, promovendo segurança digital e acessibilidade. Seu desenvolvimento é embasado em literatura médica e recomendações técnicas sobre gatilhos visuais de crises epilépticas. Estudos sobre frequência de flashes, contraste e área de cobertura serão levados em conta para análise de risco.
+O projeto visa mitigar os riscos causados por estímulos visuais perigosos, como flashes rápidos e contrastes altos, a indivíduos com epilepsia fotossensível, promovendo segurança digital e acessibilidade. Seu desenvolvimento é embasado em literatura médica e recomendações técnicas sobre gatilhos visuais de crises epilépticas. Estudos sobre frequência de flashes, contraste e área de cobertura serão levados em conta para análise de risco.
 
 ## 📬 Contato
 

@@ -7,12 +7,15 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Diagnostics;
 using PoryGuard.Controller;
+using System.Text.Json;
+using System.IO;
 
 namespace PoryGuard
 {
     public partial class PoryGuard: Form
     {
         CapturaDeTela capturaDeTela;
+        private const string configPath = "ConfiguraçãoPersistente.json";
         public PoryGuard()
         {
             InitializeComponent();
@@ -20,12 +23,55 @@ namespace PoryGuard
         }
         private void IniciaExecucao()
         {
+            CarregarConfiguracoes();
             VerificaLigado();
+        }
+        private void CarregarConfiguracoes()
+        {
+            if (!File.Exists(configPath)) 
+                return;
+
+            var json = File.ReadAllText(configPath);
+            var config = JsonSerializer.Deserialize<ConfiguracaoPersistente>(json);
+
+            nudMinimo.Value = config.FlashMinimo;
+            nudMaximo.Value = config.FlashMaximo;
+            tcbLuminosidadeTela.Value = config.LuminosidadeTela;
+            nudLuminosidadeTela.Value = config.LuminosidadeTela;
+            tcbLuminosidadeQuadrante.Value = config.LuminosidadeQuadrante;
+            nudLuminosidadeQuadrante.Value = config.LuminosidadeQuadrante;
+            tcbQuadrantes.Value = config.Quadrantes;
+            nudQuadrantes.Value = config.Quadrantes;
+            tcbVermelhoCritico.Value = config.VermelhoCritico;
+            nudVermelhoCritico.Value = config.VermelhoCritico;
+
+        }
+        private void SalvarConfiguracoes()
+        {
+            var config = new ConfiguracaoPersistente
+            {
+                FlashMinimo = (int)nudMinimo.Value,
+                FlashMaximo = (int)nudMaximo.Value,
+                LuminosidadeTela = (int)nudLuminosidadeTela.Value,
+                LuminosidadeQuadrante = (int)nudLuminosidadeQuadrante.Value,
+                Quadrantes = (int)nudQuadrantes.Value,
+                VermelhoCritico = (int)nudVermelhoCritico.Value
+
+            };
+
+            var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(configPath, json);
+        }
+
+        private void PoryGuard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SalvarConfiguracoes();
         }
         private void VerificaLigado()
         {
             if (cbxLigado.Checked)
             {
+                SalvarConfiguracoes();
                 AtivarInterface(false);
                 capturaDeTela = new CapturaDeTela();
             }
@@ -101,5 +147,17 @@ namespace PoryGuard
             tcbVermelhoCritico.Enabled = ativar;
             nudVermelhoCritico.Enabled = ativar;
         }
+
     }
+    public class ConfiguracaoPersistente
+    {
+        public int FlashMinimo { get; set; } 
+        public int FlashMaximo { get; set; }
+        public int LuminosidadeTela { get; set; }
+        public int LuminosidadeQuadrante { get; set; }
+        public int Quadrantes { get; set; }
+        public int VermelhoCritico { get; set; }
+
+    }
+
 }

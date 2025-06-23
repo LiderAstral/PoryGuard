@@ -6,8 +6,10 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace PoryGuard.Controller
 {
@@ -25,6 +27,10 @@ namespace PoryGuard.Controller
         private Bitmap[] bitmaps;
         int subdivisoes = 30; // Número de subdivisões da maior dimensão para a análise
         private Censura[] censura;
+        private const string configPath = "ConfiguraçãoPersistente.json";
+        public int flashMinimo { get; set; }
+        public int flashMaximo { get; set; }
+        public int luminosidadeTela { get; set; }
 
         public AnaliseDeCapturas(int frameRate, float proporcao)
         {
@@ -36,6 +42,21 @@ namespace PoryGuard.Controller
             this.proporcao = proporcao;
             luminanciaMedia = new double[frameRate];
             vermelhoCriticoMedio = new double[frameRate];
+            CarregarConfiguracoes();
+        }
+        private void CarregarConfiguracoes()
+        {
+            if (!File.Exists(configPath))
+                return;
+            var json = File.ReadAllText(configPath);
+            var config = JsonSerializer.Deserialize<ConfiguracaoPersistente>(json);
+            flashMinimo = config.FlashMinimo;
+            flashMaximo = config.FlashMaximo;
+            variacao = config.LuminosidadeTela;
+            limiarLuminancia = config.LuminosidadeQuadrante;
+            subdivisoes = config.Quadrantes;
+            limiarVermelho = config.VermelhoCritico;
+            // Atualiza os controles da interface com os valores carregados
         }
         public void InserirFrame(Bitmap bitmap, int contador)
         {

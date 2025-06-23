@@ -27,6 +27,7 @@
 
 ## 📁 Estrutura do Projeto
 
+```
 PoryGuard/
 ├── Controller/               # Captura de tela, análise e censura
 │   ├── CapturaDeTela.cs
@@ -40,7 +41,7 @@ PoryGuard/
 ├── PoryGuard.cs              # Interface principal (UI)
 ├── Program.cs                # Ponto de entrada
 └── ConfiguraçãoPersistente.json
-
+```
 ## 🚀 Como Executar
 
 1. Clone o repositório:

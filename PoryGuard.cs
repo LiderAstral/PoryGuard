@@ -147,7 +147,6 @@ namespace PoryGuard
             tcbVermelhoCritico.Enabled = ativar;
             nudVermelhoCritico.Enabled = ativar;
         }
-
     }
     public class ConfiguracaoPersistente
     {

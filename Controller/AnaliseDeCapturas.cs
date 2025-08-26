@@ -78,32 +78,32 @@ namespace PoryGuard.Controller
                 censura[contador % 2].ClearRectangles();
                 int contadorAux = contador;
                 int subAltura = (int)Math.Ceiling((double)(bitmaps[contador].Height * subdivisoes) / bitmaps[contador].Width);
-                int pixelsPorAltura = (int)Math.Ceiling((double)(bitmaps[contador].Height / subAltura));
-                int pixelsPorLargura = (int)Math.Ceiling((double)(bitmaps[contador].Width / subdivisoes));
-                bool[,] quadrantes = new bool[subdivisoes, subAltura];
-                for (int i = 0; i < subdivisoes; i++)
+                double pixelsPorAltura = (double)bitmaps[contador].Height / subAltura;
+                double pixelsPorLargura = (double)bitmaps[contador].Width / subdivisoes;
+                bool[,] quadrantes = new bool[subdivisoes - 1, subAltura - 1];
+                for (int i = 0; i < subdivisoes - 1; i++)
                 {
-                    for (int j = 0; j < subAltura; j++)
+                    for (int j = 0; j < subAltura - 1; j++)
                     {
                         int flashes = 0;
                         for (int aux = 0; aux < frameRate; aux++)
                         {
                             if (--contadorAux == -1)
                                 contadorAux = frameRate - 1;
-                            // Verifica se a diferença de luminância entre os frames é maior que o limiar
+                            // Verifica se a diferença de luminância ou de vermelho crítico entre os frames é maior que o limiar
                             if (Math.Abs(luminanciaMedia[contador] - luminanciaMedia[contadorAux]) >= limiarLuminancia || Math.Abs(vermelhoCriticoMedio[contador] - vermelhoCriticoMedio[contadorAux]) >= limiarVermelho)
                             {
                                 //Calcula o vermelho crítico do pixel, e sua luminância relativa, e compara com o frame anterior
-                                R = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R;
-                                G = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G;
-                                B = bitmaps[contador].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B;
+                                R = bitmaps[contador].GetPixel((int)((i + 1) * pixelsPorLargura), (int)((j + 1) * pixelsPorAltura)).R;
+                                G = bitmaps[contador].GetPixel((int)((i + 1) * pixelsPorLargura), (int)((j + 1) * pixelsPorAltura)).G;
+                                B = bitmaps[contador].GetPixel((int)((i + 1) * pixelsPorLargura), (int)((j + 1) * pixelsPorAltura)).B;
                                 vermelhoCritico = (R - G - B) * 320 / 255f;
                                 if (vermelhoCritico < 0)
                                     vermelhoCritico = 0;
                                 luminanciaRelativa = 0.2126 * R + 0.7152 * G + 0.0722 * B;
-                                Raux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).R;
-                                Gaux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).G;
-                                Baux = bitmaps[contadorAux].GetPixel((int)((i + 0.5) * pixelsPorLargura), (int)((j + 0.5) * pixelsPorAltura)).B;
+                                Raux = bitmaps[contadorAux].GetPixel((int)((i + 1) * pixelsPorLargura), (int)((j + 1) * pixelsPorAltura)).R;
+                                Gaux = bitmaps[contadorAux].GetPixel((int)((i + 1) * pixelsPorLargura), (int)((j + 1) * pixelsPorAltura)).G;
+                                Baux = bitmaps[contadorAux].GetPixel((int)((i + 1) * pixelsPorLargura), (int)((j + 1) * pixelsPorAltura)).B;
                                 vermelhoCriticoAux = (Raux - Gaux - Baux) * 320 / 255f;
                                 if (vermelhoCriticoAux < 0)
                                     vermelhoCriticoAux = 0;
@@ -129,14 +129,14 @@ namespace PoryGuard.Controller
             {  }
 
         }
-        private void DetectarBlocosDeFlashes(bool[,] quadrantes, int pixelsPorLargura, int pixelsPorAltura, int contador)
+        private void DetectarBlocosDeFlashes(bool[,] quadrantes, double pixelsPorLargura, double pixelsPorAltura, int contador)
         {
             int altura = quadrantes.GetLength(1);
             int largura = quadrantes.GetLength(0);
 
-            for (int i = 0; i < largura - 1; i++)
+            for (int i = 0; i < largura; i++)
             {
-                for (int j = 0; j < altura - 1; j++)
+                for (int j = 0; j < altura; j++)
                 {
                     // Verifica se os 4 quadrantes vizinhos formam um bloco de 2x2 todos "true"
                         /*Removido por enquanto.
@@ -146,7 +146,7 @@ namespace PoryGuard.Controller
                     //{
                         // Marca todos os 4 quadrantes com AddRectangle
                     if(quadrantes[i, j])
-                        censura[contador % 2].AddRectangle(i * pixelsPorLargura, j * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
+                        censura[contador % 2].AddRectangle((int)(i * pixelsPorLargura), (int)(j * pixelsPorAltura), (int)(2 * pixelsPorLargura), (int)(2 * pixelsPorAltura), Color.FromArgb(255, 0, 0, 0));
                         //censura[contador % 2].AddRectangle((i + 1) * pixelsPorLargura, j * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
                         //censura[contador % 2].AddRectangle(i * pixelsPorLargura, (j + 1) * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
                         //censura[contador % 2].AddRectangle((i + 1) * pixelsPorLargura, (j + 1) * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));

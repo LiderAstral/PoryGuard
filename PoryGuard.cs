@@ -44,7 +44,8 @@ namespace PoryGuard
             nudQuadrantes.Value = config.Quadrantes;
             tcbVermelhoCritico.Value = config.VermelhoCritico;
             nudVermelhoCritico.Value = config.VermelhoCritico;
-
+            tcbOpacidade.Value = config.Opacidade;
+            nudOpacidade.Value = config.Opacidade;
         }
         private void SalvarConfiguracoes()
         {
@@ -55,7 +56,8 @@ namespace PoryGuard
                 LuminosidadeTela = (int)nudLuminosidadeTela.Value,
                 LuminosidadeQuadrante = (int)nudLuminosidadeQuadrante.Value,
                 Quadrantes = (int)nudQuadrantes.Value,
-                VermelhoCritico = (int)nudVermelhoCritico.Value
+                VermelhoCritico = (int)nudVermelhoCritico.Value,
+                Opacidade = (int)nudOpacidade.Value
 
             };
 
@@ -146,6 +148,18 @@ namespace PoryGuard
             nudQuadrantes.Enabled = ativar;
             tcbVermelhoCritico.Enabled = ativar;
             nudVermelhoCritico.Enabled = ativar;
+            tcbOpacidade.Enabled = ativar;
+            nudOpacidade.Enabled = ativar;
+        }
+
+        private void tcbOpacidade_Scroll(object sender, EventArgs e)
+        {
+            nudOpacidade.Value = tcbOpacidade.Value;
+        }
+
+        private void nudOpacidade_ValueChanged(object sender, EventArgs e)
+        {
+            tcbOpacidade.Value = (int)nudOpacidade.Value;
         }
     }
     public class ConfiguracaoPersistente
@@ -156,6 +170,7 @@ namespace PoryGuard
         public int LuminosidadeQuadrante { get; set; }
         public int Quadrantes { get; set; }
         public int VermelhoCritico { get; set; }
+        public int Opacidade { get; set; }
 
     }
 

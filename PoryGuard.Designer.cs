@@ -54,6 +54,11 @@
             this.label14 = new System.Windows.Forms.Label();
             this.tcbQuadrantes = new System.Windows.Forms.TrackBar();
             this.label15 = new System.Windows.Forms.Label();
+            this.nudOpacidade = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tcbOpacidade = new System.Windows.Forms.TrackBar();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).BeginInit();
@@ -64,6 +69,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbOpacidade)).BeginInit();
             this.SuspendLayout();
             // 
             // cbxLigado
@@ -72,9 +79,10 @@
             this.cbxLigado.Checked = true;
             this.cbxLigado.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxLigado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxLigado.Location = new System.Drawing.Point(71, 58);
+            this.cbxLigado.Location = new System.Drawing.Point(95, 71);
+            this.cbxLigado.Margin = new System.Windows.Forms.Padding(4);
             this.cbxLigado.Name = "cbxLigado";
-            this.cbxLigado.Size = new System.Drawing.Size(126, 24);
+            this.cbxLigado.Size = new System.Drawing.Size(155, 29);
             this.cbxLigado.TabIndex = 0;
             this.cbxLigado.Text = "Em Execução";
             this.cbxLigado.UseVisualStyleBackColor = true;
@@ -84,16 +92,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 123);
+            this.label1.Location = new System.Drawing.Point(89, 151);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 20);
+            this.label1.Size = new System.Drawing.Size(172, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Intervalo de Flash:";
             // 
             // nudMinimo
             // 
             this.nudMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudMinimo.Location = new System.Drawing.Point(212, 123);
+            this.nudMinimo.Location = new System.Drawing.Point(283, 151);
+            this.nudMinimo.Margin = new System.Windows.Forms.Padding(4);
             this.nudMinimo.Maximum = new decimal(new int[] {
             30,
             0,
@@ -105,7 +115,7 @@
             0,
             0});
             this.nudMinimo.Name = "nudMinimo";
-            this.nudMinimo.Size = new System.Drawing.Size(50, 22);
+            this.nudMinimo.Size = new System.Drawing.Size(67, 26);
             this.nudMinimo.TabIndex = 3;
             this.nudMinimo.Value = new decimal(new int[] {
             3,
@@ -117,7 +127,8 @@
             // nudMaximo
             // 
             this.nudMaximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudMaximo.Location = new System.Drawing.Point(297, 123);
+            this.nudMaximo.Location = new System.Drawing.Point(396, 151);
+            this.nudMaximo.Margin = new System.Windows.Forms.Padding(4);
             this.nudMaximo.Maximum = new decimal(new int[] {
             30,
             0,
@@ -129,7 +140,7 @@
             0,
             0});
             this.nudMaximo.Name = "nudMaximo";
-            this.nudMaximo.Size = new System.Drawing.Size(49, 22);
+            this.nudMaximo.Size = new System.Drawing.Size(65, 26);
             this.nudMaximo.TabIndex = 4;
             this.nudMaximo.Value = new decimal(new int[] {
             30,
@@ -142,9 +153,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(217, 102);
+            this.label2.Location = new System.Drawing.Point(289, 126);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 18);
+            this.label2.Size = new System.Drawing.Size(50, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "Mín.";
             // 
@@ -152,9 +164,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(302, 102);
+            this.label3.Location = new System.Drawing.Point(403, 126);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 18);
+            this.label3.Size = new System.Drawing.Size(55, 24);
             this.label3.TabIndex = 6;
             this.label3.Text = "Máx.";
             // 
@@ -162,19 +175,21 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(104, 195);
+            this.label4.Location = new System.Drawing.Point(139, 240);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(197, 20);
+            this.label4.Size = new System.Drawing.Size(246, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Limiar de Vermelho Crítico:";
             // 
             // tcbVermelhoCritico
             // 
-            this.tcbVermelhoCritico.Location = new System.Drawing.Point(297, 195);
+            this.tcbVermelhoCritico.Location = new System.Drawing.Point(396, 240);
+            this.tcbVermelhoCritico.Margin = new System.Windows.Forms.Padding(4);
             this.tcbVermelhoCritico.Maximum = 80;
             this.tcbVermelhoCritico.Minimum = 5;
             this.tcbVermelhoCritico.Name = "tcbVermelhoCritico";
-            this.tcbVermelhoCritico.Size = new System.Drawing.Size(195, 45);
+            this.tcbVermelhoCritico.Size = new System.Drawing.Size(260, 56);
             this.tcbVermelhoCritico.TabIndex = 8;
             this.tcbVermelhoCritico.TickStyle = System.Windows.Forms.TickStyle.None;
             this.tcbVermelhoCritico.Value = 20;
@@ -184,9 +199,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(303, 222);
+            this.label5.Location = new System.Drawing.Point(404, 273);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 18);
+            this.label5.Size = new System.Drawing.Size(37, 24);
             this.label5.TabIndex = 9;
             this.label5.Text = "5%";
             // 
@@ -194,9 +210,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(452, 222);
+            this.label6.Location = new System.Drawing.Point(603, 273);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 18);
+            this.label6.Size = new System.Drawing.Size(48, 24);
             this.label6.TabIndex = 10;
             this.label6.Text = "80%";
             // 
@@ -204,7 +221,8 @@
             // 
             this.nudVermelhoCritico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudVermelhoCritico.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudVermelhoCritico.Location = new System.Drawing.Point(498, 193);
+            this.nudVermelhoCritico.Location = new System.Drawing.Point(664, 238);
+            this.nudVermelhoCritico.Margin = new System.Windows.Forms.Padding(4);
             this.nudVermelhoCritico.Maximum = new decimal(new int[] {
             80,
             0,
@@ -216,7 +234,7 @@
             0,
             0});
             this.nudVermelhoCritico.Name = "nudVermelhoCritico";
-            this.nudVermelhoCritico.Size = new System.Drawing.Size(35, 22);
+            this.nudVermelhoCritico.Size = new System.Drawing.Size(47, 26);
             this.nudVermelhoCritico.TabIndex = 11;
             this.nudVermelhoCritico.Value = new decimal(new int[] {
             20,
@@ -229,7 +247,8 @@
             // 
             this.nudLuminosidadeTela.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudLuminosidadeTela.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudLuminosidadeTela.Location = new System.Drawing.Point(498, 268);
+            this.nudLuminosidadeTela.Location = new System.Drawing.Point(664, 330);
+            this.nudLuminosidadeTela.Margin = new System.Windows.Forms.Padding(4);
             this.nudLuminosidadeTela.Maximum = new decimal(new int[] {
             80,
             0,
@@ -241,7 +260,7 @@
             0,
             0});
             this.nudLuminosidadeTela.Name = "nudLuminosidadeTela";
-            this.nudLuminosidadeTela.Size = new System.Drawing.Size(35, 22);
+            this.nudLuminosidadeTela.Size = new System.Drawing.Size(47, 26);
             this.nudLuminosidadeTela.TabIndex = 16;
             this.nudLuminosidadeTela.Value = new decimal(new int[] {
             20,
@@ -254,9 +273,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(452, 297);
+            this.label7.Location = new System.Drawing.Point(603, 366);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 18);
+            this.label7.Size = new System.Drawing.Size(48, 24);
             this.label7.TabIndex = 15;
             this.label7.Text = "80%";
             // 
@@ -264,19 +284,21 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(303, 297);
+            this.label8.Location = new System.Drawing.Point(404, 366);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 18);
+            this.label8.Size = new System.Drawing.Size(37, 24);
             this.label8.TabIndex = 14;
             this.label8.Text = "5%";
             // 
             // tcbLuminosidadeTela
             // 
-            this.tcbLuminosidadeTela.Location = new System.Drawing.Point(297, 270);
+            this.tcbLuminosidadeTela.Location = new System.Drawing.Point(396, 332);
+            this.tcbLuminosidadeTela.Margin = new System.Windows.Forms.Padding(4);
             this.tcbLuminosidadeTela.Maximum = 80;
             this.tcbLuminosidadeTela.Minimum = 5;
             this.tcbLuminosidadeTela.Name = "tcbLuminosidadeTela";
-            this.tcbLuminosidadeTela.Size = new System.Drawing.Size(195, 45);
+            this.tcbLuminosidadeTela.Size = new System.Drawing.Size(260, 56);
             this.tcbLuminosidadeTela.TabIndex = 13;
             this.tcbLuminosidadeTela.TickStyle = System.Windows.Forms.TickStyle.None;
             this.tcbLuminosidadeTela.Value = 20;
@@ -286,9 +308,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(65, 270);
+            this.label9.Location = new System.Drawing.Point(87, 332);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(236, 20);
+            this.label9.Size = new System.Drawing.Size(295, 25);
             this.label9.TabIndex = 12;
             this.label9.Text = "Limiar de Luminosidade da Tela:";
             // 
@@ -296,7 +319,8 @@
             // 
             this.nudLuminosidadeQuadrante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudLuminosidadeQuadrante.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudLuminosidadeQuadrante.Location = new System.Drawing.Point(498, 344);
+            this.nudLuminosidadeQuadrante.Location = new System.Drawing.Point(664, 423);
+            this.nudLuminosidadeQuadrante.Margin = new System.Windows.Forms.Padding(4);
             this.nudLuminosidadeQuadrante.Maximum = new decimal(new int[] {
             80,
             0,
@@ -308,7 +332,7 @@
             0,
             0});
             this.nudLuminosidadeQuadrante.Name = "nudLuminosidadeQuadrante";
-            this.nudLuminosidadeQuadrante.Size = new System.Drawing.Size(35, 22);
+            this.nudLuminosidadeQuadrante.Size = new System.Drawing.Size(47, 26);
             this.nudLuminosidadeQuadrante.TabIndex = 21;
             this.nudLuminosidadeQuadrante.Value = new decimal(new int[] {
             20,
@@ -321,9 +345,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(452, 373);
+            this.label10.Location = new System.Drawing.Point(603, 459);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 18);
+            this.label10.Size = new System.Drawing.Size(48, 24);
             this.label10.TabIndex = 20;
             this.label10.Text = "80%";
             // 
@@ -331,19 +356,21 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(303, 373);
+            this.label11.Location = new System.Drawing.Point(404, 459);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 18);
+            this.label11.Size = new System.Drawing.Size(37, 24);
             this.label11.TabIndex = 19;
             this.label11.Text = "5%";
             // 
             // tcbLuminosidadeQuadrante
             // 
-            this.tcbLuminosidadeQuadrante.Location = new System.Drawing.Point(297, 346);
+            this.tcbLuminosidadeQuadrante.Location = new System.Drawing.Point(396, 426);
+            this.tcbLuminosidadeQuadrante.Margin = new System.Windows.Forms.Padding(4);
             this.tcbLuminosidadeQuadrante.Maximum = 80;
             this.tcbLuminosidadeQuadrante.Minimum = 5;
             this.tcbLuminosidadeQuadrante.Name = "tcbLuminosidadeQuadrante";
-            this.tcbLuminosidadeQuadrante.Size = new System.Drawing.Size(195, 45);
+            this.tcbLuminosidadeQuadrante.Size = new System.Drawing.Size(260, 56);
             this.tcbLuminosidadeQuadrante.TabIndex = 18;
             this.tcbLuminosidadeQuadrante.TickStyle = System.Windows.Forms.TickStyle.None;
             this.tcbLuminosidadeQuadrante.Value = 20;
@@ -354,9 +381,10 @@
             this.label12.AutoEllipsis = true;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(57, 334);
+            this.label12.Location = new System.Drawing.Point(76, 411);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(244, 40);
+            this.label12.Size = new System.Drawing.Size(300, 50);
             this.label12.TabIndex = 17;
             this.label12.Text = "Limiar de Luminosidade \ndo Quadrante de Monitoramento:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -365,7 +393,8 @@
             // 
             this.nudQuadrantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudQuadrantes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudQuadrantes.Location = new System.Drawing.Point(498, 420);
+            this.nudQuadrantes.Location = new System.Drawing.Point(664, 517);
+            this.nudQuadrantes.Margin = new System.Windows.Forms.Padding(4);
             this.nudQuadrantes.Maximum = new decimal(new int[] {
             50,
             0,
@@ -377,7 +406,7 @@
             0,
             0});
             this.nudQuadrantes.Name = "nudQuadrantes";
-            this.nudQuadrantes.Size = new System.Drawing.Size(35, 22);
+            this.nudQuadrantes.Size = new System.Drawing.Size(47, 26);
             this.nudQuadrantes.TabIndex = 26;
             this.nudQuadrantes.Value = new decimal(new int[] {
             30,
@@ -390,9 +419,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(465, 444);
+            this.label13.Location = new System.Drawing.Point(620, 546);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 18);
+            this.label13.Size = new System.Drawing.Size(32, 24);
             this.label13.TabIndex = 25;
             this.label13.Text = "50";
             // 
@@ -400,19 +430,21 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(302, 444);
+            this.label14.Location = new System.Drawing.Point(403, 546);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 18);
+            this.label14.Size = new System.Drawing.Size(32, 24);
             this.label14.TabIndex = 24;
             this.label14.Text = "10";
             // 
             // tcbQuadrantes
             // 
-            this.tcbQuadrantes.Location = new System.Drawing.Point(297, 422);
+            this.tcbQuadrantes.Location = new System.Drawing.Point(396, 519);
+            this.tcbQuadrantes.Margin = new System.Windows.Forms.Padding(4);
             this.tcbQuadrantes.Maximum = 50;
             this.tcbQuadrantes.Minimum = 10;
             this.tcbQuadrantes.Name = "tcbQuadrantes";
-            this.tcbQuadrantes.Size = new System.Drawing.Size(195, 45);
+            this.tcbQuadrantes.Size = new System.Drawing.Size(260, 56);
             this.tcbQuadrantes.TabIndex = 23;
             this.tcbQuadrantes.TickStyle = System.Windows.Forms.TickStyle.None;
             this.tcbQuadrantes.Value = 30;
@@ -423,18 +455,93 @@
             this.label15.AutoEllipsis = true;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(24, 420);
+            this.label15.Location = new System.Drawing.Point(43, 519);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(271, 20);
+            this.label15.Size = new System.Drawing.Size(333, 25);
             this.label15.TabIndex = 22;
             this.label15.Text = "Quadrantes na Dimensão Horizontal:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // nudOpacidade
+            // 
+            this.nudOpacidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudOpacidade.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.nudOpacidade.Location = new System.Drawing.Point(664, 600);
+            this.nudOpacidade.Margin = new System.Windows.Forms.Padding(4);
+            this.nudOpacidade.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nudOpacidade.Name = "nudOpacidade";
+            this.nudOpacidade.Size = new System.Drawing.Size(47, 26);
+            this.nudOpacidade.TabIndex = 31;
+            this.nudOpacidade.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.nudOpacidade.ValueChanged += new System.EventHandler(this.nudOpacidade_ValueChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(592, 629);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(59, 24);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "100%";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(403, 629);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 24);
+            this.label17.TabIndex = 29;
+            this.label17.Text = "10%";
+            // 
+            // tcbOpacidade
+            // 
+            this.tcbOpacidade.Location = new System.Drawing.Point(396, 602);
+            this.tcbOpacidade.Margin = new System.Windows.Forms.Padding(4);
+            this.tcbOpacidade.Maximum = 50;
+            this.tcbOpacidade.Minimum = 10;
+            this.tcbOpacidade.Name = "tcbOpacidade";
+            this.tcbOpacidade.Size = new System.Drawing.Size(260, 56);
+            this.tcbOpacidade.TabIndex = 28;
+            this.tcbOpacidade.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.tcbOpacidade.Value = 30;
+            this.tcbOpacidade.Scroll += new System.EventHandler(this.tcbOpacidade_Scroll);
+            // 
+            // label18
+            // 
+            this.label18.AutoEllipsis = true;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(128, 598);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(254, 25);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "Opacidade dos Quadrados:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // PoryGuard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 518);
+            this.ClientSize = new System.Drawing.Size(1067, 701);
+            this.Controls.Add(this.nudOpacidade);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.tcbOpacidade);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.nudQuadrantes);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
@@ -461,6 +568,7 @@
             this.Controls.Add(this.nudMinimo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbxLigado);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PoryGuard";
             this.Text = "PoryGuard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PoryGuard_FormClosing);
@@ -474,6 +582,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbOpacidade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -507,6 +617,11 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TrackBar tcbQuadrantes;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.NumericUpDown nudOpacidade;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TrackBar tcbOpacidade;
+        private System.Windows.Forms.Label label18;
     }
 }
 

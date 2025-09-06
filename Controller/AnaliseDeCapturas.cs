@@ -138,19 +138,8 @@ namespace PoryGuard.Controller
             {
                 for (int j = 0; j < altura; j++)
                 {
-                    // Verifica se os 4 quadrantes vizinhos formam um bloco de 2x2 todos "true"
-                        /*Removido por enquanto.
-                    if (quadrantes[i, j] && quadrantes[i + 1, j] &&
-                        quadrantes[i, j + 1] && quadrantes[i + 1, j + 1])
-                        */
-                    //{
-                        // Marca todos os 4 quadrantes com AddRectangle
                     if(quadrantes[i, j])
-                        censura[contador % 2].AddRectangle((int)(i * pixelsPorLargura), (int)(j * pixelsPorAltura), (int)(2 * pixelsPorLargura), (int)(2 * pixelsPorAltura), Color.FromArgb(255, 0, 0, 0));
-                        //censura[contador % 2].AddRectangle((i + 1) * pixelsPorLargura, j * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
-                        //censura[contador % 2].AddRectangle(i * pixelsPorLargura, (j + 1) * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
-                        //censura[contador % 2].AddRectangle((i + 1) * pixelsPorLargura, (j + 1) * pixelsPorAltura, 2 * pixelsPorLargura, 2 * pixelsPorAltura, Color.FromArgb(255, 0, 0, 0));
-                    //}
+                        censura[contador % 2].AddRectangle((int)(i * pixelsPorLargura), (int)(j * pixelsPorAltura), (int)(2 * pixelsPorLargura), (int)(2 * pixelsPorAltura), Color.FromArgb(128, 0, 0, 0));
                 }
             }
         }
@@ -190,7 +179,7 @@ namespace PoryGuard.Controller
                     bitmaps[i].Dispose();
                     bitmaps[i] = null;
                 }
-                catch (NullReferenceException ex)
+                catch (Exception ex)
                 { }
       
             }

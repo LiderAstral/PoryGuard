@@ -59,6 +59,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.tcbOpacidade = new System.Windows.Forms.TrackBar();
             this.label18 = new System.Windows.Forms.Label();
+            this.cbxInicioAutomatico = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).BeginInit();
@@ -79,7 +80,7 @@
             this.cbxLigado.Checked = true;
             this.cbxLigado.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbxLigado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxLigado.Location = new System.Drawing.Point(95, 71);
+            this.cbxLigado.Location = new System.Drawing.Point(94, 68);
             this.cbxLigado.Margin = new System.Windows.Forms.Padding(4);
             this.cbxLigado.Name = "cbxLigado";
             this.cbxLigado.Size = new System.Drawing.Size(155, 29);
@@ -532,11 +533,26 @@
             this.label18.Text = "Opacidade dos Quadrados:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // cbxInicioAutomatico
+            // 
+            this.cbxInicioAutomatico.AutoSize = true;
+            this.cbxInicioAutomatico.Checked = true;
+            this.cbxInicioAutomatico.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxInicioAutomatico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxInicioAutomatico.Location = new System.Drawing.Point(712, 68);
+            this.cbxInicioAutomatico.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxInicioAutomatico.Name = "cbxInicioAutomatico";
+            this.cbxInicioAutomatico.Size = new System.Drawing.Size(182, 29);
+            this.cbxInicioAutomatico.TabIndex = 32;
+            this.cbxInicioAutomatico.Text = "Início Automatico";
+            this.cbxInicioAutomatico.UseVisualStyleBackColor = true;
+            // 
             // PoryGuard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 701);
+            this.Controls.Add(this.cbxInicioAutomatico);
             this.Controls.Add(this.nudOpacidade);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
@@ -622,6 +638,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TrackBar tcbOpacidade;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox cbxInicioAutomatico;
     }
 }
 

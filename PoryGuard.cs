@@ -34,6 +34,7 @@ namespace PoryGuard
             var json = File.ReadAllText(configPath);
             var config = JsonSerializer.Deserialize<ConfiguracaoPersistente>(json);
             cbxLigado.Checked = config.Ligado;
+            cbxInicioAutomatico.Checked = config.InicioAutomatico;
             nudMinimo.Value = config.FlashMinimo;
             nudMaximo.Value = config.FlashMaximo;
             tcbLuminosidadeTela.Value = config.LuminosidadeTela;
@@ -46,6 +47,7 @@ namespace PoryGuard
             nudVermelhoCritico.Value = config.VermelhoCritico;
             tcbOpacidade.Value = config.Opacidade;
             nudOpacidade.Value = config.Opacidade;
+
         }
         private void SalvarConfiguracoes()
         {
@@ -58,7 +60,8 @@ namespace PoryGuard
                 Quadrantes = (int)nudQuadrantes.Value,
                 VermelhoCritico = (int)nudVermelhoCritico.Value,
                 Opacidade = (int)nudOpacidade.Value,
-                Ligado = cbxLigado.Checked
+                Ligado = cbxLigado.Checked,
+                InicioAutomatico = cbxInicioAutomatico.Checked
             };
 
             var json = JsonSerializer.Serialize(config, new JsonSerializerOptions { WriteIndented = true });
@@ -166,6 +169,7 @@ namespace PoryGuard
     public class ConfiguracaoPersistente
     {
         public bool Ligado { get; set; }
+        public bool InicioAutomatico { get; set; }
         public int FlashMinimo { get; set; } 
         public int FlashMaximo { get; set; }
         public int LuminosidadeTela { get; set; }

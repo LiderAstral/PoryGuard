@@ -33,13 +33,18 @@ namespace PoryGuard.Controller
         public int flashMaximo { get; set; }
         public int luminosidadeTela { get; set; }
         public int opacidadeCensura { get; set; }
-        public AnaliseDeCapturas(int frameRate, float proporcao)
+        private int telaRealLargura;
+        private int telaRealAltura;
+
+        public AnaliseDeCapturas(int frameRate, float proporcao, int telaRealLargura, int telaRealAltura)
         {
             censura = new Censura();
 
             this.frameRate = frameRate;
             bitmaps = new Bitmap[frameRate];
             this.proporcao = proporcao;
+            this.telaRealLargura = telaRealLargura;
+            this.telaRealAltura = telaRealAltura;
             luminanciaMedia = new double[frameRate];
             vermelhoCriticoMedio = new double[frameRate];
             CarregarConfiguracoes();
@@ -202,7 +207,6 @@ namespace PoryGuard.Controller
         {
             if (regiao.Count == 0) return;
 
-            // Converter lista de pontos em matriz booleana para facilitar processamento
             int minX = regiao.Min(p => p.X);
             int maxX = regiao.Max(p => p.X);
             int minY = regiao.Min(p => p.Y);
@@ -213,29 +217,35 @@ namespace PoryGuard.Controller
 
             bool[,] grid = new bool[largura, altura];
 
-            // Marcar pontos no grid local
             foreach (var ponto in regiao)
             {
                 grid[ponto.X - minX, ponto.Y - minY] = true;
             }
 
-            // Criar retângulos conectando horizontal E vertical
             bool[,] processados = new bool[largura, altura];
 
-            for (int j = 0; j < altura; j++) // Por linha
+            for (int j = 0; j < altura; j++)
             {
-                for (int i = 0; i < largura; i++) // Por coluna
+                for (int i = 0; i < largura; i++)
                 {
                     if (grid[i, j] && !processados[i, j])
                     {
-                        // Encontrar o maior retângulo possível a partir deste ponto
                         Rectangle rect = EncontrarMaiorRetanguloNaRegiao(grid, processados, i, j, largura, altura,
                             minX, minY, pixelsPorLargura, pixelsPorAltura);
 
                         if (rect.Width > 0 && rect.Height > 0)
                         {
-                            censura.AddRectangle(rect.X, rect.Y, rect.Width, rect.Height,
-                                Color.FromArgb(opacidadeCensura, 0, 0, 0));
+                            //Escala proporcional entre bitmap reduzido e tela real
+                            float escalaX = (float)telaRealLargura / bitmaps[0].Width;
+                            float escalaY = (float)telaRealAltura / bitmaps[0].Height;
+
+                            censura.AddRectangle(
+                                (int)(rect.X * escalaX),
+                                (int)(rect.Y * escalaY),
+                                (int)(rect.Width * escalaX),
+                                (int)(rect.Height * escalaY),
+                                Color.FromArgb(opacidadeCensura, 0, 0, 0)
+                            );
                         }
                     }
                 }

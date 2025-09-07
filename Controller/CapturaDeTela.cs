@@ -30,11 +30,15 @@ namespace PoryGuard.Controller
         //Classe para enviar as imagens para análise
         private AnaliseDeCapturas analiseDeCapturas;
 
+        // 🔽 Variáveis para redimensionamento
+        private int telaRealLargura;
+        private int telaRealAltura;
+
         public CapturaDeTela()
         {
             Monitor monitor = new Monitor();
             ConfigurarMonitor(monitor);
-            analiseDeCapturas = new AnaliseDeCapturas(frameRate, proporcao);
+            analiseDeCapturas = new AnaliseDeCapturas(frameRate, proporcao, telaRealLargura, telaRealAltura);
             // Thread que captura as imagens sem bloqueio
             capturaThread = new Thread(GerenciarCapturas);
             capturaThread.IsBackground = true;
@@ -55,7 +59,11 @@ namespace PoryGuard.Controller
             boundsX = monitor.GetBoundsX();
             boundsY = monitor.GetBoundsY();
             size = new Size(largura, altura);
-            bitmaps = new Bitmap[frameRate];    
+            bitmaps = new Bitmap[frameRate];
+
+            // Guardar dimensões reais da tela
+            telaRealLargura = largura;
+            telaRealAltura = altura;
         }
 
         private void GerenciarCapturas()
@@ -65,14 +73,13 @@ namespace PoryGuard.Controller
             int tempoAlvo = 1000 / frameRate;
             while (true)
             {
-                sw.Restart();   
+                sw.Restart();
                 CapturaFrame(contador);
                 contador = (contador + 1) % frameRate;
 
-                //Espera até o próximo tempo-alvo sem usar Thread.Sleep() direto
                 while (sw.ElapsedMilliseconds < tempoAlvo)
                 {
-                    Thread.SpinWait(1); //Melhor que Thread.Sleep()
+                    Thread.SpinWait(1);
                 }
             }
         }
@@ -82,7 +89,7 @@ namespace PoryGuard.Controller
             try
             {
                 Bitmap bitmap;
-                lock (lockObject) //Evita conflito no acesso ao buffer de tela
+                lock (lockObject)
                 {
                     bitmap = new Bitmap(largura, altura);
                     using (Graphics g = Graphics.FromImage(bitmap))
@@ -90,12 +97,27 @@ namespace PoryGuard.Controller
                         g.CopyFromScreen(boundsX, boundsY, 0, 0, size, CopyPixelOperation.SourceCopy);
                     }
                 }
+
+                // Reduzir resolução para análise (ex: largura máx 640px)
+                int maxWidth = 640;
+                if (bitmap.Width > maxWidth)
+                {
+                    int newHeight = (int)((float)bitmap.Height / bitmap.Width * maxWidth);
+                    Bitmap reduzido = new Bitmap(maxWidth, newHeight);
+                    using (Graphics g = Graphics.FromImage(reduzido))
+                    {
+                        g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+                        g.DrawImage(bitmap, 0, 0, maxWidth, newHeight);
+                    }
+                    bitmap.Dispose();
+                    bitmap = reduzido;
+                }
+
                 while (filaDeImagens.Count >= 10)
                 {
-                    Console.WriteLine("Fila cheia, aguardando...");
-                    Thread.Sleep(1000); //Aguarda 1 segundo para liberar espaço em caso de sobrecarga.
+                    Thread.Sleep(1000);
                 }
-                //Adiciona o bitmap à fila para ser salvo posteriormente
+
                 filaDeImagens.Enqueue((bitmap, contador));
             }
             catch (Exception ex)
@@ -118,7 +140,7 @@ namespace PoryGuard.Controller
                 }
                 else
                 {
-                    Thread.Sleep(1); // Pequeno delay para evitar consumo de recursos desnecessário
+                    Thread.Sleep(1);
                 }
             }
         }
@@ -129,7 +151,7 @@ namespace PoryGuard.Controller
             salvamentoThread.Abort();
             foreach (var bitmap in bitmaps)
             {
-                bitmap?.Dispose(); // Libera os recursos dos bitmaps
+                bitmap?.Dispose();
             }
         }
     }

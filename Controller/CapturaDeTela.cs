@@ -74,8 +74,6 @@ namespace PoryGuard.Controller
                 {
                     Thread.SpinWait(1); //Melhor que Thread.Sleep()
                 }
-
-                //Console.WriteLine($"Frame {contador} capturado em {sw.ElapsedMilliseconds} ms");
             }
         }
 

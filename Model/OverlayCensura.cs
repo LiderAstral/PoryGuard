@@ -87,16 +87,6 @@ namespace PoryGuard.Model
             e.Cancel = true;
         }
 
-        // Ignora Alt+F4
-        protected override void WndProc(ref Message m)
-        {
-            const int WM_SYSCOMMAND = 0x0112;
-            const int SC_CLOSE = 0xF060;
-            if (m.Msg == WM_SYSCOMMAND && (m.WParam.ToInt32() & 0xFFF0) == SC_CLOSE)
-                return;
-            base.WndProc(ref m);
-        }
-
         public OverlayCensura()
         {
             InitializeComponent();

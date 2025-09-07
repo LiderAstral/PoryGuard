@@ -510,7 +510,7 @@
             // 
             this.tcbOpacidade.Location = new System.Drawing.Point(396, 602);
             this.tcbOpacidade.Margin = new System.Windows.Forms.Padding(4);
-            this.tcbOpacidade.Maximum = 50;
+            this.tcbOpacidade.Maximum = 100;
             this.tcbOpacidade.Minimum = 10;
             this.tcbOpacidade.Name = "tcbOpacidade";
             this.tcbOpacidade.Size = new System.Drawing.Size(260, 56);

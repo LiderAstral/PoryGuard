@@ -194,7 +194,7 @@ namespace PoryGuard.Model
         {
             lock (lockObject)
             {
-                rectangles.Add((new Rectangle(x, y, width, height), Color.FromArgb(60,0,0,0)));
+                rectangles.Add((new Rectangle(x, y, width, height), color));
             }
         }
 

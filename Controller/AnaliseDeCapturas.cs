@@ -26,17 +26,17 @@ namespace PoryGuard.Controller
         private int limiarLuminancia = 20; // Limiar de desvio de luminancia para considerar um quadrante como "flash"
         private Bitmap[] bitmaps;
         int subdivisoes = 30; // Número de subdivisões da maior dimensão para a análise
-        private Censura[] censura;
+        private Censura censura;
+
         private const string configPath = "ConfiguraçãoPersistente.json";
         public int flashMinimo { get; set; }
         public int flashMaximo { get; set; }
         public int luminosidadeTela { get; set; }
-
+        public int opacidadeCensura { get; set; }
         public AnaliseDeCapturas(int frameRate, float proporcao)
         {
-            censura = new Censura[2];
-            censura[0] = new Censura();
-            censura[1] = new Censura();
+            censura = new Censura();
+
             this.frameRate = frameRate;
             bitmaps = new Bitmap[frameRate];
             this.proporcao = proporcao;
@@ -44,6 +44,7 @@ namespace PoryGuard.Controller
             vermelhoCriticoMedio = new double[frameRate];
             CarregarConfiguracoes();
         }
+
         private void CarregarConfiguracoes()
         {
             if (!File.Exists(configPath))
@@ -56,8 +57,9 @@ namespace PoryGuard.Controller
             limiarLuminancia = config.LuminosidadeQuadrante;
             subdivisoes = config.Quadrantes;
             limiarVermelho = config.VermelhoCritico;
-            // Atualiza os controles da interface com os valores carregados
+            opacidadeCensura = (int)(config.Opacidade*255f)/100;   
         }
+
         public void InserirFrame(Bitmap bitmap, int contador)
         {
             if (contador == frameRate - 1)
@@ -69,18 +71,21 @@ namespace PoryGuard.Controller
             if (contador % 15 == 0)
                 AnalisarFrames(contador);
         }
+
         public void AnalisarFrames(int contador)
         {
             if (!liberado)
                 return;
             try
             {
-                censura[contador % 2].ClearRectangles();
+                censura.ClearRectangles();
+
                 int contadorAux = contador;
                 int subAltura = (int)Math.Ceiling((double)(bitmaps[contador].Height * subdivisoes) / bitmaps[contador].Width);
                 double pixelsPorAltura = (double)bitmaps[contador].Height / subAltura;
                 double pixelsPorLargura = (double)bitmaps[contador].Width / subdivisoes;
                 bool[,] quadrantes = new bool[subdivisoes - 1, subAltura - 1];
+
                 for (int i = 0; i < subdivisoes - 1; i++)
                 {
                     for (int j = 0; j < subAltura - 1; j++)
@@ -122,14 +127,15 @@ namespace PoryGuard.Controller
                             quadrantes[i, j] = false;
                     }
                 }
-                DetectarBlocosDeFlashes(quadrantes, pixelsPorLargura, pixelsPorAltura, contador);
-                censura[contador % 2].Redesenhar();
-            }
-            catch(NullReferenceException ex)
-            {  }
 
+                DetectarBlocosDeFlashes(quadrantes, pixelsPorLargura, pixelsPorAltura);
+                censura.Redesenhar();
+            }
+            catch (NullReferenceException ex)
+            { }
         }
-        private void DetectarBlocosDeFlashes(bool[,] quadrantes, double pixelsPorLargura, double pixelsPorAltura, int contador)
+
+        private void DetectarBlocosDeFlashes(bool[,] quadrantes, double pixelsPorLargura, double pixelsPorAltura)
         {
             int altura = quadrantes.GetLength(1);
             int largura = quadrantes.GetLength(0);
@@ -138,11 +144,20 @@ namespace PoryGuard.Controller
             {
                 for (int j = 0; j < altura; j++)
                 {
-                    if(quadrantes[i, j])
-                        censura[contador % 2].AddRectangle((int)(i * pixelsPorLargura), (int)(j * pixelsPorAltura), (int)(2 * pixelsPorLargura), (int)(2 * pixelsPorAltura), Color.FromArgb(128, 0, 0, 0));
+                    if (quadrantes[i, j])
+                    {
+                            censura.AddRectangle(
+                            (int)(i * pixelsPorLargura),
+                            (int)(j * pixelsPorAltura),
+                            (int)(2 * pixelsPorLargura),
+                            (int)(2 * pixelsPorAltura),
+                            Color.FromArgb(opacidadeCensura, 0, 0, 0)
+                        );
+                    }
                 }
             }
         }
+
         private Color CalcularMediaRGB(Bitmap imagem)
         {
             using (var reduzido = new Bitmap(1, 1))
@@ -167,9 +182,10 @@ namespace PoryGuard.Controller
 
                 g.DrawImage(imagem, new Rectangle(0, 0, 1, 1), 0, 0, imagem.Width, imagem.Height, GraphicsUnit.Pixel, imageAttributes);
 
-                return reduzido.GetPixel(0, 0); // Contém a média
+                return reduzido.GetPixel(0, 0);
             }
         }
+
         public void PararAnalise()
         {
             for (int i = 0; i < bitmaps.Length; i++)
@@ -179,20 +195,16 @@ namespace PoryGuard.Controller
                     bitmaps[i].Dispose();
                     bitmaps[i] = null;
                 }
-                catch (Exception ex)
-                { }
-      
-            }
-            for (int i = 0; i < censura.Length; i++)
-            {
-                try
-                {
-                    censura[i].EncerraCensura();
-                    censura[i] = null;
-                }
                 catch (NullReferenceException ex)
                 { }
             }
+            try
+            {
+                censura?.EncerraCensura();
+                censura = null;
+            }
+            catch (NullReferenceException ex)
+            { }
         }
     }
 }

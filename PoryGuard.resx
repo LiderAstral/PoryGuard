@@ -117,4 +117,1750 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbxInicioAutomatico.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbxInicioAutomatico.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbxInicioAutomatico.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="cbxInicioAutomatico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>788, 0</value>
+  </data>
+  <data name="cbxInicioAutomatico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbxInicioAutomatico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 70</value>
+  </data>
+  <data name="cbxInicioAutomatico.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbxInicioAutomatico.Text" xml:space="preserve">
+    <value>Início Automatico</value>
+  </data>
+  <data name="cbxInicioAutomatico.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;cbxInicioAutomatico.Name" xml:space="preserve">
+    <value>cbxInicioAutomatico</value>
+  </data>
+  <data name="&gt;&gt;cbxInicioAutomatico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbxInicioAutomatico.Parent" xml:space="preserve">
+    <value>panelHeader</value>
+  </data>
+  <data name="&gt;&gt;cbxInicioAutomatico.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="lblOpacidade.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblOpacidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="lblOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 425</value>
+  </data>
+  <data name="lblOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 28</value>
+  </data>
+  <data name="lblOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lblOpacidade.Text" xml:space="preserve">
+    <value>Opacidade dos Quadrados:</value>
+  </data>
+  <data name="lblOpacidade.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblOpacidade.Name" xml:space="preserve">
+    <value>lblOpacidade</value>
+  </data>
+  <data name="&gt;&gt;lblOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOpacidade.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblOpacidade.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tcbOpacidade.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 0</value>
+  </data>
+  <data name="tcbOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 113</value>
+  </data>
+  <data name="tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Name" xml:space="preserve">
+    <value>tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Parent" xml:space="preserve">
+    <value>panel_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nudOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="nudOpacidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="nudOpacidade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nudOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>843, 429</value>
+  </data>
+  <data name="nudOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 28</value>
+  </data>
+  <data name="nudOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="nudOpacidade.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;nudOpacidade.Name" xml:space="preserve">
+    <value>nudOpacidade</value>
+  </data>
+  <data name="&gt;&gt;nudOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudOpacidade.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;nudOpacidade.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblQuadrantes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lblQuadrantes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblQuadrantes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="lblQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 371</value>
+  </data>
+  <data name="lblQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 28</value>
+  </data>
+  <data name="lblQuadrantes.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblQuadrantes.Text" xml:space="preserve">
+    <value>Quadrantes na Dimensão Horizontal:</value>
+  </data>
+  <data name="lblQuadrantes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblQuadrantes.Name" xml:space="preserve">
+    <value>lblQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;lblQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQuadrantes.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblQuadrantes.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="tcbQuadrantes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 0</value>
+  </data>
+  <data name="tcbQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 74</value>
+  </data>
+  <data name="tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;tcbQuadrantes.Name" xml:space="preserve">
+    <value>tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;tcbQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcbQuadrantes.Parent" xml:space="preserve">
+    <value>panel_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;tcbQuadrantes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nudQuadrantes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="nudQuadrantes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="nudQuadrantes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nudQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>843, 349</value>
+  </data>
+  <data name="nudQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 28</value>
+  </data>
+  <data name="nudQuadrantes.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="nudQuadrantes.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;nudQuadrantes.Name" xml:space="preserve">
+    <value>nudQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;nudQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudQuadrantes.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;nudQuadrantes.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 277</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 56</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.Text" xml:space="preserve">
+    <value>Limiar de Luminosidade 
+do Quadrante de Monitoramento:</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>lblLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="tcbLuminosidadeQuadrante.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 0</value>
+  </data>
+  <data name="tcbLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 74</value>
+  </data>
+  <data name="tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>843, 269</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 28</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>nudLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblLuminosidadeTela.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lblLuminosidadeTela.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblLuminosidadeTela.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="lblLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 211</value>
+  </data>
+  <data name="lblLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 28</value>
+  </data>
+  <data name="lblLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblLuminosidadeTela.Text" xml:space="preserve">
+    <value>Limiar de Luminosidade da Tela:</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeTela.Name" xml:space="preserve">
+    <value>lblLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeTela.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tcbLuminosidadeTela.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 0</value>
+  </data>
+  <data name="tcbLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 74</value>
+  </data>
+  <data name="tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeTela.Name" xml:space="preserve">
+    <value>tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeTela.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;tcbLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nudLuminosidadeTela.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="nudLuminosidadeTela.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="nudLuminosidadeTela.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nudLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>843, 189</value>
+  </data>
+  <data name="nudLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 28</value>
+  </data>
+  <data name="nudLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="nudLuminosidadeTela.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeTela.Name" xml:space="preserve">
+    <value>nudLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeTela.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;nudLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="nudVermelhoCritico.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="nudVermelhoCritico.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="nudVermelhoCritico.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nudVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>843, 109</value>
+  </data>
+  <data name="nudVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 28</value>
+  </data>
+  <data name="nudVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="nudVermelhoCritico.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;nudVermelhoCritico.Name" xml:space="preserve">
+    <value>nudVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;nudVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudVermelhoCritico.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;nudVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tcbVermelhoCritico.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 0</value>
+  </data>
+  <data name="tcbVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>308, 74</value>
+  </data>
+  <data name="tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tcbVermelhoCritico.Name" xml:space="preserve">
+    <value>tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;tcbVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcbVermelhoCritico.Parent" xml:space="preserve">
+    <value>panel_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;tcbVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblVermelhoCritico.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lblVermelhoCritico.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblVermelhoCritico.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="lblVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 131</value>
+  </data>
+  <data name="lblVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 28</value>
+  </data>
+  <data name="lblVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblVermelhoCritico.Text" xml:space="preserve">
+    <value>Limiar de Vermelho Crítico:</value>
+  </data>
+  <data name="&gt;&gt;lblVermelhoCritico.Name" xml:space="preserve">
+    <value>lblVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;lblVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVermelhoCritico.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblMaximo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lblMaximo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMaximo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="lblMaximo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 11</value>
+  </data>
+  <data name="lblMaximo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblMaximo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 25</value>
+  </data>
+  <data name="lblMaximo.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblMaximo.Text" xml:space="preserve">
+    <value>Máx.</value>
+  </data>
+  <data name="lblMaximo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;lblMaximo.Name" xml:space="preserve">
+    <value>lblMaximo</value>
+  </data>
+  <data name="&gt;&gt;lblMaximo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMaximo.Parent" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;lblMaximo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="nudMaximo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="nudMaximo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="nudMaximo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 51</value>
+  </data>
+  <data name="nudMaximo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudMaximo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 28</value>
+  </data>
+  <data name="nudMaximo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;nudMaximo.Name" xml:space="preserve">
+    <value>nudMaximo</value>
+  </data>
+  <data name="&gt;&gt;nudMaximo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudMaximo.Parent" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;nudMaximo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbxLigado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbxLigado.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="cbxLigado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="cbxLigado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cbxLigado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbxLigado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 70</value>
+  </data>
+  <data name="cbxLigado.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cbxLigado.Text" xml:space="preserve">
+    <value>Em Execução</value>
+  </data>
+  <data name="cbxLigado.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;cbxLigado.Name" xml:space="preserve">
+    <value>cbxLigado</value>
+  </data>
+  <data name="&gt;&gt;cbxLigado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbxLigado.Parent" xml:space="preserve">
+    <value>panelHeader</value>
+  </data>
+  <data name="&gt;&gt;cbxLigado.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelHeader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="panelHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>991, 70</value>
+  </data>
+  <data name="panelHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;panelHeader.Name" xml:space="preserve">
+    <value>panelHeader</value>
+  </data>
+  <data name="&gt;&gt;panelHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelHeader.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tlpMain.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlpMain.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="panel_tcbOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="max_tcbOpacidade.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="max_tcbOpacidade.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="max_tcbOpacidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="max_tcbOpacidade.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="max_tcbOpacidade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="max_tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 0</value>
+  </data>
+  <data name="max_tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 25</value>
+  </data>
+  <data name="max_tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="max_tcbOpacidade.Text" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="max_tcbOpacidade.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;max_tcbOpacidade.Name" xml:space="preserve">
+    <value>max_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;max_tcbOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbOpacidade.Parent" xml:space="preserve">
+    <value>panel_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;max_tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="min_tcbOpacidade.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="min_tcbOpacidade.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="min_tcbOpacidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="min_tcbOpacidade.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="min_tcbOpacidade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="min_tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="min_tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 25</value>
+  </data>
+  <data name="min_tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="min_tcbOpacidade.Text" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="min_tcbOpacidade.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.Name" xml:space="preserve">
+    <value>min_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.Parent" xml:space="preserve">
+    <value>panel_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 428</value>
+  </data>
+  <data name="panel_tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 113</value>
+  </data>
+  <data name="panel_tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.Name" xml:space="preserve">
+    <value>panel_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_tcbQuadrantes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="max_tcbQuadrantes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="max_tcbQuadrantes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="max_tcbQuadrantes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="max_tcbQuadrantes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="max_tcbQuadrantes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="max_tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 0</value>
+  </data>
+  <data name="max_tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 25</value>
+  </data>
+  <data name="max_tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="max_tcbQuadrantes.Text" xml:space="preserve">
+    <value>50%</value>
+  </data>
+  <data name="max_tcbQuadrantes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.Name" xml:space="preserve">
+    <value>max_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.Parent" xml:space="preserve">
+    <value>panel_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="min_tcbQuadrantes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="min_tcbQuadrantes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="min_tcbQuadrantes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="min_tcbQuadrantes.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="min_tcbQuadrantes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="min_tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="min_tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 25</value>
+  </data>
+  <data name="min_tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="min_tcbQuadrantes.Text" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="min_tcbQuadrantes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.Name" xml:space="preserve">
+    <value>min_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.Parent" xml:space="preserve">
+    <value>panel_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 348</value>
+  </data>
+  <data name="panel_tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 74</value>
+  </data>
+  <data name="panel_tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.Name" xml:space="preserve">
+    <value>panel_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 0</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 25</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.Text" xml:space="preserve">
+    <value>80%</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>max_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.Text" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="min_tcbLuminosidadeQuadrante.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>min_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 268</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 74</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>panel_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 0</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 25</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.Text" xml:space="preserve">
+    <value>80%</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.Name" xml:space="preserve">
+    <value>max_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.Text" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="min_tcbLuminosidadeTela.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.Name" xml:space="preserve">
+    <value>min_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 188</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 74</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Name" xml:space="preserve">
+    <value>panel_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblIntervaloFlash.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lblIntervaloFlash.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblIntervaloFlash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="lblIntervaloFlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 41</value>
+  </data>
+  <data name="lblIntervaloFlash.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblIntervaloFlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 28</value>
+  </data>
+  <data name="lblIntervaloFlash.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblIntervaloFlash.Text" xml:space="preserve">
+    <value>Intervalo de Flash:</value>
+  </data>
+  <data name="lblIntervaloFlash.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.Name" xml:space="preserve">
+    <value>lblIntervaloFlash</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tlpIntervalo.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblMinimo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lblMinimo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMinimo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="lblMinimo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 11</value>
+  </data>
+  <data name="lblMinimo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblMinimo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 25</value>
+  </data>
+  <data name="lblMinimo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblMinimo.Text" xml:space="preserve">
+    <value>Mín.</value>
+  </data>
+  <data name="lblMinimo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.Name" xml:space="preserve">
+    <value>lblMinimo</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.Parent" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nudMinimo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="nudMinimo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
+  </data>
+  <data name="nudMinimo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 51</value>
+  </data>
+  <data name="nudMinimo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="nudMinimo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 28</value>
+  </data>
+  <data name="nudMinimo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.Name" xml:space="preserve">
+    <value>nudMinimo</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.Parent" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpIntervalo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpIntervalo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 8</value>
+  </data>
+  <data name="tlpIntervalo.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tlpIntervalo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 94</value>
+  </data>
+  <data name="tlpIntervalo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.Name" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tlpIntervalo.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMinimo" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudMinimo" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblMaximo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="nudMaximo" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 0</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 25</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.Text" xml:space="preserve">
+    <value>80%</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.Name" xml:space="preserve">
+    <value>max_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.Parent" xml:space="preserve">
+    <value>panel_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.Text" xml:space="preserve">
+    <value>5%</value>
+  </data>
+  <data name="min_tcbVermelhoCritico.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.Name" xml:space="preserve">
+    <value>min_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.Parent" xml:space="preserve">
+    <value>panel_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 108</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 74</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.Name" xml:space="preserve">
+    <value>panel_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="tlpMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 75</value>
+  </data>
+  <data name="tlpMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="tlpMain.RowCount" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tlpMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>991, 549</value>
+  </data>
+  <data name="tlpMain.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Name" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpMain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel_tcbOpacidade" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbQuadrantes" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbLuminosidadeQuadrante" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbLuminosidadeTela" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpIntervalo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="nudOpacidade" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="nudVermelhoCritico" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblLuminosidadeTela" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblOpacidade" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudQuadrantes" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="nudLuminosidadeTela" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblLuminosidadeQuadrante" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudLuminosidadeQuadrante" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblQuadrantes" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblVermelhoCritico" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbVermelhoCritico" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Absolute,400,Absolute,226" /&gt;&lt;Rows Styles="Absolute,100,Absolute,80,Absolute,80,Absolute,80,Absolute,80,Absolute,80" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="lblAviso.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAviso.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblAviso.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.2pt, style=Bold</value>
+  </data>
+  <data name="lblAviso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lblAviso.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>35, 10, 10, 10</value>
+  </data>
+  <data name="lblAviso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 66</value>
+  </data>
+  <data name="lblAviso.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblAviso.Text" xml:space="preserve">
+    <value>ATENÇÃO: As configurações deste software devem ser ajustadas com base em orientação e laudo médico profissional. 
+O uso inadequado é de inteira responsabilidade do usuário.</value>
+  </data>
+  <data name="lblAviso.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblAviso.Name" xml:space="preserve">
+    <value>lblAviso</value>
+  </data>
+  <data name="&gt;&gt;lblAviso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAviso.Parent" xml:space="preserve">
+    <value>panelFooter</value>
+  </data>
+  <data name="&gt;&gt;lblAviso.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelFooter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelFooter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 564</value>
+  </data>
+  <data name="panelFooter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>991, 60</value>
+  </data>
+  <data name="panelFooter.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;panelFooter.Name" xml:space="preserve">
+    <value>panelFooter</value>
+  </data>
+  <data name="&gt;&gt;panelFooter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelFooter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelFooter.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1001, 629</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAMAMDAAAAEAIACoJQAANgAAACAgAAABACAAqBAAAN4lAAAQEAAAAQAgAGgEAACGNgAAKAAAADAA
+        AABgAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAycUFA0fEhY5IRUVPh0QFT4cExM3GhoaCgAA
+        AAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgICAIIhcXQyccHHYxJCjtMCMm9i8i
+        J/UwIyfrJxwebiMUGEEzMzMFAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAyQYGBUmGh2vOy4y50k+
+        Qf9gWFv/ZF1g/1dPUv9hWV3/Vk1P/z8zNuAmGxtDIxcXFgAAAAMAAAABAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkJCQHJBkZZC0i
+        I7RYT1H6ZF1f/nFsbf96d3f/m5ye/5iYmv97d3j/dW9y/2RdX/5FOjz5LiEktx8SFWIgICAIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwc
+        HAkvJShSST9C9VpSVPtqY2b+dXFx/3Rwbv81KB7/LiIk/ysfIf8yJTr/lpef/4SChf9uaWz+VUtP/Dgs
+        L/UjGh1XHBwcCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAALhcXCzIqKmdXUFLyaWRm/2FaW/90cG//T0U7/1RFIf9XSiP/TENF/zwxNP9EPIf/RT2D/1ZP
+        Z/+PkJj/kpGV/0lAQv9BNjryKx4hZRoaGgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAaGhoKNi0vZ1pTVPGbmpr/gn+A/zguLP9AMxz/YFIi/2laJv9uYDP/T0ZI/z80
+        N/9TT6X/V1K4/1BKqf88M2T/hION/4B+gf9oYWP/Qzc78SsfIWQcHBwJAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAASAgIAgyJypbXFVW8pqZmf+LiYj/Mygo/z0wF/9mVyX/fW42/39w
+        Of9xYzb/T0ZI/0A0OP9VUKf/YF3J/19cyP9OSKn/OS9j/1BIT/99e37/aGJk/0I2OfEuJCRNJCQkBwAA
+        AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABJCQkBywiJGlfV1j1lpWV/4F+f/80KCf/QDEX/2tc
+        KP9/cTn/gnM7/4FyO/9xYzb/UEdJ/z80OP9VUKf/YV3J/2Fey/9fW8j/UUqv/zIoXv9PSE//f32A/2Zg
+        Yv9DNjr1JhseXzMAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqKioGKiAgZ15WV/idnZ3+f3t8/zgt
+        K/8/MRj/alwo/4BxOf+Cczv/g3Q7/4NzO/9yYzb/T0dI/z81N/9VUKb/YV7J/2Ffyv9hXsn/YFzJ/1JM
+        r/8xKFr/WlRd/4B+gf9nYGP+RDg79x8UF1ozAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9PT0ZS0NFyZ+e
+        nv6WlJX/OC4s/0M1Gv9nWSf/gHI5/4JzO/+DdDz/gnQ7/4J0O/9yZDb/UEdJ/z40Nv9VUab/YF7I/2Ff
+        y/9iX8v/YV/J/19cyP9QS6v/NSxg/1hSWv91cXP/aGFj/TEmJ8IzGiYUAAAAAgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUq
+        KhhCOjy8q6+y+3NvcP9fWVj/Sj0h/2haJ/+AcTn/gnM7/4JzO/+Cczv/gnM7/4JzO/9yYzf/VUxO/0E2
+        Ov9VUKb/YF7I/2Jfyf9hX8r/YV/J/2Feyf9fXMf/UEmp/0c/df+Ojpf/cm1v/1ZOUfskGBu2KxwcEgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAA0E4O1KBgIP1qq2u/3x5ef8wIhj/YlMi/39wOP+Cczr/gnM6/4JzO/+Cczv/gnM7/4Fy
+        O/9xYzf/VU1O/0Q5Pf9VUKb/YF3I/2Jfyf9hXsr/YV7L/2Jfyv9gXcr/X1vG/0pDn/8sITb/i4qO/2Ze
+        Yf83Ky70JhgcSQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAKioqBkI7PIe0urv/mpmZ/0Y8N/9gUiD/dmcw/4BxOv+Cczr/gnQ6/4Jz
+        O/+DdDz/g3Q7/4JzO/9yZDf/Ylxd/0I5Ov9VUab/YF3I/2Ffyf9iX8v/YV7J/2Ffyf9hXsr/YV3J/1lT
+        u/9IQZj/eXeE/3l2ef9QRkn/JhwcfjMAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJycnDUY/QZaZmJn/eHR0/zosGP9nWCX/gHE5/4Jz
+        Ov+Cczv/gnM7/4J0O/+DdDz/gnM7/4JzO/9yZTj/amVn/1RNTv9VUqf/YF3I/2Ffyv9iX8n/Yl/J/2Fe
+        yv9hX8n/YV/K/19cx/9MRKX/LiNK/6issf9nYWT/MSYojRcXFwsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMyYqPHVzdvCbm5z/U0tK/0w/
+        G/99bjf/gXI6/4NzO/+Cczv/gnM7/4JzO/+Cczv/gnM7/4FyO/90ZDj/bGhp/1pTVP9WUqf/YF7I/2Fe
+        yv9hX8n/YV/K/2Feyv9hX8n/YV7K/2Fey/9dWcT/OzJ1/4SDif9wam3/QDc57igeHjMAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqAAAGTEZJtrK2
+        uPyTlJT/OC0p/2tdKP9/cTj/gnM7/4JzO/+Bczn/gnM7/4JzO/+Cczv/gnM7/4JzO/90ZTj/dnN0/1tV
+        Vv9WUqf/YF7H/2Ffyf9hXsr/YV/J/2Jfyv9hX8n/YV7L/2Fey/9fW8j/TESj/1tWX/90b3L/Z19j+ysg
+        IbEzAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAApIiIlY19hzK6xtP99enr/RTge/3FjLv+Bcjr/gnM6/4JzO/+Cczv/gnM7/4J0O/+Cczv/gnM7/4Jz
+        O/90ZTn/eXd4/2pmZv9WUqb/YF7I/2Jfyf9hX8r/YV/K/2Feyv9hX8v/YV7L/2Fey/9gXcn/VE+0/0I6
+        a/+gpKn/bmlr/zctLscnFxchAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAlGh10mp2g9Jycnf9bU1P/STsa/35vOf+Bcjr/gnM7/4JzO/+Ccjr/gnI6/4Fy
+        Ov+Cczv/gnM7/4FyO/9zZTj/eXd4/3BqbP9XUqf/YV7J/2Ffyv9hXsv/YV7L/2Fey/9hXsv/YV7L/2Fe
+        y/9gXcr/XlrG/zgubv+vs7z/cm1w/1RLTvQgFBdxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoGx55mpyh956en/9ZUVH/SDoa/3xtOP9+bzn/fm84/35v
+        OP9/bzj/fm84/35vOP9/bzj/fm84/31uOP9wYzf/eXd4/3BrbP9VUaX/XlvE/19bxf9fW8X/X1vF/19a
+        xf9fWsX/X1rF/15axf9eWcT/XVjC/zgubf+vtLv/dG9x/1VMTvciFxl4AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmGx55mp2g95ydnf9WT1D/NikW/0g6
+        HP9JOx3/STsd/0g7Hf9IOx3/SDod/0g6Hf9JOx3/STsd/0g7Hf9ENyD/d3R1/3Bsbf84Ll3/OS9q/zkv
+        a/85L2v/OTBr/zkwa/85L2v/OS9r/zkva/85L2v/OC5p/ywgRv+ts7r/c29x/1VMTvciFxl4AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoGx55k5WY921o
+        av9TS03/PTM1/3x4eP99eXr/fHl5/3x4ef98eHn/fHh5/3x4ef98eHj/fHh4/3t3d/97eHj/k5GR/5KR
+        kf9pZGb/WlNW/1hRU/9YUVT/YVtd/3Bsbv9bVFf/WFBT/1ZOUv9QSEv/ST5D/zQpLP+us7j/XVdZ/09G
+        SPckFxl4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAmHB54nqKm97m/wv9WTVD/QDY5/6SorP+mqK7/pqmu/6aprv+mqa7/paiv/6Worf+kqK3/pKet/6Sn
+        rf+hpan/lpaV/5SSkv+BfX7/fnp7/357e/9/e3z/f3x8/4B9fv+AfHz/gHx9/4B9ff9/e3z/gXx9/zgu
+        MP+utLn/tLq+/11YWfciFxd4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAmHB54m52g95+foP9YUVb/MydS/09Jjv9RS5H/UUuR/1FLkf9RS5H/UUqQ/1FL
+        kP9RS5D/UUuR/1BKkP9LRH7/e3p7/3Nvb/9ZSy//YlQx/2JVMf9iVTH/Y1Qx/2JUMf9iVTD/Y1Qx/2NV
+        Mf9jVTH/YVMv/zosF/+utLf/dnJ0/1ZOUfciFxl5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmHB54mp2g956env9YUVb/OjFx/2Bdxv9iXsn/Yl7I/2Je
+        yP9iXsj/YV7I/2FeyP9iXsj/YV/I/2Fex/9YVKv/eXd4/29ra/9wYTb/gHE6/4FyOv+Bcjr/gXI6/4Fy
+        Ov+Bczr/gnI6/4FyOv+Bcjr/gHA5/0g7Gf+us7b/c29x/1VMT/ciFxl5AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmHBx4mZyg952env9XUFX/OjFy/2Fd
+        xv9iXsj/Yl7J/2JeyP9jX8n/Yl7I/2FeyP9jX8n/Yl/J/2Fex/9ZVKv/eXZ4/29ra/9wYjb/gHE6/4Fy
+        Ov+Bcjr/gnM7/4FyOv+Bcjr/gnM7/4FyOv+Bcjr/gHE5/0g6Gf+ts7X/c25x/1VMTvciFxl4AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmGRx4mp2g952e
+        nv9XUFX/OjBx/2Fdxv9iXsj/Yl7I/2JeyP9iXsj/Yl/I/2Jfyf9iX8n/Y1/J/2Fex/9ZVaz/eXZ4/29r
+        a/9xYTb/gXI6/4FyOv+Bczr/gXI6/4JzO/+Bcjr/gXI6/4JzO/+Bczr/gHE5/0g6Gf+ts7T/c25x/1VM
+        TvciFxl4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAkGRx4mp2g952env9XUFX/OTBx/2Fdxv9iXsf/Yl7I/2Nfyf9jX8n/Yl/I/2Jfyf9iXsj/Yl/I/2Fe
+        x/9ZVaz/eXZ4/3BrbP9xYjb/gHE6/4FzOv+Cczr/gnM7/4FyOv+Bczr/gnM7/4JzO/+Bczn/gHE5/0g6
+        Gf+ts7T/c29x/1VMTvciFxd4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAkGhx3mp2g956env9XUVb/OjBx/2Fdxv9iX8n/Y1/J/2JeyP9iXsj/Yl7I/2Ff
+        yf9jYMr/YV7I/2Bex/9ZVaz/eHZ4/29ra/9wYzb/gHE6/4FyOv+Cczv/gnM7/4FyOv+Ccjr/g3M7/4Jz
+        O/+Bcjr/gHE5/0c6Gf+ts7T/c25x/1VMTvcgFxd4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkGhx3mpyg952en/9XUFb/OTBx/2Fcx/9iXsn/Yl7I/2Je
+        yf9jX8n/Y1/J/2Jfyf9iX8n/YV7I/2Fex/9YVKz/eHZ4/3Bqa/9wYjb/gHE6/4FyOv+Bcjr/gXI6/4Fy
+        Ov+Bcjr/gXI6/4JyOv+Bcjr/gHE5/0g6Gf+ts7T/cm5w/1RLTvciFxd4AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkGhx3m52g952fn/9XUFX/OS9x/2Bc
+        xv9hX8n/YF7I/2FeyP9iX8n/Yl/I/2Jfyf9hXsr/YV/I/2Fex/9ZVav/eHZ4/29qa/9vYTX/gXI6/4Fz
+        Ov+Bcjr/gnI6/4JyOv+Bcjr/gXI6/4JyOv+Ccjn/gHE6/0g6Gf+ts7T/c25w/1RMTfcgFxd4AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkGhx3naCk96Sn
+        qf9XUFb/OS9w/2Bcxv9hXsr/YV7J/2FeyP9gXsj/YV7I/2Ffyf9hX8n/Y1/J/2Fex/9ZVaz/gYCC/21p
+        av9wYjb/gHE6/4JzO/+Cczv/gnM7/4JyOv+Cczv/gnI6/4FyOv+Bczv/fnA4/0g6Gv+tsbT/c25w/1VM
+        TfciFxd4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAjGhx2mZuf96Olpv9XUFX/OS9w/1VPt/9iXcr/YF3J/2Feyf9hXsn/YF3K/2Beyv9hXsr/Yl7J/2Bd
+        x/9ZVq7/j5GV/21oaf9wYTX/gHE6/4JzO/+Ccjr/gnM7/4NyOv+Ccjr/gnI6/4JyOv+BcTn/b2Er/0c5
+        GP+tsbT/cm1w/1RLTfciFRd4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAiGBh3gH1996Ggof96dnn/OzFn/0c+mP9cVsD/XVjC/15axf9hXsr/YV7K/2Fe
+        y/9hXsv/YV/K/2BdyP9ZVq7/j5GV/29rbP9xYjb/gXM7/4J0O/+Cczv/gnM7/4JzO/+Bczr/fW42/3xt
+        Nf95ajL/XU8f/0Q3HP96dnf/bGZo/1RLTfcgFRh3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjGBh2f3x895KRkv91cXP/aWNn/zowSv85L2j/RDuP/09I
+        rP9WULf/VlG5/2BcyP9gXcr/YV7K/2FeyP9ZVq3/kJKW/46Pkf9xYzf/gXI6/4J0O/+Bczn/gXI6/3xt
+        Nv9zZC3/aFok/1hKHv9HORv/LSAV/0tCQv92cXL/YFpc/1RLTfcgFRh3AAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjFxpukZOV85+ho/93c3X/oaCg/3x4
+        e/9eV1z/QDdN/zEmSv8wJUr/PzaB/0xFpP9NRqT/WFK5/1pWv/9YVKz/ioqN/4eIi/9wYjf/eGkz/3Nl
+        L/9oWCX/ZFYk/1dJIf84Khj/NikY/0A0Kv9VTE3/VUxN/2dhYv92cXL/dXJ0/2pmZvMgFRduAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuIy4WTEZIp6So
+        q/ehpKf8q62t/6mrq/+qq6z/n56f/3h0df9nYmT/UEdV/zcsQf82LEH/PzZy/0Y+kP9HQIj/V1BS/1hQ
+        U/9YSiX/W0wi/05BIP87LyX/PTIp/0M4M/9NQ0b/VUtN/2ZgYf9rZWb/cmxu/3Jsbv90b3D8dG9x9zwz
+        NakqICAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAABPjU1HSgdH6VDPT69nqKl9aGkqfXL1tr8try+/62vsP+np6f/oqKi/5GQkP97dnj/WlJX/0E3
+        Pv8rHyX/Kx8g/yoeIP8sIB//Qzo4/1pTUf91cnH/fnt7/3Jubv9tZ2j/dXBx/3RvcP90cHD8e3d49Xt2
+        d/UwJSW5JBoaqTUsLB0AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEkEhIOHxEUSyMWGlBRTE/oVVBT8oSEh/fAxsr9w8rN/qWm
+        p/+kpaX/pKSk/5qamv+OjIz/cGts/15YWf+OjIz/nJub/6Ojo/+ioqL/oqKi/5qZmv6Ni4z9Z2Fi90U9
+        PfFDOjvkHhEUTRsREUwcHBwJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAJmZmYFSUlJBygd
+        HUclGRutdXR24ZGSlv6Qk5b/p6ut/7W5uv+zt7j/vcPH/6yvsP+kpKT/pKSk/5GQkP9xbW3/cW1t/l9Y
+        WeIgFhitJBkZR0lJSQczMzMFAAAAAgAAAAIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAQuLi4LOy4uJzo2Ojk7Mzc8TENGs01HSfFNRknxTUhJ8UlBQvFCODrxPzc48T81
+        NrI0LCxAMyovPDEkJCouFxcLAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAADKSEhHyofHzEqHx8xKh8fMSkf
+        HzIpGR8yJBoaMSkZGR8AAAADAAAAAwAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP///////wAA////////AAD///////8AAP//8A///wAA///AA///AAD//wAA//8AAP//
+        AAD//wAA//4AAH//AAD//AAAP/8AAP/4AAAf/wAA/+AAAAf/AAD/wAAAB/8AAP/AAAAD/wAA/4AAAAH/
+        AAD/gAAAAf8AAP8AAAAA/wAA/wAAAAD/AAD/AAAAAP8AAP8AAAAA/wAA/gAAAAB/AAD+AAAAAH8AAP4A
+        AAAAfwAA/gAAAAB/AAD+AAAAAH8AAP4AAAAAfwAA/gAAAAB/AAD+AAAAAH8AAP4AAAAAfwAA/gAAAAB/
+        AAD+AAAAAH8AAP4AAAAAfwAA/gAAAAB/AAD+AAAAAH8AAP4AAAAAfwAA/gAAAAB/AAD+AAAAAH8AAP4A
+        AAAAfwAA/gAAAAB/AAD+AAAAAH8AAP4AAAAAfwAA/gAAAAB/AAD/gAAAA/8AAP/AAAAD/wAA//4AAH//
+        AAD//4AB//8AAP///////wAA////////AAD///////8AACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAABoaGgolGR0+JRgbfSMXG3slFxw3GhoaCgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjEhIdLyQlrEY8P+9YUFP5UUhL+U1CRe81KyyQIBUVGAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkJCQHMCQmaj40OOFmX2H/cm1s/4KAgf+AfoD/dnJ2/2Ve
+        YP8+NDbiJBgaaiQkJAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJxQUDUY/P25tZ2r0XVZX/2dfVv9USDD/Oi8u/zEl
+        Lv9RSnv/dHGG/3hzeP9GPD71NSkubyoVFQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQkJAdGPT9xfnt87XBsbf88LyL/YlUo/3Bh
+        Lv9GOzj/OS47/1hUt/9RS6P/ZWB+/3Nwc/9aUVPsNiosbSoqKgYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABOS8vbH14efV1cXH/OSsg/2hZ
+        J/9/cDn/fW45/0c8Of85Ljv/XlrD/19cyf9SS63/OC9M/3Vzdf9YTlL0KyEjZQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjInJ2F6dnb/fHh4/z0x
+        I/9pWyj/gXI6/4JzO/9/bzn/Rz05/zkuO/9eW8L/YV/J/2Feyv9PSan/QzpY/3Vydv9WTVD+JBgbVgAA
+        AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8MTYvhoWH24iG
+        hv9TSTv/ZVco/4BxOf+Cczv/gnM7/35vOf9JPzv/OS88/15bwf9hX8r/YV/J/19dx/9MRp//ZWB+/3Rw
+        c/9GOz/XJBgYKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAgCGNg
+        Ypqlp6j8XVZR/1xOI/99bjf/gnM6/4JzO/+Cczv/fm85/05EQP87MT7/XlrB/2Feyf9hXsr/YV/J/15a
+        xP9LQ5T/bmp3/2RcXvsuIiSVKgAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAgICAQZF9gt4iGh/9JOx7/eGky/4FyOv+Cczv/gnM7/4JzO/9+bzn/WFBL/0M7R/9eW8H/YV/J/2Ff
+        yf9hXsn/YV7J/1lUvP88M2r/jo6S/z40N7QnFBQNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAUlFRT+XmJvmXFVV/11QIf+Bcjr/gnM7/4JzO/+Cczv/gnM7/35vOf9bVE//S0NP/15b
+        wf9hXsn/YV/J/2Feyv9gXsr/YV3K/0U9lP+Dgof/XFRX5CsjIzsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAgICAIa2lrjZaWl/9HPDH/d2ky/4FzOv+Bcjr/gnM6/4JzO/+Cczv/fm85/2Jc
+        WP9SS1f/XlvB/2Ffyf9hX8n/YV/J/2Fey/9hXsv/VlG5/1xWbf9xbG//PjU3hyQkJAcAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAADkrORJxbnHQjo6P/0M2IP9/cDn/gnI6/4JyOv+Ccjr/gXI6/4Jy
+        Ov99bzn/YlxY/1lSXf9eW8L/YV7K/2Fey/9hXcr/YV3K/2Bdyv9fW8f/OzJd/4WEh/9DOjvOLR4eEQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQDMzFHFvcNqOjY//Oi0e/1VGIP9WRyD/VUcg/1VH
+        IP9VRyH/Vkcg/1NFIP9cVlP/Vk9X/0E4gf9COYX/QjqF/0I5hf9COYX/QjmF/0I5hf81LEv/hoWI/0M6
+        PNkoGxsTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDNjYTZ2Vn2Wxoa/84LTD/iIaH/4eF
+        hv+GhIb/hoSG/4aEhv+GhIX/hYOE/4+Njf+Lior/ZWBh/19ZWv9kXl//dXFx/2BZWv9dVlf/UklM/zkw
+        Mv+CgIT/PjQ22SgbGxMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADY2NhNzcnTZk5OV/zQo
+        Ov9dWIH/XViC/11Ygv9dWIL/XViC/11Ygf9bVn7/amds/2dgX/9bUD3/XVI+/11SPv9dUj7/XVI+/15T
+        P/9eUz//Oi8o/5GSlf9JQEPaJhoaFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANjY2E3Fu
+        cdmOjY//OC5a/2JeyP9iXsj/Yl7I/2JeyP9hXsj/Yl/I/15bwP9fWmb/XFRQ/3xtOP+Bcjr/gXI7/4Fy
+        Ov+Bcjr/gXI6/4FxOf9FOST/hoWI/0M6PNomGhoUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAA2NjYTcW1x2Y6Nj/84Llr/YV7I/2JeyP9iXsj/Yl7I/2FeyP9iX8n/XlvB/19aZv9cVFD/fW04/4Fy
+        Ov+Bcjr/gnI6/4FyOv+Bcjr/gXI6/0U5JP+GhIj/Qzo82SgbGxMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADY2NhNwbXHZjo2P/zcuWv9hXsj/Yl7I/2Nfyf9iXsj/Yl/J/2JeyP9eW8H/X1pm/1xU
+        UP98bTj/gXM6/4JyOv+Bcjr/gnM6/4FzOv+Bcjr/RTkk/4aFh/9DOjzZKBsbEwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAANjY2E3BtcNmOjo//Ny5a/2FeyP9iXsj/Yl7I/2JeyP9hX8n/YV7I/15b
+        wf9eWmb/XFNP/3xuOP+Bcjr/gnM7/4FyOv+Ccjr/gXI6/4FyOv9FOST/hoSH/0M6PNkoGxsTAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2NjYTcW5x2Y+Pkf83LVr/YV3J/2Feyf9hXsj/YV7I/2Fe
+        yP9hXsj/XlvB/19baP9bU0//fG04/4FzOv+Ccjr/gXI6/4FyOv+Bcjr/gXI5/0U5JP+GhYf/Qzo82Sgb
+        GxMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADY2NhNycHPZkZGT/zctWf9bV8H/YV3K/2Fe
+        yP9gXcr/YF7J/2Feyf9eW8H/a2p4/1pSTf98bTj/gXI6/4JzO/+Ccjr/gnI6/4JyOv95ajP/RTgk/4aE
+        h/9DOjzZKBsbEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANigoE2JcXNmWlZb/S0Nh/0dA
+        k/9XUbb/XVjC/19cx/9hXcr/YV7K/15bw/9ubHr/X1hU/31uOf+Cczv/gXI6/4BxOf97bDX/c2Qv/1pM
+        IP9GOiz/bmlq/0I4O9koGxsTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtLS0RZWBhzIyL
+        jf+VlJT/XVZh/0xEZP9HP33/RTyH/09IpP9WUbP/W1e+/2hlcv9qZmP/eGk0/3NkMP9pWiv/XE4n/1FE
+        JP9KPy//RDk2/2ReX/9vamz/SEBBzC0eHhEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMz
+        MwVeWFtifX1/36eqq/2pq63/pKWn/4SBgv9zbnj/VExh/0hAYv9AN3P/PTM7/z80NP9PQSP/UEUz/1ZN
+        Q/9WTUr/WlFT/2hiY/92cnL/dXBx/WBaWt9GQEBjMzMzBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAElJSQdOTk4XPTI0dUhBRZF3dnr5qq6x/bq/wv+fn5//mpqb/4SBhf9sZ2j/ZV9g/4aD
+        gv+bmpn/nZ2d/46Mjf9+env9WlNU+TgvL44wJSd1Ojo6FiQkJAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIcERFKT0lMpG5tb+eGiIrtsra4+LW7
+        vfifoKH4mpqa+HBsbO1YUlPnRTw8phwREUoAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        AADAAwAAwAMAAMADAADAAwAA4AcAAPw/AAA=
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PoryGuard</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PoryGuard</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

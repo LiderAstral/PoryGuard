@@ -28,374 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbxLigado = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nudMinimo = new System.Windows.Forms.NumericUpDown();
-            this.nudMaximo = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tcbVermelhoCritico = new System.Windows.Forms.TrackBar();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.nudVermelhoCritico = new System.Windows.Forms.NumericUpDown();
-            this.nudLuminosidadeTela = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tcbLuminosidadeTela = new System.Windows.Forms.TrackBar();
-            this.label9 = new System.Windows.Forms.Label();
-            this.nudLuminosidadeQuadrante = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tcbLuminosidadeQuadrante = new System.Windows.Forms.TrackBar();
-            this.label12 = new System.Windows.Forms.Label();
-            this.nudQuadrantes = new System.Windows.Forms.NumericUpDown();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tcbQuadrantes = new System.Windows.Forms.TrackBar();
-            this.label15 = new System.Windows.Forms.Label();
-            this.nudOpacidade = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tcbOpacidade = new System.Windows.Forms.TrackBar();
-            this.label18 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PoryGuard));
             this.cbxInicioAutomatico = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudVermelhoCritico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeTela)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeTela)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeQuadrante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).BeginInit();
+            this.lblOpacidade = new System.Windows.Forms.Label();
+            this.tcbOpacidade = new System.Windows.Forms.TrackBar();
+            this.nudOpacidade = new System.Windows.Forms.NumericUpDown();
+            this.lblQuadrantes = new System.Windows.Forms.Label();
+            this.tcbQuadrantes = new System.Windows.Forms.TrackBar();
+            this.nudQuadrantes = new System.Windows.Forms.NumericUpDown();
+            this.lblLuminosidadeQuadrante = new System.Windows.Forms.Label();
+            this.tcbLuminosidadeQuadrante = new System.Windows.Forms.TrackBar();
+            this.nudLuminosidadeQuadrante = new System.Windows.Forms.NumericUpDown();
+            this.lblLuminosidadeTela = new System.Windows.Forms.Label();
+            this.tcbLuminosidadeTela = new System.Windows.Forms.TrackBar();
+            this.nudLuminosidadeTela = new System.Windows.Forms.NumericUpDown();
+            this.nudVermelhoCritico = new System.Windows.Forms.NumericUpDown();
+            this.tcbVermelhoCritico = new System.Windows.Forms.TrackBar();
+            this.lblVermelhoCritico = new System.Windows.Forms.Label();
+            this.lblMaximo = new System.Windows.Forms.Label();
+            this.nudMaximo = new System.Windows.Forms.NumericUpDown();
+            this.cbxLigado = new System.Windows.Forms.CheckBox();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
+            this.panel_tcbOpacidade = new System.Windows.Forms.Panel();
+            this.max_tcbOpacidade = new System.Windows.Forms.Label();
+            this.min_tcbOpacidade = new System.Windows.Forms.Label();
+            this.panel_tcbQuadrantes = new System.Windows.Forms.Panel();
+            this.max_tcbQuadrantes = new System.Windows.Forms.Label();
+            this.min_tcbQuadrantes = new System.Windows.Forms.Label();
+            this.panel_tcbLuminosidadeQuadrante = new System.Windows.Forms.Panel();
+            this.max_tcbLuminosidadeQuadrante = new System.Windows.Forms.Label();
+            this.min_tcbLuminosidadeQuadrante = new System.Windows.Forms.Label();
+            this.panel_tcbLuminosidadeTela = new System.Windows.Forms.Panel();
+            this.max_tcbLuminosidadeTela = new System.Windows.Forms.Label();
+            this.min_tcbLuminosidadeTela = new System.Windows.Forms.Label();
+            this.lblIntervaloFlash = new System.Windows.Forms.Label();
+            this.tlpIntervalo = new System.Windows.Forms.TableLayoutPanel();
+            this.lblMinimo = new System.Windows.Forms.Label();
+            this.nudMinimo = new System.Windows.Forms.NumericUpDown();
+            this.panel_tcbVermelhoCritico = new System.Windows.Forms.Panel();
+            this.max_tcbVermelhoCritico = new System.Windows.Forms.Label();
+            this.min_tcbVermelhoCritico = new System.Windows.Forms.Label();
+            this.panelFooter = new System.Windows.Forms.Panel();
+            this.lblAviso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tcbOpacidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeQuadrante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeTela)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeTela)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVermelhoCritico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).BeginInit();
+            this.panelHeader.SuspendLayout();
+            this.tlpMain.SuspendLayout();
+            this.panel_tcbOpacidade.SuspendLayout();
+            this.panel_tcbQuadrantes.SuspendLayout();
+            this.panel_tcbLuminosidadeQuadrante.SuspendLayout();
+            this.panel_tcbLuminosidadeTela.SuspendLayout();
+            this.tlpIntervalo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).BeginInit();
+            this.panel_tcbVermelhoCritico.SuspendLayout();
+            this.panelFooter.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cbxLigado
+            // cbxInicioAutomatico
             // 
-            this.cbxLigado.AutoSize = true;
-            this.cbxLigado.Checked = true;
-            this.cbxLigado.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbxLigado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxLigado.Location = new System.Drawing.Point(94, 68);
-            this.cbxLigado.Margin = new System.Windows.Forms.Padding(4);
-            this.cbxLigado.Name = "cbxLigado";
-            this.cbxLigado.Size = new System.Drawing.Size(155, 29);
-            this.cbxLigado.TabIndex = 0;
-            this.cbxLigado.Text = "Em Execução";
-            this.cbxLigado.UseVisualStyleBackColor = true;
-            this.cbxLigado.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
+            resources.ApplyResources(this.cbxInicioAutomatico, "cbxInicioAutomatico");
+            this.cbxInicioAutomatico.Checked = true;
+            this.cbxInicioAutomatico.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxInicioAutomatico.ForeColor = System.Drawing.Color.Black;
+            this.cbxInicioAutomatico.Name = "cbxInicioAutomatico";
+            this.cbxInicioAutomatico.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblOpacidade
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(89, 151);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Intervalo de Flash:";
+            resources.ApplyResources(this.lblOpacidade, "lblOpacidade");
+            this.lblOpacidade.AutoEllipsis = true;
+            this.lblOpacidade.Name = "lblOpacidade";
             // 
-            // nudMinimo
+            // tcbOpacidade
             // 
-            this.nudMinimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudMinimo.Location = new System.Drawing.Point(283, 151);
-            this.nudMinimo.Margin = new System.Windows.Forms.Padding(4);
-            this.nudMinimo.Maximum = new decimal(new int[] {
+            resources.ApplyResources(this.tcbOpacidade, "tcbOpacidade");
+            this.tcbOpacidade.Maximum = 100;
+            this.tcbOpacidade.Minimum = 10;
+            this.tcbOpacidade.Name = "tcbOpacidade";
+            this.tcbOpacidade.TickFrequency = 10;
+            this.tcbOpacidade.Value = 30;
+            this.tcbOpacidade.Scroll += new System.EventHandler(this.tcbOpacidade_Scroll);
+            // 
+            // nudOpacidade
+            // 
+            resources.ApplyResources(this.nudOpacidade, "nudOpacidade");
+            this.nudOpacidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
+            this.nudOpacidade.ForeColor = System.Drawing.Color.White;
+            this.nudOpacidade.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nudOpacidade.Name = "nudOpacidade";
+            this.nudOpacidade.Value = new decimal(new int[] {
             30,
             0,
             0,
             0});
-            this.nudMinimo.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.nudMinimo.Name = "nudMinimo";
-            this.nudMinimo.Size = new System.Drawing.Size(67, 26);
-            this.nudMinimo.TabIndex = 3;
-            this.nudMinimo.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.nudMinimo.ValueChanged += new System.EventHandler(this.nudMinimo_ValueChanged);
+            this.nudOpacidade.ValueChanged += new System.EventHandler(this.nudOpacidade_ValueChanged);
             // 
-            // nudMaximo
+            // lblQuadrantes
             // 
-            this.nudMaximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudMaximo.Location = new System.Drawing.Point(396, 151);
-            this.nudMaximo.Margin = new System.Windows.Forms.Padding(4);
-            this.nudMaximo.Maximum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nudMaximo.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.nudMaximo.Name = "nudMaximo";
-            this.nudMaximo.Size = new System.Drawing.Size(65, 26);
-            this.nudMaximo.TabIndex = 4;
-            this.nudMaximo.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nudMaximo.ValueChanged += new System.EventHandler(this.nudMaximo_ValueChanged);
+            resources.ApplyResources(this.lblQuadrantes, "lblQuadrantes");
+            this.lblQuadrantes.AutoEllipsis = true;
+            this.lblQuadrantes.Name = "lblQuadrantes";
             // 
-            // label2
+            // tcbQuadrantes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(289, 126);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 24);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Mín.";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(403, 126);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Máx.";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(139, 240);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(246, 25);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Limiar de Vermelho Crítico:";
-            // 
-            // tcbVermelhoCritico
-            // 
-            this.tcbVermelhoCritico.Location = new System.Drawing.Point(396, 240);
-            this.tcbVermelhoCritico.Margin = new System.Windows.Forms.Padding(4);
-            this.tcbVermelhoCritico.Maximum = 80;
-            this.tcbVermelhoCritico.Minimum = 5;
-            this.tcbVermelhoCritico.Name = "tcbVermelhoCritico";
-            this.tcbVermelhoCritico.Size = new System.Drawing.Size(260, 56);
-            this.tcbVermelhoCritico.TabIndex = 8;
-            this.tcbVermelhoCritico.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.tcbVermelhoCritico.Value = 20;
-            this.tcbVermelhoCritico.Scroll += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(404, 273);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 24);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "5%";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(603, 273);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 24);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "80%";
-            // 
-            // nudVermelhoCritico
-            // 
-            this.nudVermelhoCritico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudVermelhoCritico.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudVermelhoCritico.Location = new System.Drawing.Point(664, 238);
-            this.nudVermelhoCritico.Margin = new System.Windows.Forms.Padding(4);
-            this.nudVermelhoCritico.Maximum = new decimal(new int[] {
-            80,
-            0,
-            0,
-            0});
-            this.nudVermelhoCritico.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudVermelhoCritico.Name = "nudVermelhoCritico";
-            this.nudVermelhoCritico.Size = new System.Drawing.Size(47, 26);
-            this.nudVermelhoCritico.TabIndex = 11;
-            this.nudVermelhoCritico.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudVermelhoCritico.ValueChanged += new System.EventHandler(this.nudVermelhoCritico_ValueChanged);
-            // 
-            // nudLuminosidadeTela
-            // 
-            this.nudLuminosidadeTela.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudLuminosidadeTela.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudLuminosidadeTela.Location = new System.Drawing.Point(664, 330);
-            this.nudLuminosidadeTela.Margin = new System.Windows.Forms.Padding(4);
-            this.nudLuminosidadeTela.Maximum = new decimal(new int[] {
-            80,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeTela.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeTela.Name = "nudLuminosidadeTela";
-            this.nudLuminosidadeTela.Size = new System.Drawing.Size(47, 26);
-            this.nudLuminosidadeTela.TabIndex = 16;
-            this.nudLuminosidadeTela.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeTela.ValueChanged += new System.EventHandler(this.nudLuminosidadeTela_ValueChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(603, 366);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 24);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "80%";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(404, 366);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 24);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "5%";
-            // 
-            // tcbLuminosidadeTela
-            // 
-            this.tcbLuminosidadeTela.Location = new System.Drawing.Point(396, 332);
-            this.tcbLuminosidadeTela.Margin = new System.Windows.Forms.Padding(4);
-            this.tcbLuminosidadeTela.Maximum = 80;
-            this.tcbLuminosidadeTela.Minimum = 5;
-            this.tcbLuminosidadeTela.Name = "tcbLuminosidadeTela";
-            this.tcbLuminosidadeTela.Size = new System.Drawing.Size(260, 56);
-            this.tcbLuminosidadeTela.TabIndex = 13;
-            this.tcbLuminosidadeTela.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.tcbLuminosidadeTela.Value = 20;
-            this.tcbLuminosidadeTela.Scroll += new System.EventHandler(this.tcbLuminosidadeTela_Scroll);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(87, 332);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(295, 25);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Limiar de Luminosidade da Tela:";
-            // 
-            // nudLuminosidadeQuadrante
-            // 
-            this.nudLuminosidadeQuadrante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudLuminosidadeQuadrante.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudLuminosidadeQuadrante.Location = new System.Drawing.Point(664, 423);
-            this.nudLuminosidadeQuadrante.Margin = new System.Windows.Forms.Padding(4);
-            this.nudLuminosidadeQuadrante.Maximum = new decimal(new int[] {
-            80,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeQuadrante.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeQuadrante.Name = "nudLuminosidadeQuadrante";
-            this.nudLuminosidadeQuadrante.Size = new System.Drawing.Size(47, 26);
-            this.nudLuminosidadeQuadrante.TabIndex = 21;
-            this.nudLuminosidadeQuadrante.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeQuadrante.ValueChanged += new System.EventHandler(this.nudLuminosidadeQuadrante_ValueChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(603, 459);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 24);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "80%";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(404, 459);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 24);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "5%";
-            // 
-            // tcbLuminosidadeQuadrante
-            // 
-            this.tcbLuminosidadeQuadrante.Location = new System.Drawing.Point(396, 426);
-            this.tcbLuminosidadeQuadrante.Margin = new System.Windows.Forms.Padding(4);
-            this.tcbLuminosidadeQuadrante.Maximum = 80;
-            this.tcbLuminosidadeQuadrante.Minimum = 5;
-            this.tcbLuminosidadeQuadrante.Name = "tcbLuminosidadeQuadrante";
-            this.tcbLuminosidadeQuadrante.Size = new System.Drawing.Size(260, 56);
-            this.tcbLuminosidadeQuadrante.TabIndex = 18;
-            this.tcbLuminosidadeQuadrante.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.tcbLuminosidadeQuadrante.Value = 20;
-            this.tcbLuminosidadeQuadrante.Scroll += new System.EventHandler(this.tcbLuminosidadeQuadrante_Scroll);
-            // 
-            // label12
-            // 
-            this.label12.AutoEllipsis = true;
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(76, 411);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(300, 50);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Limiar de Luminosidade \ndo Quadrante de Monitoramento:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            resources.ApplyResources(this.tcbQuadrantes, "tcbQuadrantes");
+            this.tcbQuadrantes.Maximum = 50;
+            this.tcbQuadrantes.Minimum = 10;
+            this.tcbQuadrantes.Name = "tcbQuadrantes";
+            this.tcbQuadrantes.TickFrequency = 5;
+            this.tcbQuadrantes.Value = 30;
+            this.tcbQuadrantes.Scroll += new System.EventHandler(this.tcbQuadrantes_Scroll);
             // 
             // nudQuadrantes
             // 
-            this.nudQuadrantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudQuadrantes.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudQuadrantes.Location = new System.Drawing.Point(664, 517);
-            this.nudQuadrantes.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.nudQuadrantes, "nudQuadrantes");
+            this.nudQuadrantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
+            this.nudQuadrantes.ForeColor = System.Drawing.Color.White;
             this.nudQuadrantes.Maximum = new decimal(new int[] {
             50,
             0,
@@ -407,8 +169,6 @@
             0,
             0});
             this.nudQuadrantes.Name = "nudQuadrantes";
-            this.nudQuadrantes.Size = new System.Drawing.Size(47, 26);
-            this.nudQuadrantes.TabIndex = 26;
             this.nudQuadrantes.Value = new decimal(new int[] {
             30,
             0,
@@ -416,190 +176,378 @@
             0});
             this.nudQuadrantes.ValueChanged += new System.EventHandler(this.nudQuadrantes_ValueChanged);
             // 
-            // label13
+            // lblLuminosidadeQuadrante
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(620, 546);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 24);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "50";
+            resources.ApplyResources(this.lblLuminosidadeQuadrante, "lblLuminosidadeQuadrante");
+            this.lblLuminosidadeQuadrante.AutoEllipsis = true;
+            this.lblLuminosidadeQuadrante.Name = "lblLuminosidadeQuadrante";
             // 
-            // label14
+            // tcbLuminosidadeQuadrante
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(403, 546);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(32, 24);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "10";
+            resources.ApplyResources(this.tcbLuminosidadeQuadrante, "tcbLuminosidadeQuadrante");
+            this.tcbLuminosidadeQuadrante.Maximum = 80;
+            this.tcbLuminosidadeQuadrante.Minimum = 5;
+            this.tcbLuminosidadeQuadrante.Name = "tcbLuminosidadeQuadrante";
+            this.tcbLuminosidadeQuadrante.TickFrequency = 5;
+            this.tcbLuminosidadeQuadrante.Value = 20;
+            this.tcbLuminosidadeQuadrante.Scroll += new System.EventHandler(this.tcbLuminosidadeQuadrante_Scroll);
             // 
-            // tcbQuadrantes
+            // nudLuminosidadeQuadrante
             // 
-            this.tcbQuadrantes.Location = new System.Drawing.Point(396, 519);
-            this.tcbQuadrantes.Margin = new System.Windows.Forms.Padding(4);
-            this.tcbQuadrantes.Maximum = 50;
-            this.tcbQuadrantes.Minimum = 10;
-            this.tcbQuadrantes.Name = "tcbQuadrantes";
-            this.tcbQuadrantes.Size = new System.Drawing.Size(260, 56);
-            this.tcbQuadrantes.TabIndex = 23;
-            this.tcbQuadrantes.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.tcbQuadrantes.Value = 30;
-            this.tcbQuadrantes.Scroll += new System.EventHandler(this.tcbQuadrantes_Scroll);
-            // 
-            // label15
-            // 
-            this.label15.AutoEllipsis = true;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(43, 519);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(333, 25);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "Quadrantes na Dimensão Horizontal:";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // nudOpacidade
-            // 
-            this.nudOpacidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudOpacidade.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nudOpacidade.Location = new System.Drawing.Point(664, 600);
-            this.nudOpacidade.Margin = new System.Windows.Forms.Padding(4);
-            this.nudOpacidade.Minimum = new decimal(new int[] {
-            10,
+            resources.ApplyResources(this.nudLuminosidadeQuadrante, "nudLuminosidadeQuadrante");
+            this.nudLuminosidadeQuadrante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
+            this.nudLuminosidadeQuadrante.ForeColor = System.Drawing.Color.White;
+            this.nudLuminosidadeQuadrante.Maximum = new decimal(new int[] {
+            80,
             0,
             0,
             0});
-            this.nudOpacidade.Name = "nudOpacidade";
-            this.nudOpacidade.Size = new System.Drawing.Size(47, 26);
-            this.nudOpacidade.TabIndex = 31;
-            this.nudOpacidade.Value = new decimal(new int[] {
+            this.nudLuminosidadeQuadrante.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.nudLuminosidadeQuadrante.Name = "nudLuminosidadeQuadrante";
+            this.nudLuminosidadeQuadrante.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudLuminosidadeQuadrante.ValueChanged += new System.EventHandler(this.nudLuminosidadeQuadrante_ValueChanged);
+            // 
+            // lblLuminosidadeTela
+            // 
+            resources.ApplyResources(this.lblLuminosidadeTela, "lblLuminosidadeTela");
+            this.lblLuminosidadeTela.Name = "lblLuminosidadeTela";
+            // 
+            // tcbLuminosidadeTela
+            // 
+            resources.ApplyResources(this.tcbLuminosidadeTela, "tcbLuminosidadeTela");
+            this.tcbLuminosidadeTela.Maximum = 80;
+            this.tcbLuminosidadeTela.Minimum = 5;
+            this.tcbLuminosidadeTela.Name = "tcbLuminosidadeTela";
+            this.tcbLuminosidadeTela.TickFrequency = 5;
+            this.tcbLuminosidadeTela.Value = 20;
+            this.tcbLuminosidadeTela.Scroll += new System.EventHandler(this.tcbLuminosidadeTela_Scroll);
+            // 
+            // nudLuminosidadeTela
+            // 
+            resources.ApplyResources(this.nudLuminosidadeTela, "nudLuminosidadeTela");
+            this.nudLuminosidadeTela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
+            this.nudLuminosidadeTela.ForeColor = System.Drawing.Color.White;
+            this.nudLuminosidadeTela.Maximum = new decimal(new int[] {
+            80,
+            0,
+            0,
+            0});
+            this.nudLuminosidadeTela.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.nudLuminosidadeTela.Name = "nudLuminosidadeTela";
+            this.nudLuminosidadeTela.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudLuminosidadeTela.ValueChanged += new System.EventHandler(this.nudLuminosidadeTela_ValueChanged);
+            // 
+            // nudVermelhoCritico
+            // 
+            resources.ApplyResources(this.nudVermelhoCritico, "nudVermelhoCritico");
+            this.nudVermelhoCritico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
+            this.nudVermelhoCritico.ForeColor = System.Drawing.Color.White;
+            this.nudVermelhoCritico.Maximum = new decimal(new int[] {
+            80,
+            0,
+            0,
+            0});
+            this.nudVermelhoCritico.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.nudVermelhoCritico.Name = "nudVermelhoCritico";
+            this.nudVermelhoCritico.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudVermelhoCritico.ValueChanged += new System.EventHandler(this.nudVermelhoCritico_ValueChanged);
+            // 
+            // tcbVermelhoCritico
+            // 
+            this.tcbVermelhoCritico.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.tcbVermelhoCritico, "tcbVermelhoCritico");
+            this.tcbVermelhoCritico.Maximum = 80;
+            this.tcbVermelhoCritico.Minimum = 5;
+            this.tcbVermelhoCritico.Name = "tcbVermelhoCritico";
+            this.tcbVermelhoCritico.TickFrequency = 5;
+            this.tcbVermelhoCritico.Value = 20;
+            this.tcbVermelhoCritico.Scroll += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
+            // 
+            // lblVermelhoCritico
+            // 
+            resources.ApplyResources(this.lblVermelhoCritico, "lblVermelhoCritico");
+            this.lblVermelhoCritico.Name = "lblVermelhoCritico";
+            // 
+            // lblMaximo
+            // 
+            resources.ApplyResources(this.lblMaximo, "lblMaximo");
+            this.lblMaximo.Name = "lblMaximo";
+            // 
+            // nudMaximo
+            // 
+            this.nudMaximo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(208)))), ((int)(((byte)(218)))));
+            resources.ApplyResources(this.nudMaximo, "nudMaximo");
+            this.nudMaximo.ForeColor = System.Drawing.Color.White;
+            this.nudMaximo.Maximum = new decimal(new int[] {
             30,
             0,
             0,
             0});
-            this.nudOpacidade.ValueChanged += new System.EventHandler(this.nudOpacidade_ValueChanged);
+            this.nudMaximo.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.nudMaximo.Name = "nudMaximo";
+            this.nudMaximo.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.nudMaximo.ValueChanged += new System.EventHandler(this.nudMaximo_ValueChanged);
             // 
-            // label16
+            // cbxLigado
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(592, 629);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(59, 24);
-            this.label16.TabIndex = 30;
-            this.label16.Text = "100%";
+            resources.ApplyResources(this.cbxLigado, "cbxLigado");
+            this.cbxLigado.Checked = true;
+            this.cbxLigado.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxLigado.ForeColor = System.Drawing.Color.Black;
+            this.cbxLigado.Name = "cbxLigado";
+            this.cbxLigado.UseVisualStyleBackColor = true;
+            this.cbxLigado.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
             // 
-            // label17
+            // panelHeader
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(403, 629);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 24);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "10%";
+            this.panelHeader.Controls.Add(this.cbxLigado);
+            this.panelHeader.Controls.Add(this.cbxInicioAutomatico);
+            resources.ApplyResources(this.panelHeader, "panelHeader");
+            this.panelHeader.ForeColor = System.Drawing.Color.Black;
+            this.panelHeader.Name = "panelHeader";
             // 
-            // tcbOpacidade
+            // tlpMain
             // 
-            this.tcbOpacidade.Location = new System.Drawing.Point(396, 602);
-            this.tcbOpacidade.Margin = new System.Windows.Forms.Padding(4);
-            this.tcbOpacidade.Maximum = 100;
-            this.tcbOpacidade.Minimum = 10;
-            this.tcbOpacidade.Name = "tcbOpacidade";
-            this.tcbOpacidade.Size = new System.Drawing.Size(260, 56);
-            this.tcbOpacidade.TabIndex = 28;
-            this.tcbOpacidade.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.tcbOpacidade.Value = 30;
-            this.tcbOpacidade.Scroll += new System.EventHandler(this.tcbOpacidade_Scroll);
+            resources.ApplyResources(this.tlpMain, "tlpMain");
+            this.tlpMain.Controls.Add(this.panel_tcbOpacidade, 1, 5);
+            this.tlpMain.Controls.Add(this.panel_tcbQuadrantes, 1, 4);
+            this.tlpMain.Controls.Add(this.panel_tcbLuminosidadeQuadrante, 1, 3);
+            this.tlpMain.Controls.Add(this.panel_tcbLuminosidadeTela, 1, 2);
+            this.tlpMain.Controls.Add(this.lblIntervaloFlash, 0, 0);
+            this.tlpMain.Controls.Add(this.tlpIntervalo, 1, 0);
+            this.tlpMain.Controls.Add(this.nudOpacidade, 2, 5);
+            this.tlpMain.Controls.Add(this.nudVermelhoCritico, 2, 1);
+            this.tlpMain.Controls.Add(this.lblLuminosidadeTela, 0, 2);
+            this.tlpMain.Controls.Add(this.lblOpacidade, 0, 5);
+            this.tlpMain.Controls.Add(this.nudQuadrantes, 2, 4);
+            this.tlpMain.Controls.Add(this.nudLuminosidadeTela, 2, 2);
+            this.tlpMain.Controls.Add(this.lblLuminosidadeQuadrante, 0, 3);
+            this.tlpMain.Controls.Add(this.nudLuminosidadeQuadrante, 2, 3);
+            this.tlpMain.Controls.Add(this.lblQuadrantes, 0, 4);
+            this.tlpMain.Controls.Add(this.lblVermelhoCritico, 0, 1);
+            this.tlpMain.Controls.Add(this.panel_tcbVermelhoCritico, 1, 1);
+            this.tlpMain.Name = "tlpMain";
             // 
-            // label18
+            // panel_tcbOpacidade
             // 
-            this.label18.AutoEllipsis = true;
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(128, 598);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(254, 25);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "Opacidade dos Quadrados:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            resources.ApplyResources(this.panel_tcbOpacidade, "panel_tcbOpacidade");
+            this.panel_tcbOpacidade.Controls.Add(this.tcbOpacidade);
+            this.panel_tcbOpacidade.Controls.Add(this.max_tcbOpacidade);
+            this.panel_tcbOpacidade.Controls.Add(this.min_tcbOpacidade);
+            this.panel_tcbOpacidade.Name = "panel_tcbOpacidade";
             // 
-            // cbxInicioAutomatico
+            // max_tcbOpacidade
             // 
-            this.cbxInicioAutomatico.AutoSize = true;
-            this.cbxInicioAutomatico.Checked = true;
-            this.cbxInicioAutomatico.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbxInicioAutomatico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxInicioAutomatico.Location = new System.Drawing.Point(712, 68);
-            this.cbxInicioAutomatico.Margin = new System.Windows.Forms.Padding(4);
-            this.cbxInicioAutomatico.Name = "cbxInicioAutomatico";
-            this.cbxInicioAutomatico.Size = new System.Drawing.Size(182, 29);
-            this.cbxInicioAutomatico.TabIndex = 32;
-            this.cbxInicioAutomatico.Text = "Início Automatico";
-            this.cbxInicioAutomatico.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.max_tcbOpacidade, "max_tcbOpacidade");
+            this.max_tcbOpacidade.Name = "max_tcbOpacidade";
+            // 
+            // min_tcbOpacidade
+            // 
+            resources.ApplyResources(this.min_tcbOpacidade, "min_tcbOpacidade");
+            this.min_tcbOpacidade.Name = "min_tcbOpacidade";
+            // 
+            // panel_tcbQuadrantes
+            // 
+            resources.ApplyResources(this.panel_tcbQuadrantes, "panel_tcbQuadrantes");
+            this.panel_tcbQuadrantes.Controls.Add(this.tcbQuadrantes);
+            this.panel_tcbQuadrantes.Controls.Add(this.max_tcbQuadrantes);
+            this.panel_tcbQuadrantes.Controls.Add(this.min_tcbQuadrantes);
+            this.panel_tcbQuadrantes.Name = "panel_tcbQuadrantes";
+            // 
+            // max_tcbQuadrantes
+            // 
+            resources.ApplyResources(this.max_tcbQuadrantes, "max_tcbQuadrantes");
+            this.max_tcbQuadrantes.Name = "max_tcbQuadrantes";
+            // 
+            // min_tcbQuadrantes
+            // 
+            resources.ApplyResources(this.min_tcbQuadrantes, "min_tcbQuadrantes");
+            this.min_tcbQuadrantes.Name = "min_tcbQuadrantes";
+            // 
+            // panel_tcbLuminosidadeQuadrante
+            // 
+            resources.ApplyResources(this.panel_tcbLuminosidadeQuadrante, "panel_tcbLuminosidadeQuadrante");
+            this.panel_tcbLuminosidadeQuadrante.Controls.Add(this.tcbLuminosidadeQuadrante);
+            this.panel_tcbLuminosidadeQuadrante.Controls.Add(this.max_tcbLuminosidadeQuadrante);
+            this.panel_tcbLuminosidadeQuadrante.Controls.Add(this.min_tcbLuminosidadeQuadrante);
+            this.panel_tcbLuminosidadeQuadrante.Name = "panel_tcbLuminosidadeQuadrante";
+            // 
+            // max_tcbLuminosidadeQuadrante
+            // 
+            resources.ApplyResources(this.max_tcbLuminosidadeQuadrante, "max_tcbLuminosidadeQuadrante");
+            this.max_tcbLuminosidadeQuadrante.Name = "max_tcbLuminosidadeQuadrante";
+            // 
+            // min_tcbLuminosidadeQuadrante
+            // 
+            resources.ApplyResources(this.min_tcbLuminosidadeQuadrante, "min_tcbLuminosidadeQuadrante");
+            this.min_tcbLuminosidadeQuadrante.Name = "min_tcbLuminosidadeQuadrante";
+            // 
+            // panel_tcbLuminosidadeTela
+            // 
+            resources.ApplyResources(this.panel_tcbLuminosidadeTela, "panel_tcbLuminosidadeTela");
+            this.panel_tcbLuminosidadeTela.Controls.Add(this.tcbLuminosidadeTela);
+            this.panel_tcbLuminosidadeTela.Controls.Add(this.max_tcbLuminosidadeTela);
+            this.panel_tcbLuminosidadeTela.Controls.Add(this.min_tcbLuminosidadeTela);
+            this.panel_tcbLuminosidadeTela.Name = "panel_tcbLuminosidadeTela";
+            // 
+            // max_tcbLuminosidadeTela
+            // 
+            resources.ApplyResources(this.max_tcbLuminosidadeTela, "max_tcbLuminosidadeTela");
+            this.max_tcbLuminosidadeTela.Name = "max_tcbLuminosidadeTela";
+            // 
+            // min_tcbLuminosidadeTela
+            // 
+            resources.ApplyResources(this.min_tcbLuminosidadeTela, "min_tcbLuminosidadeTela");
+            this.min_tcbLuminosidadeTela.Name = "min_tcbLuminosidadeTela";
+            // 
+            // lblIntervaloFlash
+            // 
+            resources.ApplyResources(this.lblIntervaloFlash, "lblIntervaloFlash");
+            this.lblIntervaloFlash.Name = "lblIntervaloFlash";
+            // 
+            // tlpIntervalo
+            // 
+            resources.ApplyResources(this.tlpIntervalo, "tlpIntervalo");
+            this.tlpIntervalo.Controls.Add(this.lblMinimo, 0, 0);
+            this.tlpIntervalo.Controls.Add(this.nudMinimo, 0, 1);
+            this.tlpIntervalo.Controls.Add(this.lblMaximo, 1, 0);
+            this.tlpIntervalo.Controls.Add(this.nudMaximo, 1, 1);
+            this.tlpIntervalo.Name = "tlpIntervalo";
+            // 
+            // lblMinimo
+            // 
+            resources.ApplyResources(this.lblMinimo, "lblMinimo");
+            this.lblMinimo.Name = "lblMinimo";
+            // 
+            // nudMinimo
+            // 
+            this.nudMinimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(208)))), ((int)(((byte)(218)))));
+            resources.ApplyResources(this.nudMinimo, "nudMinimo");
+            this.nudMinimo.ForeColor = System.Drawing.Color.White;
+            this.nudMinimo.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.nudMinimo.Minimum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.nudMinimo.Name = "nudMinimo";
+            this.nudMinimo.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.nudMinimo.ValueChanged += new System.EventHandler(this.nudMinimo_ValueChanged);
+            // 
+            // panel_tcbVermelhoCritico
+            // 
+            resources.ApplyResources(this.panel_tcbVermelhoCritico, "panel_tcbVermelhoCritico");
+            this.panel_tcbVermelhoCritico.Controls.Add(this.tcbVermelhoCritico);
+            this.panel_tcbVermelhoCritico.Controls.Add(this.max_tcbVermelhoCritico);
+            this.panel_tcbVermelhoCritico.Controls.Add(this.min_tcbVermelhoCritico);
+            this.panel_tcbVermelhoCritico.Name = "panel_tcbVermelhoCritico";
+            // 
+            // max_tcbVermelhoCritico
+            // 
+            resources.ApplyResources(this.max_tcbVermelhoCritico, "max_tcbVermelhoCritico");
+            this.max_tcbVermelhoCritico.Name = "max_tcbVermelhoCritico";
+            // 
+            // min_tcbVermelhoCritico
+            // 
+            resources.ApplyResources(this.min_tcbVermelhoCritico, "min_tcbVermelhoCritico");
+            this.min_tcbVermelhoCritico.Name = "min_tcbVermelhoCritico";
+            // 
+            // panelFooter
+            // 
+            this.panelFooter.Controls.Add(this.lblAviso);
+            resources.ApplyResources(this.panelFooter, "panelFooter");
+            this.panelFooter.ForeColor = System.Drawing.Color.Red;
+            this.panelFooter.Name = "panelFooter";
+            // 
+            // lblAviso
+            // 
+            resources.ApplyResources(this.lblAviso, "lblAviso");
+            this.lblAviso.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblAviso.Name = "lblAviso";
             // 
             // PoryGuard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 701);
-            this.Controls.Add(this.cbxInicioAutomatico);
-            this.Controls.Add(this.nudOpacidade);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.tcbOpacidade);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.nudQuadrantes);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.tcbQuadrantes);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.nudLuminosidadeQuadrante);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.tcbLuminosidadeQuadrante);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.nudLuminosidadeTela);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.tcbLuminosidadeTela);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.nudVermelhoCritico);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.tcbVermelhoCritico);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.nudMaximo);
-            this.Controls.Add(this.nudMinimo);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbxLigado);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.panelFooter);
+            this.Controls.Add(this.tlpMain);
+            this.Controls.Add(this.panelHeader);
+            this.ForeColor = System.Drawing.Color.DimGray;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "PoryGuard";
-            this.Text = "PoryGuard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PoryGuard_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudVermelhoCritico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeTela)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeTela)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeQuadrante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcbOpacidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeQuadrante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeTela)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeTela)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVermelhoCritico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).EndInit();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.tlpMain.ResumeLayout(false);
+            this.tlpMain.PerformLayout();
+            this.panel_tcbOpacidade.ResumeLayout(false);
+            this.panel_tcbOpacidade.PerformLayout();
+            this.panel_tcbQuadrantes.ResumeLayout(false);
+            this.panel_tcbQuadrantes.PerformLayout();
+            this.panel_tcbLuminosidadeQuadrante.ResumeLayout(false);
+            this.panel_tcbLuminosidadeQuadrante.PerformLayout();
+            this.panel_tcbLuminosidadeTela.ResumeLayout(false);
+            this.panel_tcbLuminosidadeTela.PerformLayout();
+            this.tlpIntervalo.ResumeLayout(false);
+            this.tlpIntervalo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).EndInit();
+            this.panel_tcbVermelhoCritico.ResumeLayout(false);
+            this.panel_tcbVermelhoCritico.PerformLayout();
+            this.panelFooter.ResumeLayout(false);
+            this.panelFooter.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -607,38 +555,48 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox cbxLigado;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown nudMinimo;
-        private System.Windows.Forms.NumericUpDown nudMaximo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TrackBar tcbVermelhoCritico;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown nudVermelhoCritico;
-        private System.Windows.Forms.NumericUpDown nudLuminosidadeTela;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TrackBar tcbLuminosidadeTela;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown nudLuminosidadeQuadrante;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TrackBar tcbLuminosidadeQuadrante;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown nudQuadrantes;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TrackBar tcbQuadrantes;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.NumericUpDown nudOpacidade;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TrackBar tcbOpacidade;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.CheckBox cbxInicioAutomatico;
+        private System.Windows.Forms.Label lblOpacidade;
+        private System.Windows.Forms.TrackBar tcbOpacidade;
+        private System.Windows.Forms.NumericUpDown nudOpacidade;
+        private System.Windows.Forms.Label lblQuadrantes;
+        private System.Windows.Forms.TrackBar tcbQuadrantes;
+        private System.Windows.Forms.NumericUpDown nudQuadrantes;
+        private System.Windows.Forms.Label lblLuminosidadeQuadrante;
+        private System.Windows.Forms.TrackBar tcbLuminosidadeQuadrante;
+        private System.Windows.Forms.NumericUpDown nudLuminosidadeQuadrante;
+        private System.Windows.Forms.Label lblLuminosidadeTela;
+        private System.Windows.Forms.TrackBar tcbLuminosidadeTela;
+        private System.Windows.Forms.NumericUpDown nudLuminosidadeTela;
+        private System.Windows.Forms.NumericUpDown nudVermelhoCritico;
+        private System.Windows.Forms.TrackBar tcbVermelhoCritico;
+        private System.Windows.Forms.Label lblVermelhoCritico;
+        private System.Windows.Forms.Label lblMaximo;
+        private System.Windows.Forms.NumericUpDown nudMaximo;
+        private System.Windows.Forms.CheckBox cbxLigado;
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.TableLayoutPanel tlpMain;
+        private System.Windows.Forms.Label lblIntervaloFlash;
+        private System.Windows.Forms.TableLayoutPanel tlpIntervalo;
+        private System.Windows.Forms.Label lblMinimo;
+        private System.Windows.Forms.NumericUpDown nudMinimo;
+        private System.Windows.Forms.Panel panelFooter;
+        private System.Windows.Forms.Label lblAviso;
+        private System.Windows.Forms.Panel panel_tcbVermelhoCritico;
+        private System.Windows.Forms.Label min_tcbVermelhoCritico;
+        private System.Windows.Forms.Label max_tcbVermelhoCritico;
+        private System.Windows.Forms.Panel panel_tcbOpacidade;
+        private System.Windows.Forms.Label max_tcbOpacidade;
+        private System.Windows.Forms.Label min_tcbOpacidade;
+        private System.Windows.Forms.Panel panel_tcbQuadrantes;
+        private System.Windows.Forms.Label max_tcbQuadrantes;
+        private System.Windows.Forms.Label min_tcbQuadrantes;
+        private System.Windows.Forms.Panel panel_tcbLuminosidadeQuadrante;
+        private System.Windows.Forms.Label max_tcbLuminosidadeQuadrante;
+        private System.Windows.Forms.Label min_tcbLuminosidadeQuadrante;
+        private System.Windows.Forms.Panel panel_tcbLuminosidadeTela;
+        private System.Windows.Forms.Label max_tcbLuminosidadeTela;
+        private System.Windows.Forms.Label min_tcbLuminosidadeTela;
     }
 }
 

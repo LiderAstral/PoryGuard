@@ -107,6 +107,7 @@
             // 
             resources.ApplyResources(this.lblOpacidade, "lblOpacidade");
             this.lblOpacidade.AutoEllipsis = true;
+            this.lblOpacidade.ForeColor = System.Drawing.Color.Black;
             this.lblOpacidade.Name = "lblOpacidade";
             // 
             // tcbOpacidade
@@ -141,6 +142,7 @@
             // 
             resources.ApplyResources(this.lblQuadrantes, "lblQuadrantes");
             this.lblQuadrantes.AutoEllipsis = true;
+            this.lblQuadrantes.ForeColor = System.Drawing.Color.Black;
             this.lblQuadrantes.Name = "lblQuadrantes";
             // 
             // tcbQuadrantes
@@ -180,6 +182,7 @@
             // 
             resources.ApplyResources(this.lblLuminosidadeQuadrante, "lblLuminosidadeQuadrante");
             this.lblLuminosidadeQuadrante.AutoEllipsis = true;
+            this.lblLuminosidadeQuadrante.ForeColor = System.Drawing.Color.Black;
             this.lblLuminosidadeQuadrante.Name = "lblLuminosidadeQuadrante";
             // 
             // tcbLuminosidadeQuadrante
@@ -218,6 +221,7 @@
             // lblLuminosidadeTela
             // 
             resources.ApplyResources(this.lblLuminosidadeTela, "lblLuminosidadeTela");
+            this.lblLuminosidadeTela.ForeColor = System.Drawing.Color.Black;
             this.lblLuminosidadeTela.Name = "lblLuminosidadeTela";
             // 
             // tcbLuminosidadeTela
@@ -290,11 +294,13 @@
             // lblVermelhoCritico
             // 
             resources.ApplyResources(this.lblVermelhoCritico, "lblVermelhoCritico");
+            this.lblVermelhoCritico.ForeColor = System.Drawing.Color.Black;
             this.lblVermelhoCritico.Name = "lblVermelhoCritico";
             // 
             // lblMaximo
             // 
             resources.ApplyResources(this.lblMaximo, "lblMaximo");
+            this.lblMaximo.ForeColor = System.Drawing.Color.Black;
             this.lblMaximo.Name = "lblMaximo";
             // 
             // nudMaximo
@@ -371,11 +377,13 @@
             // max_tcbOpacidade
             // 
             resources.ApplyResources(this.max_tcbOpacidade, "max_tcbOpacidade");
+            this.max_tcbOpacidade.ForeColor = System.Drawing.Color.Black;
             this.max_tcbOpacidade.Name = "max_tcbOpacidade";
             // 
             // min_tcbOpacidade
             // 
             resources.ApplyResources(this.min_tcbOpacidade, "min_tcbOpacidade");
+            this.min_tcbOpacidade.ForeColor = System.Drawing.Color.Black;
             this.min_tcbOpacidade.Name = "min_tcbOpacidade";
             // 
             // panel_tcbQuadrantes
@@ -389,11 +397,13 @@
             // max_tcbQuadrantes
             // 
             resources.ApplyResources(this.max_tcbQuadrantes, "max_tcbQuadrantes");
+            this.max_tcbQuadrantes.ForeColor = System.Drawing.Color.Black;
             this.max_tcbQuadrantes.Name = "max_tcbQuadrantes";
             // 
             // min_tcbQuadrantes
             // 
             resources.ApplyResources(this.min_tcbQuadrantes, "min_tcbQuadrantes");
+            this.min_tcbQuadrantes.ForeColor = System.Drawing.Color.Black;
             this.min_tcbQuadrantes.Name = "min_tcbQuadrantes";
             // 
             // panel_tcbLuminosidadeQuadrante
@@ -407,11 +417,13 @@
             // max_tcbLuminosidadeQuadrante
             // 
             resources.ApplyResources(this.max_tcbLuminosidadeQuadrante, "max_tcbLuminosidadeQuadrante");
+            this.max_tcbLuminosidadeQuadrante.ForeColor = System.Drawing.Color.Black;
             this.max_tcbLuminosidadeQuadrante.Name = "max_tcbLuminosidadeQuadrante";
             // 
             // min_tcbLuminosidadeQuadrante
             // 
             resources.ApplyResources(this.min_tcbLuminosidadeQuadrante, "min_tcbLuminosidadeQuadrante");
+            this.min_tcbLuminosidadeQuadrante.ForeColor = System.Drawing.Color.Black;
             this.min_tcbLuminosidadeQuadrante.Name = "min_tcbLuminosidadeQuadrante";
             // 
             // panel_tcbLuminosidadeTela
@@ -425,16 +437,19 @@
             // max_tcbLuminosidadeTela
             // 
             resources.ApplyResources(this.max_tcbLuminosidadeTela, "max_tcbLuminosidadeTela");
+            this.max_tcbLuminosidadeTela.ForeColor = System.Drawing.Color.Black;
             this.max_tcbLuminosidadeTela.Name = "max_tcbLuminosidadeTela";
             // 
             // min_tcbLuminosidadeTela
             // 
             resources.ApplyResources(this.min_tcbLuminosidadeTela, "min_tcbLuminosidadeTela");
+            this.min_tcbLuminosidadeTela.ForeColor = System.Drawing.Color.Black;
             this.min_tcbLuminosidadeTela.Name = "min_tcbLuminosidadeTela";
             // 
             // lblIntervaloFlash
             // 
             resources.ApplyResources(this.lblIntervaloFlash, "lblIntervaloFlash");
+            this.lblIntervaloFlash.ForeColor = System.Drawing.Color.Black;
             this.lblIntervaloFlash.Name = "lblIntervaloFlash";
             // 
             // tlpIntervalo
@@ -449,6 +464,7 @@
             // lblMinimo
             // 
             resources.ApplyResources(this.lblMinimo, "lblMinimo");
+            this.lblMinimo.ForeColor = System.Drawing.Color.Black;
             this.lblMinimo.Name = "lblMinimo";
             // 
             // nudMinimo
@@ -485,11 +501,13 @@
             // max_tcbVermelhoCritico
             // 
             resources.ApplyResources(this.max_tcbVermelhoCritico, "max_tcbVermelhoCritico");
+            this.max_tcbVermelhoCritico.ForeColor = System.Drawing.Color.Black;
             this.max_tcbVermelhoCritico.Name = "max_tcbVermelhoCritico";
             // 
             // min_tcbVermelhoCritico
             // 
             resources.ApplyResources(this.min_tcbVermelhoCritico, "min_tcbVermelhoCritico");
+            this.min_tcbVermelhoCritico.ForeColor = System.Drawing.Color.Black;
             this.min_tcbVermelhoCritico.Name = "min_tcbVermelhoCritico";
             // 
             // panelFooter

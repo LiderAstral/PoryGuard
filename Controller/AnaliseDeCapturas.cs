@@ -349,7 +349,7 @@ namespace PoryGuard.Controller
             {
                 try
                 {
-                    bitmaps[i].Dispose();
+                    bitmaps[i]?.Dispose();
                     bitmaps[i] = null;
                 }
                 catch (NullReferenceException ex)

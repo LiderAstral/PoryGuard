@@ -165,6 +165,11 @@ namespace PoryGuard
         {
             tcbOpacidade.Value = (int)nudOpacidade.Value;
         }
+
+        private void lblOpacidade_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     public class ConfiguracaoPersistente
     {

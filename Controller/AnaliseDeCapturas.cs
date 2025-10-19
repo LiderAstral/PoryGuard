@@ -20,12 +20,11 @@ namespace PoryGuard.Controller
         private double[] luminanciaMedia, vermelhoCriticoMedio;
         private bool liberado = false;
         private int frameRate;
-        private float proporcao;
-        private int limiarVermelho = 20; // Limiar de desvio de vermelho para considerar um quadrante como "flash"
-        private int variacao = 30; // Valor de tolerância na variação de intensidade luminosa
-        private int limiarLuminancia = 20; // Limiar de desvio de luminancia para considerar um quadrante como "flash"
+        private int limiarVermelho = 20;
+        private int variacao = 30;
+        private int limiarLuminancia = 20;
         private Bitmap[] bitmaps;
-        int subdivisoes = 30; // Número de subdivisões da maior dimensão para a análise
+        int subdivisoes = 30;
         private Censura censura;
 
         private const string configPath = "ConfiguraçãoPersistente.json";
@@ -36,13 +35,16 @@ namespace PoryGuard.Controller
         private int telaRealLargura;
         private int telaRealAltura;
 
-        public AnaliseDeCapturas(int frameRate, float proporcao, int telaRealLargura, int telaRealAltura)
+        // Controle de duração mínima da censura
+        private DateTime ultimaDeteccao = DateTime.MinValue;
+        private const int DuracaoMinima = 2000;
+
+        public AnaliseDeCapturas(int frameRate, int telaRealLargura, int telaRealAltura)
         {
             censura = new Censura();
 
             this.frameRate = frameRate;
             bitmaps = new Bitmap[frameRate];
-            this.proporcao = proporcao;
             this.telaRealLargura = telaRealLargura;
             this.telaRealAltura = telaRealAltura;
             luminanciaMedia = new double[frameRate];
@@ -52,19 +54,31 @@ namespace PoryGuard.Controller
 
         private void CarregarConfiguracoes()
         {
-            if (!File.Exists(configPath))
-                return;
-            var json = File.ReadAllText(configPath);
-            var config = JsonSerializer.Deserialize<ConfiguracaoPersistente>(json);
-            flashMinimo = config.FlashMinimo;
-            flashMaximo = config.FlashMaximo;
-            variacao = config.LuminosidadeTela;
-            limiarLuminancia = config.LuminosidadeQuadrante;
-            subdivisoes = config.Quadrantes;
-            limiarVermelho = config.VermelhoCritico;
-            opacidadeCensura = (int)(config.Opacidade*255f)/100;   
+            try
+            {
+                if (!File.Exists(configPath))
+                    return;
+                var json = File.ReadAllText(configPath);
+                var config = JsonSerializer.Deserialize<ConfiguracaoPersistente>(json);
+                flashMinimo = 2 * config.FlashMinimo;
+                flashMaximo = 2 * config.FlashMaximo;
+                variacao = config.LuminosidadeTela;
+                limiarLuminancia = config.LuminosidadeQuadrante;
+                subdivisoes = config.Quadrantes;
+                limiarVermelho = config.VermelhoCritico;
+                opacidadeCensura = (int)(config.Opacidade * 255f) / 100;
+            }
+            catch (Exception ex)
+            {
+                flashMinimo = 3;
+                flashMaximo = 30;
+                variacao = 20;
+                limiarLuminancia = 20;
+                subdivisoes = 30;
+                limiarVermelho = 20;
+                opacidadeCensura = 200;
+            }
         }
-
         public void InserirFrame(Bitmap bitmap, int contador)
         {
             if (contador == frameRate - 1)
@@ -90,6 +104,8 @@ namespace PoryGuard.Controller
                 double pixelsPorAltura = (double)bitmaps[contador].Height / subAltura;
                 double pixelsPorLargura = (double)bitmaps[contador].Width / subdivisoes;
                 bool[,] quadrantes = new bool[subdivisoes, subAltura];
+
+                bool flashDetectado = false;
 
                 for (int i = 0; i < subdivisoes; i++)
                 {
@@ -133,186 +149,30 @@ namespace PoryGuard.Controller
                                 contador = frameRate - 1;
                         }
 
-                        quadrantes[i, j] = flashes >= 6;
+                        if (flashes >= flashMinimo && flashes <= flashMaximo)
+                            flashDetectado = true;
                     }
                 }
 
-                DetectarBlocosDeFlashes(quadrantes, pixelsPorLargura, pixelsPorAltura);
+                // Se detectou qualquer flash perigoso, censura a tela inteira
+                if (flashDetectado)
+                {
+                    ultimaDeteccao = DateTime.Now;
+                    censura.AddRectangle(0,0, telaRealLargura, telaRealAltura, Color.FromArgb(opacidadeCensura, 0, 0, 0));
+                }else
+                {
+                    TimeSpan tempoDecorrido = DateTime.Now - ultimaDeteccao;
+                    if (tempoDecorrido.TotalMilliseconds < DuracaoMinima)
+                    {
+                        // Mantém a censura ativa
+                        censura.AddRectangle(0, 0, telaRealLargura, telaRealAltura, Color.FromArgb(opacidadeCensura, 0, 0, 0));
+                    }
+                }
+
                 censura.Redesenhar();
             }
             catch (NullReferenceException ex)
             { }
-        }
-
-        private void DetectarBlocosDeFlashes(bool[,] quadrantes, double pixelsPorLargura, double pixelsPorAltura)
-        {
-            int altura = quadrantes.GetLength(1);
-            int largura = quadrantes.GetLength(0);
-
-            // Matriz para controlar quais quadrantes já foram processados
-            bool[,] processados = new bool[largura, altura];
-
-            // Processar cada região de quadrantes conectados
-            for (int i = 0; i < largura; i++)
-            {
-                for (int j = 0; j < altura; j++)
-                {
-                    if (quadrantes[i, j] && !processados[i, j])
-                    {
-                        // Encontrar todos os quadrantes conectados nesta região
-                        List<Point> regiao = EncontrarRegiaoConectada(quadrantes, processados, i, j, largura, altura);
-
-                        // Criar retângulos sem sobreposições para esta região
-                        CriarRetangulosSemSobreposicao(regiao, pixelsPorLargura, pixelsPorAltura);
-                    }
-                }
-            }
-        }
-        private List<Point> EncontrarRegiaoConectada(bool[,] quadrantes, bool[,] processados,
-    int startI, int startJ, int largura, int altura)
-        {
-            List<Point> regiao = new List<Point>();
-            Queue<Point> fila = new Queue<Point>();
-
-            fila.Enqueue(new Point(startI, startJ));
-            processados[startI, startJ] = true;
-
-            // Direções: cima, baixo, esquerda, direita
-            int[] dx = { 0, 0, -1, 1 };
-            int[] dy = { -1, 1, 0, 0 };
-
-            while (fila.Count > 0)
-            {
-                Point atual = fila.Dequeue();
-                regiao.Add(atual);
-
-                // Verificar vizinhos adjacentes
-                for (int dir = 0; dir < 4; dir++)
-                {
-                    int newX = atual.X + dx[dir];
-                    int newY = atual.Y + dy[dir];
-
-                    if (newX >= 0 && newX < largura && newY >= 0 && newY < altura &&
-                        !processados[newX, newY] && quadrantes[newX, newY])
-                    {
-                        processados[newX, newY] = true;
-                        fila.Enqueue(new Point(newX, newY));
-                    }
-                }
-            }
-
-            return regiao;
-        }
-        private void CriarRetangulosSemSobreposicao(List<Point> regiao, double pixelsPorLargura, double pixelsPorAltura)
-        {
-            if (regiao.Count == 0) return;
-
-            int minX = regiao.Min(p => p.X);
-            int maxX = regiao.Max(p => p.X);
-            int minY = regiao.Min(p => p.Y);
-            int maxY = regiao.Max(p => p.Y);
-
-            int largura = maxX - minX + 1;
-            int altura = maxY - minY + 1;
-
-            bool[,] grid = new bool[largura, altura];
-
-            foreach (var ponto in regiao)
-            {
-                grid[ponto.X - minX, ponto.Y - minY] = true;
-            }
-
-            bool[,] processados = new bool[largura, altura];
-
-            for (int j = 0; j < altura; j++)
-            {
-                for (int i = 0; i < largura; i++)
-                {
-                    if (grid[i, j] && !processados[i, j])
-                    {
-                        Rectangle rect = EncontrarMaiorRetanguloNaRegiao(grid, processados, i, j, largura, altura,
-                            minX, minY, pixelsPorLargura, pixelsPorAltura);
-
-                        if (rect.Width > 0 && rect.Height > 0)
-                        {
-                            //Escala proporcional entre bitmap reduzido e tela real
-                            float escalaX = (float)telaRealLargura / bitmaps[0].Width;
-                            float escalaY = (float)telaRealAltura / bitmaps[0].Height;
-
-                            censura.AddRectangle(
-                                (int)(rect.X * escalaX),
-                                (int)(rect.Y * escalaY),
-                                (int)(rect.Width * escalaX),
-                                (int)(rect.Height * escalaY),
-                                Color.FromArgb(opacidadeCensura, 0, 0, 0)
-                            );
-                        }
-                    }
-                }
-            }
-        }
-        private Rectangle EncontrarMaiorRetanguloNaRegiao(bool[,] grid, bool[,] processados, int startI, int startJ,
-    int largura, int altura, int offsetX, int offsetY, double pixelsPorLargura, double pixelsPorAltura)
-        {
-            if (!grid[startI, startJ] || processados[startI, startJ])
-                return Rectangle.Empty;
-
-            // Primeiro, encontrar a largura máxima na linha atual
-            int maxLargura = 0;
-            for (int i = startI; i < largura && grid[i, startJ] && !processados[i, startJ]; i++)
-            {
-                maxLargura++;
-            }
-
-            if (maxLargura == 0) return Rectangle.Empty;
-
-            // Encontrar quantas linhas consecutivas têm essa largura completa disponível
-            int maxAltura = 0;
-            for (int j = startJ; j < altura; j++)
-            {
-                bool linhaCompleta = true;
-
-                // Verificar se toda a largura está disponível nesta linha
-                for (int i = startI; i < startI + maxLargura; i++)
-                {
-                    if (i >= largura || !grid[i, j] || processados[i, j])
-                    {
-                        linhaCompleta = false;
-                        break;
-                    }
-                }
-
-                if (linhaCompleta)
-                {
-                    maxAltura++;
-                }
-                else
-                {
-                    break; // Parar na primeira linha incompleta
-                }
-            }
-
-            if (maxAltura == 0) return Rectangle.Empty;
-
-            // Marcar toda a área do retângulo como processada
-            for (int i = startI; i < startI + maxLargura; i++)
-            {
-                for (int j = startJ; j < startJ + maxAltura; j++)
-                {
-                    processados[i, j] = true;
-                }
-            }
-
-            // Converter coordenadas locais para coordenadas globais de pixels
-            int globalX = offsetX + startI;
-            int globalY = offsetY + startJ;
-
-            int pixelX = (int)(globalX * pixelsPorLargura);
-            int pixelY = (int)(globalY * pixelsPorAltura);
-            int pixelWidth = (int)(maxLargura * pixelsPorLargura);
-            int pixelHeight = (int)(maxAltura * pixelsPorAltura);
-
-            return new Rectangle(pixelX, pixelY, pixelWidth, pixelHeight);
         }
 
         private Color CalcularMediaRGB(Bitmap imagem)

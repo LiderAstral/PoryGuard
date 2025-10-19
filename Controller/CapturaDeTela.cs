@@ -14,7 +14,6 @@ namespace PoryGuard.Controller
         //variáveis do monitor
         private int altura;
         private int largura;
-        private float proporcao;
         private int frameRate;
         private int boundsX;
         private int boundsY;
@@ -38,7 +37,7 @@ namespace PoryGuard.Controller
         {
             Monitor monitor = new Monitor();
             ConfigurarMonitor(monitor);
-            analiseDeCapturas = new AnaliseDeCapturas(frameRate, proporcao, telaRealLargura, telaRealAltura);
+            analiseDeCapturas = new AnaliseDeCapturas(frameRate, telaRealLargura, telaRealAltura);
             // Thread que captura as imagens sem bloqueio
             capturaThread = new Thread(GerenciarCapturas);
             capturaThread.IsBackground = true;
@@ -54,7 +53,6 @@ namespace PoryGuard.Controller
         {
             altura = monitor.GetAltura();
             largura = monitor.GetLargura();
-            proporcao = monitor.GetProporcao();
             frameRate = monitor.GetFrameRate();
             boundsX = monitor.GetBoundsX();
             boundsY = monitor.GetBoundsY();
@@ -98,7 +96,7 @@ namespace PoryGuard.Controller
                     }
                 }
 
-                // Reduzir resolução para análise (ex: largura máx 640px)
+                // Reduzir resolução para análise
                 int maxWidth = 640;
                 if (bitmap.Width > maxWidth)
                 {

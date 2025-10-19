@@ -130,10 +130,13 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="cbxInicioAutomatico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>684, 0</value>
+    <value>788, 0</value>
+  </data>
+  <data name="cbxInicioAutomatico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="cbxInicioAutomatico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 49</value>
+    <value>203, 69</value>
   </data>
   <data name="cbxInicioAutomatico.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -166,19 +169,22 @@
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="lblOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 351</value>
+    <value>136, 499</value>
+  </data>
+  <data name="lblOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblOpacidade.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 42</value>
+    <value>0, 0, 0, 60</value>
   </data>
   <data name="lblOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 63</value>
+    <value>220, 88</value>
   </data>
   <data name="lblOpacidade.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
   <data name="lblOpacidade.Text" xml:space="preserve">
-    <value>Opacidade dos Quadrados:</value>
+    <value>Opacidade da Censura:</value>
   </data>
   <data name="lblOpacidade.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
@@ -199,10 +205,13 @@
     <value>Fill</value>
   </data>
   <data name="tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 0</value>
+    <value>48, 0</value>
+  </data>
+  <data name="tcbOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 100</value>
+    <value>286, 139</value>
   </data>
   <data name="tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -229,10 +238,13 @@
     <value>NoControl</value>
   </data>
   <data name="nudOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 334</value>
+    <value>879, 475</value>
+  </data>
+  <data name="nudOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="nudOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 24</value>
+    <value>59, 28</value>
   </data>
   <data name="nudOpacidade.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -262,10 +274,13 @@
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="lblQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 288</value>
+    <value>9, 411</value>
+  </data>
+  <data name="lblQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 21</value>
+    <value>347, 28</value>
   </data>
   <data name="lblQuadrantes.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -292,10 +307,13 @@
     <value>Fill</value>
   </data>
   <data name="tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 0</value>
+    <value>48, 0</value>
+  </data>
+  <data name="tcbQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 60</value>
+    <value>296, 85</value>
   </data>
   <data name="tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -322,10 +340,13 @@
     <value>NoControl</value>
   </data>
   <data name="nudQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 270</value>
+    <value>879, 384</value>
+  </data>
+  <data name="nudQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="nudQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 24</value>
+    <value>59, 28</value>
   </data>
   <data name="nudQuadrantes.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -355,10 +376,13 @@
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="lblLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 214</value>
+    <value>35, 306</value>
+  </data>
+  <data name="lblLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 42</value>
+    <value>321, 56</value>
   </data>
   <data name="lblLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -386,10 +410,13 @@ do Quadrante de Monitoramento:</value>
     <value>Fill</value>
   </data>
   <data name="tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 0</value>
+    <value>38, 0</value>
+  </data>
+  <data name="tcbLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 60</value>
+    <value>306, 85</value>
   </data>
   <data name="tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -416,10 +443,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="nudLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 206</value>
+    <value>879, 293</value>
+  </data>
+  <data name="nudLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="nudLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 24</value>
+    <value>59, 28</value>
   </data>
   <data name="nudLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -449,10 +479,13 @@ do Quadrante de Monitoramento:</value>
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="lblLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 160</value>
+    <value>52, 229</value>
+  </data>
+  <data name="lblLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 21</value>
+    <value>304, 28</value>
   </data>
   <data name="lblLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -476,10 +509,13 @@ do Quadrante de Monitoramento:</value>
     <value>Fill</value>
   </data>
   <data name="tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 0</value>
+    <value>38, 0</value>
+  </data>
+  <data name="tcbLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 60</value>
+    <value>306, 85</value>
   </data>
   <data name="tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -506,10 +542,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="nudLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 142</value>
+    <value>879, 202</value>
+  </data>
+  <data name="nudLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="nudLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 24</value>
+    <value>59, 28</value>
   </data>
   <data name="nudLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -539,10 +578,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="nudVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 78</value>
+    <value>879, 111</value>
+  </data>
+  <data name="nudVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="nudVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 24</value>
+    <value>59, 28</value>
   </data>
   <data name="nudVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -566,10 +608,13 @@ do Quadrante de Monitoramento:</value>
     <value>Fill</value>
   </data>
   <data name="tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 0</value>
+    <value>38, 0</value>
+  </data>
+  <data name="tcbVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 60</value>
+    <value>306, 85</value>
   </data>
   <data name="tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -596,10 +641,13 @@ do Quadrante de Monitoramento:</value>
     <value>Segoe UI Semibold, 12pt, style=Bold</value>
   </data>
   <data name="lblVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 96</value>
+    <value>98, 138</value>
+  </data>
+  <data name="lblVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 21</value>
+    <value>258, 28</value>
   </data>
   <data name="lblVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -629,10 +677,13 @@ do Quadrante de Monitoramento:</value>
     <value>Segoe UI, 10.8pt, style=Bold</value>
   </data>
   <data name="lblMaximo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 6</value>
+    <value>267, 11</value>
+  </data>
+  <data name="lblMaximo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblMaximo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
+    <value>54, 25</value>
   </data>
   <data name="lblMaximo.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -662,10 +713,13 @@ do Quadrante de Monitoramento:</value>
     <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
   </data>
   <data name="nudMaximo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 36</value>
+    <value>200, 51</value>
+  </data>
+  <data name="nudMaximo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="nudMaximo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 24</value>
+    <value>188, 28</value>
   </data>
   <data name="nudMaximo.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -694,8 +748,11 @@ do Quadrante de Monitoramento:</value>
   <data name="cbxLigado.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="cbxLigado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="cbxLigado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 49</value>
+    <value>157, 69</value>
   </data>
   <data name="cbxLigado.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -722,13 +779,13 @@ do Quadrante de Monitoramento:</value>
     <value>Top</value>
   </data>
   <data name="panelHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
+    <value>5, 6</value>
   </data>
   <data name="panelHeader.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>4, 3, 4, 3</value>
   </data>
   <data name="panelHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 49</value>
+    <value>991, 69</value>
   </data>
   <data name="panelHeader.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -754,6 +811,393 @@ do Quadrante de Monitoramento:</value>
   <data name="panel_tcbOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;max_tcbOpacidade.Name" xml:space="preserve">
+    <value>max_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;max_tcbOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbOpacidade.Parent" xml:space="preserve">
+    <value>panel_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;max_tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.Name" xml:space="preserve">
+    <value>min_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.Parent" xml:space="preserve">
+    <value>panel_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;min_tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 474</value>
+  </data>
+  <data name="panel_tcbOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panel_tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 139</value>
+  </data>
+  <data name="panel_tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.Name" xml:space="preserve">
+    <value>panel_tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_tcbQuadrantes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.Name" xml:space="preserve">
+    <value>max_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.Parent" xml:space="preserve">
+    <value>panel_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;max_tcbQuadrantes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.Name" xml:space="preserve">
+    <value>min_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.Parent" xml:space="preserve">
+    <value>panel_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;min_tcbQuadrantes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 383</value>
+  </data>
+  <data name="panel_tcbQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panel_tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 85</value>
+  </data>
+  <data name="panel_tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.Name" xml:space="preserve">
+    <value>panel_tcbQuadrantes</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbQuadrantes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>max_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>min_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 292</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 85</value>
+  </data>
+  <data name="panel_tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Name" xml:space="preserve">
+    <value>panel_tcbLuminosidadeQuadrante</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.Name" xml:space="preserve">
+    <value>max_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;max_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.Name" xml:space="preserve">
+    <value>min_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.Parent" xml:space="preserve">
+    <value>panel_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;min_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 201</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 85</value>
+  </data>
+  <data name="panel_tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Name" xml:space="preserve">
+    <value>panel_tcbLuminosidadeTela</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblIntervaloFlash.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="lblIntervaloFlash.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblIntervaloFlash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 12pt, style=Bold</value>
+  </data>
+  <data name="lblIntervaloFlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 42</value>
+  </data>
+  <data name="lblIntervaloFlash.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblIntervaloFlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 28</value>
+  </data>
+  <data name="lblIntervaloFlash.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblIntervaloFlash.Text" xml:space="preserve">
+    <value>Intervalo de Flash:</value>
+  </data>
+  <data name="lblIntervaloFlash.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.Name" xml:space="preserve">
+    <value>lblIntervaloFlash</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblIntervaloFlash.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tlpIntervalo.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.Name" xml:space="preserve">
+    <value>lblMinimo</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.Parent" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;lblMinimo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.Name" xml:space="preserve">
+    <value>nudMinimo</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.Parent" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;nudMinimo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpIntervalo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpIntervalo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 9</value>
+  </data>
+  <data name="tlpIntervalo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tlpIntervalo.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tlpIntervalo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 95</value>
+  </data>
+  <data name="tlpIntervalo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.Name" xml:space="preserve">
+    <value>tlpIntervalo</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpIntervalo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tlpIntervalo.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMinimo" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudMinimo" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblMaximo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="nudMaximo" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.Name" xml:space="preserve">
+    <value>max_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.Parent" xml:space="preserve">
+    <value>panel_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;max_tcbVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.Name" xml:space="preserve">
+    <value>min_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.Parent" xml:space="preserve">
+    <value>panel_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;min_tcbVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 110</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 85</value>
+  </data>
+  <data name="panel_tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.Name" xml:space="preserve">
+    <value>panel_tcbVermelhoCritico</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;panel_tcbVermelhoCritico.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="tlpMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 75</value>
+  </data>
+  <data name="tlpMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="tlpMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
+  </data>
+  <data name="tlpMain.RowCount" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tlpMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>991, 622</value>
+  </data>
+  <data name="tlpMain.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Name" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpMain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel_tcbOpacidade" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbQuadrantes" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbLuminosidadeQuadrante" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbLuminosidadeTela" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpIntervalo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="nudOpacidade" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="nudVermelhoCritico" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblLuminosidadeTela" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblOpacidade" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudQuadrantes" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="nudLuminosidadeTela" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblLuminosidadeQuadrante" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudLuminosidadeQuadrante" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblQuadrantes" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblVermelhoCritico" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbVermelhoCritico" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Absolute,400,Absolute,298" /&gt;&lt;Rows Styles="Absolute,101,Absolute,91,Absolute,91,Absolute,91,Absolute,91,Absolute,91" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="max_tcbOpacidade.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -770,10 +1214,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="max_tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 0</value>
+    <value>334, 0</value>
+  </data>
+  <data name="max_tcbOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="max_tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 20</value>
+    <value>58, 25</value>
   </data>
   <data name="max_tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -814,8 +1261,11 @@ do Quadrante de Monitoramento:</value>
   <data name="min_tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="min_tcbOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="min_tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>48, 25</value>
   </data>
   <data name="min_tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -838,33 +1288,6 @@ do Quadrante de Monitoramento:</value>
   <data name="&gt;&gt;min_tcbOpacidade.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 333</value>
-  </data>
-  <data name="panel_tcbOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panel_tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 100</value>
-  </data>
-  <data name="panel_tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbOpacidade.Name" xml:space="preserve">
-    <value>panel_tcbOpacidade</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbOpacidade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbOpacidade.Parent" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbOpacidade.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel_tcbQuadrantes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <data name="max_tcbQuadrantes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -881,10 +1304,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="max_tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 0</value>
+    <value>344, 0</value>
+  </data>
+  <data name="max_tcbQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="max_tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>48, 25</value>
   </data>
   <data name="max_tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -925,8 +1351,11 @@ do Quadrante de Monitoramento:</value>
   <data name="min_tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="min_tcbQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="min_tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>48, 25</value>
   </data>
   <data name="min_tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -949,33 +1378,6 @@ do Quadrante de Monitoramento:</value>
   <data name="&gt;&gt;min_tcbQuadrantes.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_tcbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 269</value>
-  </data>
-  <data name="panel_tcbQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panel_tcbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 60</value>
-  </data>
-  <data name="panel_tcbQuadrantes.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbQuadrantes.Name" xml:space="preserve">
-    <value>panel_tcbQuadrantes</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbQuadrantes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbQuadrantes.Parent" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbQuadrantes.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel_tcbLuminosidadeQuadrante.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <data name="max_tcbLuminosidadeQuadrante.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -992,10 +1394,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="max_tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 0</value>
+    <value>344, 0</value>
+  </data>
+  <data name="max_tcbLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="max_tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>48, 25</value>
   </data>
   <data name="max_tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1036,8 +1441,11 @@ do Quadrante de Monitoramento:</value>
   <data name="min_tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="min_tcbLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="min_tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 20</value>
+    <value>38, 25</value>
   </data>
   <data name="min_tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1060,33 +1468,6 @@ do Quadrante de Monitoramento:</value>
   <data name="&gt;&gt;min_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_tcbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 205</value>
-  </data>
-  <data name="panel_tcbLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panel_tcbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 60</value>
-  </data>
-  <data name="panel_tcbLuminosidadeQuadrante.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Name" xml:space="preserve">
-    <value>panel_tcbLuminosidadeQuadrante</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.Parent" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeQuadrante.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel_tcbLuminosidadeTela.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <data name="max_tcbLuminosidadeTela.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1103,10 +1484,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="max_tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 0</value>
+    <value>344, 0</value>
+  </data>
+  <data name="max_tcbLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="max_tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>48, 25</value>
   </data>
   <data name="max_tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1147,8 +1531,11 @@ do Quadrante de Monitoramento:</value>
   <data name="min_tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="min_tcbLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="min_tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 20</value>
+    <value>38, 25</value>
   </data>
   <data name="min_tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1171,69 +1558,6 @@ do Quadrante de Monitoramento:</value>
   <data name="&gt;&gt;min_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_tcbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 141</value>
-  </data>
-  <data name="panel_tcbLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panel_tcbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 60</value>
-  </data>
-  <data name="panel_tcbLuminosidadeTela.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Name" xml:space="preserve">
-    <value>panel_tcbLuminosidadeTela</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeTela.Parent" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbLuminosidadeTela.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblIntervaloFlash.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="lblIntervaloFlash.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblIntervaloFlash.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 12pt, style=Bold</value>
-  </data>
-  <data name="lblIntervaloFlash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 29</value>
-  </data>
-  <data name="lblIntervaloFlash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 21</value>
-  </data>
-  <data name="lblIntervaloFlash.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lblIntervaloFlash.Text" xml:space="preserve">
-    <value>Intervalo de Flash:</value>
-  </data>
-  <data name="lblIntervaloFlash.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblIntervaloFlash.Name" xml:space="preserve">
-    <value>lblIntervaloFlash</value>
-  </data>
-  <data name="&gt;&gt;lblIntervaloFlash.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblIntervaloFlash.Parent" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;lblIntervaloFlash.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tlpIntervalo.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="lblMinimo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -1244,10 +1568,13 @@ do Quadrante de Monitoramento:</value>
     <value>Segoe UI, 10.8pt, style=Bold</value>
   </data>
   <data name="lblMinimo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 6</value>
+    <value>73, 11</value>
+  </data>
+  <data name="lblMinimo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lblMinimo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>50, 25</value>
   </data>
   <data name="lblMinimo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1277,10 +1604,13 @@ do Quadrante de Monitoramento:</value>
     <value>Microsoft Sans Serif, 10.8pt, style=Bold</value>
   </data>
   <data name="nudMinimo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 36</value>
+    <value>4, 51</value>
+  </data>
+  <data name="nudMinimo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="nudMinimo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 24</value>
+    <value>188, 28</value>
   </data>
   <data name="nudMinimo.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1296,42 +1626,6 @@ do Quadrante de Monitoramento:</value>
   </data>
   <data name="&gt;&gt;nudMinimo.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="tlpIntervalo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tlpIntervalo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 6</value>
-  </data>
-  <data name="tlpIntervalo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="tlpIntervalo.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tlpIntervalo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 67</value>
-  </data>
-  <data name="tlpIntervalo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tlpIntervalo.Name" xml:space="preserve">
-    <value>tlpIntervalo</value>
-  </data>
-  <data name="&gt;&gt;tlpIntervalo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tlpIntervalo.Parent" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;tlpIntervalo.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tlpIntervalo.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblMinimo" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudMinimo" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblMaximo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="nudMaximo" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50,Absolute,14" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="panel_tcbVermelhoCritico.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="max_tcbVermelhoCritico.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1349,10 +1643,13 @@ do Quadrante de Monitoramento:</value>
     <value>NoControl</value>
   </data>
   <data name="max_tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 0</value>
+    <value>344, 0</value>
+  </data>
+  <data name="max_tcbVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="max_tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+    <value>48, 25</value>
   </data>
   <data name="max_tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1390,8 +1687,11 @@ do Quadrante de Monitoramento:</value>
   <data name="min_tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="min_tcbVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="min_tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 20</value>
+    <value>38, 25</value>
   </data>
   <data name="min_tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1414,65 +1714,44 @@ do Quadrante de Monitoramento:</value>
   <data name="&gt;&gt;min_tcbVermelhoCritico.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_tcbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 77</value>
+  <data name="&gt;&gt;lblAviso.Name" xml:space="preserve">
+    <value>lblAviso</value>
   </data>
-  <data name="panel_tcbVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="&gt;&gt;lblAviso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panel_tcbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 60</value>
+  <data name="&gt;&gt;lblAviso.Parent" xml:space="preserve">
+    <value>panelFooter</value>
   </data>
-  <data name="panel_tcbVermelhoCritico.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="&gt;&gt;lblAviso.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;panel_tcbVermelhoCritico.Name" xml:space="preserve">
-    <value>panel_tcbVermelhoCritico</value>
+  <data name="panelFooter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
-  <data name="&gt;&gt;panel_tcbVermelhoCritico.Type" xml:space="preserve">
+  <data name="panelFooter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 637</value>
+  </data>
+  <data name="panelFooter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="panelFooter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>991, 60</value>
+  </data>
+  <data name="panelFooter.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;panelFooter.Name" xml:space="preserve">
+    <value>panelFooter</value>
+  </data>
+  <data name="&gt;&gt;panelFooter.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel_tcbVermelhoCritico.Parent" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;panel_tcbVermelhoCritico.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="tlpMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tlpMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 53</value>
-  </data>
-  <data name="tlpMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="tlpMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tlpMain.RowCount" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tlpMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 439</value>
-  </data>
-  <data name="tlpMain.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;tlpMain.Name" xml:space="preserve">
-    <value>tlpMain</value>
-  </data>
-  <data name="&gt;&gt;tlpMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tlpMain.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panelFooter.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tlpMain.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tlpMain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel_tcbOpacidade" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbQuadrantes" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbLuminosidadeQuadrante" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbLuminosidadeTela" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpIntervalo" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="nudOpacidade" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="nudVermelhoCritico" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblLuminosidadeTela" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblOpacidade" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudQuadrantes" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="nudLuminosidadeTela" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblLuminosidadeQuadrante" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="nudLuminosidadeQuadrante" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblQuadrantes" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblVermelhoCritico" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel_tcbVermelhoCritico" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Absolute,343,Absolute,255" /&gt;&lt;Rows Styles="Absolute,71,Absolute,64,Absolute,64,Absolute,64,Absolute,64,Absolute,64" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="&gt;&gt;panelFooter.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="lblAviso.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1486,11 +1765,14 @@ do Quadrante de Monitoramento:</value>
   <data name="lblAviso.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="lblAviso.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="lblAviso.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>30, 7, 9, 7</value>
+    <value>35, 10, 10, 10</value>
   </data>
   <data name="lblAviso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>789, 52</value>
+    <value>964, 66</value>
   </data>
   <data name="lblAviso.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1514,41 +1796,14 @@ O uso inadequado é de inteira responsabilidade do usuário.</value>
   <data name="&gt;&gt;lblAviso.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panelFooter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelFooter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 450</value>
-  </data>
-  <data name="panelFooter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="panelFooter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 42</value>
-  </data>
-  <data name="panelFooter.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;panelFooter.Name" xml:space="preserve">
-    <value>panelFooter</value>
-  </data>
-  <data name="&gt;&gt;panelFooter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelFooter.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelFooter.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>7, 17</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>858, 496</value>
+    <value>1001, 703</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 7.8pt</value>
@@ -1809,8 +2064,11 @@ O uso inadequado é de inteira responsabilidade do usuário.</value>
         AADAAwAAwAMAAMADAADAAwAA4AcAAPw/AAA=
 </value>
   </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 6, 5, 6</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

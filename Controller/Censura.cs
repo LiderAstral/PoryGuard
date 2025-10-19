@@ -84,6 +84,7 @@ namespace PoryGuard.Controller
                 {
                     overlayCompartilhado.EncerraCensura();
                     overlayCompartilhado = null;
+
                     contadorInstancias = 0;
                 }
             }

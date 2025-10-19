@@ -109,6 +109,7 @@
             this.lblOpacidade.AutoEllipsis = true;
             this.lblOpacidade.ForeColor = System.Drawing.Color.Black;
             this.lblOpacidade.Name = "lblOpacidade";
+            this.lblOpacidade.Click += new System.EventHandler(this.lblOpacidade_Click);
             // 
             // tcbOpacidade
             // 

@@ -28,545 +28,519 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PoryGuard));
-            this.cbxInicioAutomatico = new System.Windows.Forms.CheckBox();
-            this.lblOpacidade = new System.Windows.Forms.Label();
-            this.tcbOpacidade = new System.Windows.Forms.TrackBar();
-            this.nudOpacidade = new System.Windows.Forms.NumericUpDown();
-            this.lblQuadrantes = new System.Windows.Forms.Label();
-            this.tcbQuadrantes = new System.Windows.Forms.TrackBar();
-            this.nudQuadrantes = new System.Windows.Forms.NumericUpDown();
-            this.lblLuminosidadeQuadrante = new System.Windows.Forms.Label();
-            this.tcbLuminosidadeQuadrante = new System.Windows.Forms.TrackBar();
-            this.nudLuminosidadeQuadrante = new System.Windows.Forms.NumericUpDown();
-            this.lblLuminosidadeTela = new System.Windows.Forms.Label();
-            this.tcbLuminosidadeTela = new System.Windows.Forms.TrackBar();
-            this.nudLuminosidadeTela = new System.Windows.Forms.NumericUpDown();
-            this.nudVermelhoCritico = new System.Windows.Forms.NumericUpDown();
-            this.tcbVermelhoCritico = new System.Windows.Forms.TrackBar();
-            this.lblVermelhoCritico = new System.Windows.Forms.Label();
-            this.lblMaximo = new System.Windows.Forms.Label();
-            this.nudMaximo = new System.Windows.Forms.NumericUpDown();
-            this.cbxLigado = new System.Windows.Forms.CheckBox();
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
-            this.panel_tcbOpacidade = new System.Windows.Forms.Panel();
-            this.max_tcbOpacidade = new System.Windows.Forms.Label();
-            this.min_tcbOpacidade = new System.Windows.Forms.Label();
-            this.panel_tcbQuadrantes = new System.Windows.Forms.Panel();
-            this.max_tcbQuadrantes = new System.Windows.Forms.Label();
-            this.min_tcbQuadrantes = new System.Windows.Forms.Label();
-            this.panel_tcbLuminosidadeQuadrante = new System.Windows.Forms.Panel();
-            this.max_tcbLuminosidadeQuadrante = new System.Windows.Forms.Label();
-            this.min_tcbLuminosidadeQuadrante = new System.Windows.Forms.Label();
-            this.panel_tcbLuminosidadeTela = new System.Windows.Forms.Panel();
-            this.max_tcbLuminosidadeTela = new System.Windows.Forms.Label();
-            this.min_tcbLuminosidadeTela = new System.Windows.Forms.Label();
-            this.lblIntervaloFlash = new System.Windows.Forms.Label();
-            this.tlpIntervalo = new System.Windows.Forms.TableLayoutPanel();
-            this.lblMinimo = new System.Windows.Forms.Label();
-            this.nudMinimo = new System.Windows.Forms.NumericUpDown();
-            this.panel_tcbVermelhoCritico = new System.Windows.Forms.Panel();
-            this.max_tcbVermelhoCritico = new System.Windows.Forms.Label();
-            this.min_tcbVermelhoCritico = new System.Windows.Forms.Label();
-            this.panelFooter = new System.Windows.Forms.Panel();
-            this.lblAviso = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbOpacidade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeQuadrante)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeTela)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeTela)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudVermelhoCritico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).BeginInit();
-            this.panelHeader.SuspendLayout();
-            this.tlpMain.SuspendLayout();
-            this.panel_tcbOpacidade.SuspendLayout();
-            this.panel_tcbQuadrantes.SuspendLayout();
-            this.panel_tcbLuminosidadeQuadrante.SuspendLayout();
-            this.panel_tcbLuminosidadeTela.SuspendLayout();
-            this.tlpIntervalo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).BeginInit();
-            this.panel_tcbVermelhoCritico.SuspendLayout();
-            this.panelFooter.SuspendLayout();
+            this.mswAtivo = new MaterialSkin.Controls.MaterialSwitch();
+            this.mcbInicioAutomatico = new MaterialSkin.Controls.MaterialCheckbox();
+            this.cardSensibilidade = new MaterialSkin.Controls.MaterialCard();
+            this.tblSensibilidade = new System.Windows.Forms.TableLayoutPanel();
+            this.mtbQuadrantes = new MaterialSkin.Controls.MaterialTextBox2();
+            this.mtbVermelhoCritico = new MaterialSkin.Controls.MaterialTextBox2();
+            this.mtbLuminosidadeQuadrante = new MaterialSkin.Controls.MaterialTextBox2();
+            this.tcbQuadrantes = new Syncfusion.Windows.Forms.Tools.TrackBarEx(10, 50);
+            this.mtbLuminosidadeTela = new MaterialSkin.Controls.MaterialTextBox2();
+            this.tcbLuminosidadeQuadrante = new Syncfusion.Windows.Forms.Tools.TrackBarEx(5, 80);
+            this.tcbVermelhoCritico = new Syncfusion.Windows.Forms.Tools.TrackBarEx(5, 80);
+            this.tcbLuminosidadeTela = new Syncfusion.Windows.Forms.Tools.TrackBarEx(5, 80);
+            this.lbQuadrantes = new MaterialSkin.Controls.MaterialLabel();
+            this.lbVermelhoCritico = new MaterialSkin.Controls.MaterialLabel();
+            this.lbLuminosidadeTela = new MaterialSkin.Controls.MaterialLabel();
+            this.lbLuminosidadeQuadrante = new MaterialSkin.Controls.MaterialLabel();
+            this.mlblTituloSensibilidade = new MaterialSkin.Controls.MaterialLabel();
+            this.cardAjustes = new MaterialSkin.Controls.MaterialCard();
+            this.tblAjustes = new System.Windows.Forms.TableLayoutPanel();
+            this.mtbOpacidade = new MaterialSkin.Controls.MaterialTextBox2();
+            this.tcbOpacidade = new Syncfusion.Windows.Forms.Tools.TrackBarEx(10, 100);
+            this.lbOpacidade = new MaterialSkin.Controls.MaterialLabel();
+            this.mlblTituloAjustes = new MaterialSkin.Controls.MaterialLabel();
+            this.mlblAviso = new MaterialSkin.Controls.MaterialLabel();
+            this.mlblTituloOtimizacao = new MaterialSkin.Controls.MaterialLabel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.rngIntervaloFlash = new Syncfusion.Windows.Forms.Tools.RangeSlider();
+            this.cardOtimizacao = new MaterialSkin.Controls.MaterialCard();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.btnResetarPadroes = new MaterialSkin.Controls.MaterialButton();
+            this.cardSensibilidade.SuspendLayout();
+            this.tblSensibilidade.SuspendLayout();
+            this.cardAjustes.SuspendLayout();
+            this.tblAjustes.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.cardOtimizacao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbxInicioAutomatico
+            // mswAtivo
             // 
-            resources.ApplyResources(this.cbxInicioAutomatico, "cbxInicioAutomatico");
-            this.cbxInicioAutomatico.Checked = true;
-            this.cbxInicioAutomatico.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbxInicioAutomatico.ForeColor = System.Drawing.Color.Black;
-            this.cbxInicioAutomatico.Name = "cbxInicioAutomatico";
-            this.cbxInicioAutomatico.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.mswAtivo, "mswAtivo");
+            this.mswAtivo.Depth = 0;
+            this.mswAtivo.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.mswAtivo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mswAtivo.Name = "mswAtivo";
+            this.mswAtivo.Ripple = true;
+            this.mswAtivo.UseVisualStyleBackColor = true;
+            this.mswAtivo.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
             // 
-            // lblOpacidade
+            // mcbInicioAutomatico
             // 
-            resources.ApplyResources(this.lblOpacidade, "lblOpacidade");
-            this.lblOpacidade.AutoEllipsis = true;
-            this.lblOpacidade.ForeColor = System.Drawing.Color.Black;
-            this.lblOpacidade.Name = "lblOpacidade";
-            this.lblOpacidade.Click += new System.EventHandler(this.lblOpacidade_Click);
+            resources.ApplyResources(this.mcbInicioAutomatico, "mcbInicioAutomatico");
+            this.mcbInicioAutomatico.Depth = 0;
+            this.mcbInicioAutomatico.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.mcbInicioAutomatico.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mcbInicioAutomatico.Name = "mcbInicioAutomatico";
+            this.mcbInicioAutomatico.ReadOnly = false;
+            this.mcbInicioAutomatico.Ripple = true;
+            this.mcbInicioAutomatico.UseVisualStyleBackColor = true;
+            this.mcbInicioAutomatico.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
             // 
-            // tcbOpacidade
+            // cardSensibilidade
             // 
-            resources.ApplyResources(this.tcbOpacidade, "tcbOpacidade");
-            this.tcbOpacidade.Maximum = 100;
-            this.tcbOpacidade.Minimum = 10;
-            this.tcbOpacidade.Name = "tcbOpacidade";
-            this.tcbOpacidade.TickFrequency = 10;
-            this.tcbOpacidade.Value = 30;
-            this.tcbOpacidade.Scroll += new System.EventHandler(this.tcbOpacidade_Scroll);
+            resources.ApplyResources(this.cardSensibilidade, "cardSensibilidade");
+            this.cardSensibilidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cardSensibilidade.Controls.Add(this.tblSensibilidade);
+            this.cardSensibilidade.Controls.Add(this.mlblTituloSensibilidade);
+            this.cardSensibilidade.Depth = 0;
+            this.cardSensibilidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cardSensibilidade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cardSensibilidade.Name = "cardSensibilidade";
             // 
-            // nudOpacidade
+            // tblSensibilidade
             // 
-            resources.ApplyResources(this.nudOpacidade, "nudOpacidade");
-            this.nudOpacidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
-            this.nudOpacidade.ForeColor = System.Drawing.Color.White;
-            this.nudOpacidade.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.nudOpacidade.Name = "nudOpacidade";
-            this.nudOpacidade.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nudOpacidade.ValueChanged += new System.EventHandler(this.nudOpacidade_ValueChanged);
+            resources.ApplyResources(this.tblSensibilidade, "tblSensibilidade");
+            this.tblSensibilidade.Controls.Add(this.mtbQuadrantes, 2, 3);
+            this.tblSensibilidade.Controls.Add(this.mtbVermelhoCritico, 2, 0);
+            this.tblSensibilidade.Controls.Add(this.mtbLuminosidadeQuadrante, 2, 2);
+            this.tblSensibilidade.Controls.Add(this.tcbQuadrantes, 1, 3);
+            this.tblSensibilidade.Controls.Add(this.mtbLuminosidadeTela, 2, 1);
+            this.tblSensibilidade.Controls.Add(this.tcbLuminosidadeQuadrante, 1, 2);
+            this.tblSensibilidade.Controls.Add(this.tcbVermelhoCritico, 1, 0);
+            this.tblSensibilidade.Controls.Add(this.tcbLuminosidadeTela, 1, 1);
+            this.tblSensibilidade.Controls.Add(this.lbQuadrantes, 0, 3);
+            this.tblSensibilidade.Controls.Add(this.lbVermelhoCritico, 0, 0);
+            this.tblSensibilidade.Controls.Add(this.lbLuminosidadeTela, 0, 1);
+            this.tblSensibilidade.Controls.Add(this.lbLuminosidadeQuadrante, 0, 2);
+            this.tblSensibilidade.Name = "tblSensibilidade";
             // 
-            // lblQuadrantes
+            // mtbQuadrantes
             // 
-            resources.ApplyResources(this.lblQuadrantes, "lblQuadrantes");
-            this.lblQuadrantes.AutoEllipsis = true;
-            this.lblQuadrantes.ForeColor = System.Drawing.Color.Black;
-            this.lblQuadrantes.Name = "lblQuadrantes";
+            resources.ApplyResources(this.mtbQuadrantes, "mtbQuadrantes");
+            this.mtbQuadrantes.AnimateReadOnly = false;
+            this.mtbQuadrantes.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.mtbQuadrantes.Depth = 0;
+            this.mtbQuadrantes.HideSelection = false;
+            this.errorProvider1.SetIconPadding(this.mtbQuadrantes, ((int)(resources.GetObject("mtbQuadrantes.IconPadding"))));
+            this.mtbQuadrantes.LeadingIcon = null;
+            this.mtbQuadrantes.MaxLength = 32767;
+            this.mtbQuadrantes.MouseState = MaterialSkin.MouseState.OUT;
+            this.mtbQuadrantes.Name = "mtbQuadrantes";
+            this.mtbQuadrantes.PasswordChar = '\0';
+            this.mtbQuadrantes.ReadOnly = false;
+            this.mtbQuadrantes.SelectedText = "";
+            this.mtbQuadrantes.SelectionLength = 0;
+            this.mtbQuadrantes.SelectionStart = 0;
+            this.mtbQuadrantes.ShortcutsEnabled = false;
+            this.mtbQuadrantes.TabStop = false;
+            this.mtbQuadrantes.Tag = "";
+            this.mtbQuadrantes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbQuadrantes.TrailingIcon = null;
+            this.mtbQuadrantes.UseSystemPasswordChar = false;
+            this.mtbQuadrantes.TextChanged += new System.EventHandler(this.mtbQuadrantes_TextChanged);
+            this.mtbQuadrantes.Validating += new System.ComponentModel.CancelEventHandler(this.mtbQuadrantes_Validating);
+            // 
+            // mtbVermelhoCritico
+            // 
+            resources.ApplyResources(this.mtbVermelhoCritico, "mtbVermelhoCritico");
+            this.mtbVermelhoCritico.AnimateReadOnly = false;
+            this.mtbVermelhoCritico.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.mtbVermelhoCritico.Depth = 0;
+            this.mtbVermelhoCritico.HideSelection = false;
+            this.errorProvider1.SetIconPadding(this.mtbVermelhoCritico, ((int)(resources.GetObject("mtbVermelhoCritico.IconPadding"))));
+            this.mtbVermelhoCritico.LeadingIcon = null;
+            this.mtbVermelhoCritico.MaxLength = 32767;
+            this.mtbVermelhoCritico.MouseState = MaterialSkin.MouseState.OUT;
+            this.mtbVermelhoCritico.Name = "mtbVermelhoCritico";
+            this.mtbVermelhoCritico.PasswordChar = '\0';
+            this.mtbVermelhoCritico.ReadOnly = false;
+            this.mtbVermelhoCritico.SelectedText = "";
+            this.mtbVermelhoCritico.SelectionLength = 0;
+            this.mtbVermelhoCritico.SelectionStart = 0;
+            this.mtbVermelhoCritico.ShortcutsEnabled = false;
+            this.mtbVermelhoCritico.TabStop = false;
+            this.mtbVermelhoCritico.Tag = "";
+            this.mtbVermelhoCritico.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbVermelhoCritico.TrailingIcon = null;
+            this.mtbVermelhoCritico.UseSystemPasswordChar = false;
+            this.mtbVermelhoCritico.TextChanged += new System.EventHandler(this.mtbVermelhoCritico_TextChanged);
+            this.mtbVermelhoCritico.Validating += new System.ComponentModel.CancelEventHandler(this.mtbVermelhoCritico_Validating);
+            // 
+            // mtbLuminosidadeQuadrante
+            // 
+            resources.ApplyResources(this.mtbLuminosidadeQuadrante, "mtbLuminosidadeQuadrante");
+            this.mtbLuminosidadeQuadrante.AnimateReadOnly = false;
+            this.mtbLuminosidadeQuadrante.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.mtbLuminosidadeQuadrante.Depth = 0;
+            this.mtbLuminosidadeQuadrante.HideSelection = false;
+            this.errorProvider1.SetIconPadding(this.mtbLuminosidadeQuadrante, ((int)(resources.GetObject("mtbLuminosidadeQuadrante.IconPadding"))));
+            this.mtbLuminosidadeQuadrante.LeadingIcon = null;
+            this.mtbLuminosidadeQuadrante.MaxLength = 32767;
+            this.mtbLuminosidadeQuadrante.MouseState = MaterialSkin.MouseState.OUT;
+            this.mtbLuminosidadeQuadrante.Name = "mtbLuminosidadeQuadrante";
+            this.mtbLuminosidadeQuadrante.PasswordChar = '\0';
+            this.mtbLuminosidadeQuadrante.ReadOnly = false;
+            this.mtbLuminosidadeQuadrante.SelectedText = "";
+            this.mtbLuminosidadeQuadrante.SelectionLength = 0;
+            this.mtbLuminosidadeQuadrante.SelectionStart = 0;
+            this.mtbLuminosidadeQuadrante.ShortcutsEnabled = false;
+            this.mtbLuminosidadeQuadrante.TabStop = false;
+            this.mtbLuminosidadeQuadrante.Tag = "";
+            this.mtbLuminosidadeQuadrante.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbLuminosidadeQuadrante.TrailingIcon = null;
+            this.mtbLuminosidadeQuadrante.UseSystemPasswordChar = false;
+            this.mtbLuminosidadeQuadrante.TextChanged += new System.EventHandler(this.mtbLuminosidadeQuadrante_TextChanged);
+            this.mtbLuminosidadeQuadrante.Validating += new System.ComponentModel.CancelEventHandler(this.mtbLuminosidadeQuadrante_Validating);
             // 
             // tcbQuadrantes
             // 
             resources.ApplyResources(this.tcbQuadrantes, "tcbQuadrantes");
-            this.tcbQuadrantes.Maximum = 50;
-            this.tcbQuadrantes.Minimum = 10;
+            this.tcbQuadrantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.tcbQuadrantes.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbQuadrantes.CanApplyTheme = false;
+            this.tcbQuadrantes.DecreaseButtonSize = new System.Drawing.Size(30, 30);
+            this.tcbQuadrantes.IncreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbQuadrantes.Name = "tcbQuadrantes";
-            this.tcbQuadrantes.TickFrequency = 5;
-            this.tcbQuadrantes.Value = 30;
+            this.tcbQuadrantes.SliderSize = new System.Drawing.Size(10, 20);
+            this.tcbQuadrantes.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Metro;
+            this.tcbQuadrantes.ThemeName = "Metro";
+            this.tcbQuadrantes.ThemeStyle.ShowDivider = false;
+            this.tcbQuadrantes.TimerInterval = 100;
+            this.tcbQuadrantes.Transparent = true;
+            this.tcbQuadrantes.Value = 10;
             this.tcbQuadrantes.Scroll += new System.EventHandler(this.tcbQuadrantes_Scroll);
             // 
-            // nudQuadrantes
+            // mtbLuminosidadeTela
             // 
-            resources.ApplyResources(this.nudQuadrantes, "nudQuadrantes");
-            this.nudQuadrantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
-            this.nudQuadrantes.ForeColor = System.Drawing.Color.White;
-            this.nudQuadrantes.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.nudQuadrantes.Minimum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.nudQuadrantes.Name = "nudQuadrantes";
-            this.nudQuadrantes.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nudQuadrantes.ValueChanged += new System.EventHandler(this.nudQuadrantes_ValueChanged);
-            // 
-            // lblLuminosidadeQuadrante
-            // 
-            resources.ApplyResources(this.lblLuminosidadeQuadrante, "lblLuminosidadeQuadrante");
-            this.lblLuminosidadeQuadrante.AutoEllipsis = true;
-            this.lblLuminosidadeQuadrante.ForeColor = System.Drawing.Color.Black;
-            this.lblLuminosidadeQuadrante.Name = "lblLuminosidadeQuadrante";
+            resources.ApplyResources(this.mtbLuminosidadeTela, "mtbLuminosidadeTela");
+            this.mtbLuminosidadeTela.AnimateReadOnly = false;
+            this.mtbLuminosidadeTela.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.mtbLuminosidadeTela.Depth = 0;
+            this.mtbLuminosidadeTela.HideSelection = false;
+            this.errorProvider1.SetIconPadding(this.mtbLuminosidadeTela, ((int)(resources.GetObject("mtbLuminosidadeTela.IconPadding"))));
+            this.mtbLuminosidadeTela.LeadingIcon = null;
+            this.mtbLuminosidadeTela.MaxLength = 32767;
+            this.mtbLuminosidadeTela.MouseState = MaterialSkin.MouseState.OUT;
+            this.mtbLuminosidadeTela.Name = "mtbLuminosidadeTela";
+            this.mtbLuminosidadeTela.PasswordChar = '\0';
+            this.mtbLuminosidadeTela.ReadOnly = false;
+            this.mtbLuminosidadeTela.SelectedText = "";
+            this.mtbLuminosidadeTela.SelectionLength = 0;
+            this.mtbLuminosidadeTela.SelectionStart = 0;
+            this.mtbLuminosidadeTela.ShortcutsEnabled = false;
+            this.mtbLuminosidadeTela.TabStop = false;
+            this.mtbLuminosidadeTela.Tag = "";
+            this.mtbLuminosidadeTela.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbLuminosidadeTela.TrailingIcon = null;
+            this.mtbLuminosidadeTela.UseSystemPasswordChar = false;
+            this.mtbLuminosidadeTela.TextChanged += new System.EventHandler(this.mtbLuminosidadeTela_TextChanged);
+            this.mtbLuminosidadeTela.Validating += new System.ComponentModel.CancelEventHandler(this.mtbLuminosidadeTela_Validating);
             // 
             // tcbLuminosidadeQuadrante
             // 
             resources.ApplyResources(this.tcbLuminosidadeQuadrante, "tcbLuminosidadeQuadrante");
-            this.tcbLuminosidadeQuadrante.Maximum = 80;
-            this.tcbLuminosidadeQuadrante.Minimum = 5;
+            this.tcbLuminosidadeQuadrante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.tcbLuminosidadeQuadrante.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbLuminosidadeQuadrante.CanApplyTheme = false;
+            this.tcbLuminosidadeQuadrante.DecreaseButtonSize = new System.Drawing.Size(30, 30);
+            this.tcbLuminosidadeQuadrante.IncreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbLuminosidadeQuadrante.Name = "tcbLuminosidadeQuadrante";
-            this.tcbLuminosidadeQuadrante.TickFrequency = 5;
-            this.tcbLuminosidadeQuadrante.Value = 20;
+            this.tcbLuminosidadeQuadrante.SliderSize = new System.Drawing.Size(10, 20);
+            this.tcbLuminosidadeQuadrante.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Metro;
+            this.tcbLuminosidadeQuadrante.ThemeName = "Metro";
+            this.tcbLuminosidadeQuadrante.ThemeStyle.ShowDivider = false;
+            this.tcbLuminosidadeQuadrante.TimerInterval = 100;
+            this.tcbLuminosidadeQuadrante.Transparent = true;
+            this.tcbLuminosidadeQuadrante.Value = 5;
             this.tcbLuminosidadeQuadrante.Scroll += new System.EventHandler(this.tcbLuminosidadeQuadrante_Scroll);
             // 
-            // nudLuminosidadeQuadrante
+            // tcbVermelhoCritico
             // 
-            resources.ApplyResources(this.nudLuminosidadeQuadrante, "nudLuminosidadeQuadrante");
-            this.nudLuminosidadeQuadrante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
-            this.nudLuminosidadeQuadrante.ForeColor = System.Drawing.Color.White;
-            this.nudLuminosidadeQuadrante.Maximum = new decimal(new int[] {
-            80,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeQuadrante.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeQuadrante.Name = "nudLuminosidadeQuadrante";
-            this.nudLuminosidadeQuadrante.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeQuadrante.ValueChanged += new System.EventHandler(this.nudLuminosidadeQuadrante_ValueChanged);
-            // 
-            // lblLuminosidadeTela
-            // 
-            resources.ApplyResources(this.lblLuminosidadeTela, "lblLuminosidadeTela");
-            this.lblLuminosidadeTela.ForeColor = System.Drawing.Color.Black;
-            this.lblLuminosidadeTela.Name = "lblLuminosidadeTela";
+            resources.ApplyResources(this.tcbVermelhoCritico, "tcbVermelhoCritico");
+            this.tcbVermelhoCritico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.tcbVermelhoCritico.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbVermelhoCritico.CanApplyTheme = false;
+            this.tcbVermelhoCritico.DecreaseButtonSize = new System.Drawing.Size(30, 30);
+            this.tcbVermelhoCritico.IncreaseButtonSize = new System.Drawing.Size(30, 30);
+            this.tcbVermelhoCritico.Name = "tcbVermelhoCritico";
+            this.tcbVermelhoCritico.SliderSize = new System.Drawing.Size(10, 20);
+            this.tcbVermelhoCritico.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Metro;
+            this.tcbVermelhoCritico.ThemeName = "Metro";
+            this.tcbVermelhoCritico.ThemeStyle.ShowDivider = false;
+            this.tcbVermelhoCritico.TimerInterval = 100;
+            this.tcbVermelhoCritico.Transparent = true;
+            this.tcbVermelhoCritico.Value = 5;
+            this.tcbVermelhoCritico.Scroll += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
             // 
             // tcbLuminosidadeTela
             // 
             resources.ApplyResources(this.tcbLuminosidadeTela, "tcbLuminosidadeTela");
-            this.tcbLuminosidadeTela.Maximum = 80;
-            this.tcbLuminosidadeTela.Minimum = 5;
+            this.tcbLuminosidadeTela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.tcbLuminosidadeTela.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbLuminosidadeTela.CanApplyTheme = false;
+            this.tcbLuminosidadeTela.DecreaseButtonSize = new System.Drawing.Size(30, 30);
+            this.tcbLuminosidadeTela.IncreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbLuminosidadeTela.Name = "tcbLuminosidadeTela";
-            this.tcbLuminosidadeTela.TickFrequency = 5;
-            this.tcbLuminosidadeTela.Value = 20;
+            this.tcbLuminosidadeTela.SliderSize = new System.Drawing.Size(10, 20);
+            this.tcbLuminosidadeTela.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Metro;
+            this.tcbLuminosidadeTela.ThemeName = "Metro";
+            this.tcbLuminosidadeTela.ThemeStyle.ShowDivider = false;
+            this.tcbLuminosidadeTela.TimerInterval = 100;
+            this.tcbLuminosidadeTela.Transparent = true;
+            this.tcbLuminosidadeTela.Value = 5;
             this.tcbLuminosidadeTela.Scroll += new System.EventHandler(this.tcbLuminosidadeTela_Scroll);
             // 
-            // nudLuminosidadeTela
+            // lbQuadrantes
             // 
-            resources.ApplyResources(this.nudLuminosidadeTela, "nudLuminosidadeTela");
-            this.nudLuminosidadeTela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
-            this.nudLuminosidadeTela.ForeColor = System.Drawing.Color.White;
-            this.nudLuminosidadeTela.Maximum = new decimal(new int[] {
-            80,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeTela.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeTela.Name = "nudLuminosidadeTela";
-            this.nudLuminosidadeTela.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudLuminosidadeTela.ValueChanged += new System.EventHandler(this.nudLuminosidadeTela_ValueChanged);
+            resources.ApplyResources(this.lbQuadrantes, "lbQuadrantes");
+            this.lbQuadrantes.Depth = 0;
+            this.lbQuadrantes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbQuadrantes.Name = "lbQuadrantes";
             // 
-            // nudVermelhoCritico
+            // lbVermelhoCritico
             // 
-            resources.ApplyResources(this.nudVermelhoCritico, "nudVermelhoCritico");
-            this.nudVermelhoCritico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(155)))), ((int)(((byte)(162)))));
-            this.nudVermelhoCritico.ForeColor = System.Drawing.Color.White;
-            this.nudVermelhoCritico.Maximum = new decimal(new int[] {
-            80,
-            0,
-            0,
-            0});
-            this.nudVermelhoCritico.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nudVermelhoCritico.Name = "nudVermelhoCritico";
-            this.nudVermelhoCritico.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudVermelhoCritico.ValueChanged += new System.EventHandler(this.nudVermelhoCritico_ValueChanged);
+            resources.ApplyResources(this.lbVermelhoCritico, "lbVermelhoCritico");
+            this.lbVermelhoCritico.Depth = 0;
+            this.lbVermelhoCritico.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbVermelhoCritico.Name = "lbVermelhoCritico";
             // 
-            // tcbVermelhoCritico
+            // lbLuminosidadeTela
             // 
-            this.tcbVermelhoCritico.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.tcbVermelhoCritico, "tcbVermelhoCritico");
-            this.tcbVermelhoCritico.Maximum = 80;
-            this.tcbVermelhoCritico.Minimum = 5;
-            this.tcbVermelhoCritico.Name = "tcbVermelhoCritico";
-            this.tcbVermelhoCritico.TickFrequency = 5;
-            this.tcbVermelhoCritico.Value = 20;
-            this.tcbVermelhoCritico.Scroll += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
+            resources.ApplyResources(this.lbLuminosidadeTela, "lbLuminosidadeTela");
+            this.lbLuminosidadeTela.Depth = 0;
+            this.lbLuminosidadeTela.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbLuminosidadeTela.Name = "lbLuminosidadeTela";
             // 
-            // lblVermelhoCritico
+            // lbLuminosidadeQuadrante
             // 
-            resources.ApplyResources(this.lblVermelhoCritico, "lblVermelhoCritico");
-            this.lblVermelhoCritico.ForeColor = System.Drawing.Color.Black;
-            this.lblVermelhoCritico.Name = "lblVermelhoCritico";
+            resources.ApplyResources(this.lbLuminosidadeQuadrante, "lbLuminosidadeQuadrante");
+            this.lbLuminosidadeQuadrante.Depth = 0;
+            this.lbLuminosidadeQuadrante.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbLuminosidadeQuadrante.Name = "lbLuminosidadeQuadrante";
             // 
-            // lblMaximo
+            // mlblTituloSensibilidade
             // 
-            resources.ApplyResources(this.lblMaximo, "lblMaximo");
-            this.lblMaximo.ForeColor = System.Drawing.Color.Black;
-            this.lblMaximo.Name = "lblMaximo";
+            resources.ApplyResources(this.mlblTituloSensibilidade, "mlblTituloSensibilidade");
+            this.mlblTituloSensibilidade.BackColor = System.Drawing.Color.White;
+            this.mlblTituloSensibilidade.Depth = 0;
+            this.mlblTituloSensibilidade.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.mlblTituloSensibilidade.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.mlblTituloSensibilidade.ForeColor = System.Drawing.Color.Black;
+            this.mlblTituloSensibilidade.HighEmphasis = true;
+            this.mlblTituloSensibilidade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mlblTituloSensibilidade.Name = "mlblTituloSensibilidade";
             // 
-            // nudMaximo
+            // cardAjustes
             // 
-            this.nudMaximo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(208)))), ((int)(((byte)(218)))));
-            resources.ApplyResources(this.nudMaximo, "nudMaximo");
-            this.nudMaximo.ForeColor = System.Drawing.Color.White;
-            this.nudMaximo.Maximum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nudMaximo.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.nudMaximo.Name = "nudMaximo";
-            this.nudMaximo.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nudMaximo.ValueChanged += new System.EventHandler(this.nudMaximo_ValueChanged);
+            resources.ApplyResources(this.cardAjustes, "cardAjustes");
+            this.cardAjustes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cardAjustes.Controls.Add(this.tblAjustes);
+            this.cardAjustes.Controls.Add(this.mlblTituloAjustes);
+            this.cardAjustes.Depth = 0;
+            this.cardAjustes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cardAjustes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cardAjustes.Name = "cardAjustes";
             // 
-            // cbxLigado
+            // tblAjustes
             // 
-            resources.ApplyResources(this.cbxLigado, "cbxLigado");
-            this.cbxLigado.Checked = true;
-            this.cbxLigado.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbxLigado.ForeColor = System.Drawing.Color.Black;
-            this.cbxLigado.Name = "cbxLigado";
-            this.cbxLigado.UseVisualStyleBackColor = true;
-            this.cbxLigado.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
+            resources.ApplyResources(this.tblAjustes, "tblAjustes");
+            this.tblAjustes.Controls.Add(this.mtbOpacidade, 2, 0);
+            this.tblAjustes.Controls.Add(this.tcbOpacidade, 1, 0);
+            this.tblAjustes.Controls.Add(this.lbOpacidade, 0, 0);
+            this.tblAjustes.Name = "tblAjustes";
             // 
-            // panelHeader
+            // mtbOpacidade
             // 
-            this.panelHeader.Controls.Add(this.cbxLigado);
-            this.panelHeader.Controls.Add(this.cbxInicioAutomatico);
-            resources.ApplyResources(this.panelHeader, "panelHeader");
-            this.panelHeader.ForeColor = System.Drawing.Color.Black;
-            this.panelHeader.Name = "panelHeader";
+            resources.ApplyResources(this.mtbOpacidade, "mtbOpacidade");
+            this.mtbOpacidade.AnimateReadOnly = false;
+            this.mtbOpacidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.mtbOpacidade.Depth = 0;
+            this.mtbOpacidade.HideSelection = false;
+            this.errorProvider1.SetIconPadding(this.mtbOpacidade, ((int)(resources.GetObject("mtbOpacidade.IconPadding"))));
+            this.mtbOpacidade.LeadingIcon = null;
+            this.mtbOpacidade.MaxLength = 32767;
+            this.mtbOpacidade.MouseState = MaterialSkin.MouseState.OUT;
+            this.mtbOpacidade.Name = "mtbOpacidade";
+            this.mtbOpacidade.PasswordChar = '\0';
+            this.mtbOpacidade.ReadOnly = false;
+            this.mtbOpacidade.SelectedText = "";
+            this.mtbOpacidade.SelectionLength = 0;
+            this.mtbOpacidade.SelectionStart = 0;
+            this.mtbOpacidade.ShortcutsEnabled = false;
+            this.mtbOpacidade.TabStop = false;
+            this.mtbOpacidade.Tag = "";
+            this.mtbOpacidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbOpacidade.TrailingIcon = null;
+            this.mtbOpacidade.UseSystemPasswordChar = false;
+            this.mtbOpacidade.TextChanged += new System.EventHandler(this.mtbOpacidade_TextChanged);
+            this.mtbOpacidade.Validating += new System.ComponentModel.CancelEventHandler(this.mtbOpacidade_Validating);
             // 
-            // tlpMain
+            // tcbOpacidade
             // 
-            resources.ApplyResources(this.tlpMain, "tlpMain");
-            this.tlpMain.Controls.Add(this.panel_tcbOpacidade, 1, 5);
-            this.tlpMain.Controls.Add(this.panel_tcbQuadrantes, 1, 4);
-            this.tlpMain.Controls.Add(this.panel_tcbLuminosidadeQuadrante, 1, 3);
-            this.tlpMain.Controls.Add(this.panel_tcbLuminosidadeTela, 1, 2);
-            this.tlpMain.Controls.Add(this.lblIntervaloFlash, 0, 0);
-            this.tlpMain.Controls.Add(this.tlpIntervalo, 1, 0);
-            this.tlpMain.Controls.Add(this.nudOpacidade, 2, 5);
-            this.tlpMain.Controls.Add(this.nudVermelhoCritico, 2, 1);
-            this.tlpMain.Controls.Add(this.lblLuminosidadeTela, 0, 2);
-            this.tlpMain.Controls.Add(this.lblOpacidade, 0, 5);
-            this.tlpMain.Controls.Add(this.nudQuadrantes, 2, 4);
-            this.tlpMain.Controls.Add(this.nudLuminosidadeTela, 2, 2);
-            this.tlpMain.Controls.Add(this.lblLuminosidadeQuadrante, 0, 3);
-            this.tlpMain.Controls.Add(this.nudLuminosidadeQuadrante, 2, 3);
-            this.tlpMain.Controls.Add(this.lblQuadrantes, 0, 4);
-            this.tlpMain.Controls.Add(this.lblVermelhoCritico, 0, 1);
-            this.tlpMain.Controls.Add(this.panel_tcbVermelhoCritico, 1, 1);
-            this.tlpMain.Name = "tlpMain";
+            resources.ApplyResources(this.tcbOpacidade, "tcbOpacidade");
+            this.tcbOpacidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.tcbOpacidade.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbOpacidade.CanApplyTheme = false;
+            this.tcbOpacidade.DecreaseButtonSize = new System.Drawing.Size(30, 30);
+            this.tcbOpacidade.IncreaseButtonSize = new System.Drawing.Size(30, 30);
+            this.tcbOpacidade.Name = "tcbOpacidade";
+            this.tcbOpacidade.SliderSize = new System.Drawing.Size(10, 20);
+            this.tcbOpacidade.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Metro;
+            this.tcbOpacidade.ThemeName = "Metro";
+            this.tcbOpacidade.ThemeStyle.ShowDivider = false;
+            this.tcbOpacidade.TimerInterval = 100;
+            this.tcbOpacidade.Transparent = true;
+            this.tcbOpacidade.Value = 10;
+            this.tcbOpacidade.Scroll += new System.EventHandler(this.tcbOpacidade_Scroll);
             // 
-            // panel_tcbOpacidade
+            // lbOpacidade
             // 
-            resources.ApplyResources(this.panel_tcbOpacidade, "panel_tcbOpacidade");
-            this.panel_tcbOpacidade.Controls.Add(this.tcbOpacidade);
-            this.panel_tcbOpacidade.Controls.Add(this.max_tcbOpacidade);
-            this.panel_tcbOpacidade.Controls.Add(this.min_tcbOpacidade);
-            this.panel_tcbOpacidade.Name = "panel_tcbOpacidade";
+            resources.ApplyResources(this.lbOpacidade, "lbOpacidade");
+            this.lbOpacidade.Depth = 0;
+            this.lbOpacidade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lbOpacidade.Name = "lbOpacidade";
             // 
-            // max_tcbOpacidade
+            // mlblTituloAjustes
             // 
-            resources.ApplyResources(this.max_tcbOpacidade, "max_tcbOpacidade");
-            this.max_tcbOpacidade.ForeColor = System.Drawing.Color.Black;
-            this.max_tcbOpacidade.Name = "max_tcbOpacidade";
+            resources.ApplyResources(this.mlblTituloAjustes, "mlblTituloAjustes");
+            this.mlblTituloAjustes.BackColor = System.Drawing.Color.White;
+            this.mlblTituloAjustes.Depth = 0;
+            this.mlblTituloAjustes.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.mlblTituloAjustes.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.mlblTituloAjustes.ForeColor = System.Drawing.Color.Black;
+            this.mlblTituloAjustes.HighEmphasis = true;
+            this.mlblTituloAjustes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mlblTituloAjustes.Name = "mlblTituloAjustes";
             // 
-            // min_tcbOpacidade
+            // mlblAviso
             // 
-            resources.ApplyResources(this.min_tcbOpacidade, "min_tcbOpacidade");
-            this.min_tcbOpacidade.ForeColor = System.Drawing.Color.Black;
-            this.min_tcbOpacidade.Name = "min_tcbOpacidade";
+            resources.ApplyResources(this.mlblAviso, "mlblAviso");
+            this.mlblAviso.Depth = 0;
+            this.mlblAviso.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.mlblAviso.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.mlblAviso.ForeColor = System.Drawing.Color.IndianRed;
+            this.mlblAviso.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mlblAviso.Name = "mlblAviso";
             // 
-            // panel_tcbQuadrantes
+            // mlblTituloOtimizacao
             // 
-            resources.ApplyResources(this.panel_tcbQuadrantes, "panel_tcbQuadrantes");
-            this.panel_tcbQuadrantes.Controls.Add(this.tcbQuadrantes);
-            this.panel_tcbQuadrantes.Controls.Add(this.max_tcbQuadrantes);
-            this.panel_tcbQuadrantes.Controls.Add(this.min_tcbQuadrantes);
-            this.panel_tcbQuadrantes.Name = "panel_tcbQuadrantes";
+            resources.ApplyResources(this.mlblTituloOtimizacao, "mlblTituloOtimizacao");
+            this.mlblTituloOtimizacao.BackColor = System.Drawing.Color.White;
+            this.mlblTituloOtimizacao.Depth = 0;
+            this.mlblTituloOtimizacao.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.mlblTituloOtimizacao.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.mlblTituloOtimizacao.HighEmphasis = true;
+            this.mlblTituloOtimizacao.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mlblTituloOtimizacao.Name = "mlblTituloOtimizacao";
             // 
-            // max_tcbQuadrantes
+            // tableLayoutPanel3
             // 
-            resources.ApplyResources(this.max_tcbQuadrantes, "max_tcbQuadrantes");
-            this.max_tcbQuadrantes.ForeColor = System.Drawing.Color.Black;
-            this.max_tcbQuadrantes.Name = "max_tcbQuadrantes";
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.rngIntervaloFlash, 0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
-            // min_tcbQuadrantes
+            // rngIntervaloFlash
             // 
-            resources.ApplyResources(this.min_tcbQuadrantes, "min_tcbQuadrantes");
-            this.min_tcbQuadrantes.ForeColor = System.Drawing.Color.Black;
-            this.min_tcbQuadrantes.Name = "min_tcbQuadrantes";
+            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(824, 55);
+            this.rngIntervaloFlash.CanApplyTheme = false;
+            this.rngIntervaloFlash.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            resources.ApplyResources(this.rngIntervaloFlash, "rngIntervaloFlash");
+            this.rngIntervaloFlash.ForeColor = System.Drawing.Color.Black;
+            this.rngIntervaloFlash.HighlightedThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.rngIntervaloFlash.Maximum = 30;
+            this.rngIntervaloFlash.Minimum = 3;
+            this.rngIntervaloFlash.Name = "rngIntervaloFlash";
+            this.rngIntervaloFlash.PushedThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(86)))), ((int)(((byte)(148)))));
+            this.rngIntervaloFlash.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+            this.rngIntervaloFlash.ShowLabels = true;
+            this.rngIntervaloFlash.SliderMax = 30;
+            this.rngIntervaloFlash.SliderMin = 3;
+            this.rngIntervaloFlash.SliderSize = new System.Drawing.Size(8, 21);
+            this.rngIntervaloFlash.ThemeName = "Metro";
+            this.rngIntervaloFlash.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+            this.rngIntervaloFlash.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.rngIntervaloFlash.VisualStyle = Syncfusion.Windows.Forms.Tools.RangeSlider.RangeSliderStyle.Metro;
             // 
-            // panel_tcbLuminosidadeQuadrante
+            // cardOtimizacao
             // 
-            resources.ApplyResources(this.panel_tcbLuminosidadeQuadrante, "panel_tcbLuminosidadeQuadrante");
-            this.panel_tcbLuminosidadeQuadrante.Controls.Add(this.tcbLuminosidadeQuadrante);
-            this.panel_tcbLuminosidadeQuadrante.Controls.Add(this.max_tcbLuminosidadeQuadrante);
-            this.panel_tcbLuminosidadeQuadrante.Controls.Add(this.min_tcbLuminosidadeQuadrante);
-            this.panel_tcbLuminosidadeQuadrante.Name = "panel_tcbLuminosidadeQuadrante";
+            resources.ApplyResources(this.cardOtimizacao, "cardOtimizacao");
+            this.cardOtimizacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cardOtimizacao.Controls.Add(this.materialLabel1);
+            this.cardOtimizacao.Controls.Add(this.tableLayoutPanel3);
+            this.cardOtimizacao.Controls.Add(this.mlblTituloOtimizacao);
+            this.cardOtimizacao.Depth = 0;
+            this.cardOtimizacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cardOtimizacao.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cardOtimizacao.Name = "cardOtimizacao";
             // 
-            // max_tcbLuminosidadeQuadrante
+            // errorProvider1
             // 
-            resources.ApplyResources(this.max_tcbLuminosidadeQuadrante, "max_tcbLuminosidadeQuadrante");
-            this.max_tcbLuminosidadeQuadrante.ForeColor = System.Drawing.Color.Black;
-            this.max_tcbLuminosidadeQuadrante.Name = "max_tcbLuminosidadeQuadrante";
+            this.errorProvider1.BlinkRate = 0;
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
             // 
-            // min_tcbLuminosidadeQuadrante
+            // materialLabel1
             // 
-            resources.ApplyResources(this.min_tcbLuminosidadeQuadrante, "min_tcbLuminosidadeQuadrante");
-            this.min_tcbLuminosidadeQuadrante.ForeColor = System.Drawing.Color.Black;
-            this.min_tcbLuminosidadeQuadrante.Name = "min_tcbLuminosidadeQuadrante";
+            resources.ApplyResources(this.materialLabel1, "materialLabel1");
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.SubtleEmphasis;
+            this.errorProvider1.SetIconAlignment(this.materialLabel1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("materialLabel1.IconAlignment"))));
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
             // 
-            // panel_tcbLuminosidadeTela
+            // btnResetarPadroes
             // 
-            resources.ApplyResources(this.panel_tcbLuminosidadeTela, "panel_tcbLuminosidadeTela");
-            this.panel_tcbLuminosidadeTela.Controls.Add(this.tcbLuminosidadeTela);
-            this.panel_tcbLuminosidadeTela.Controls.Add(this.max_tcbLuminosidadeTela);
-            this.panel_tcbLuminosidadeTela.Controls.Add(this.min_tcbLuminosidadeTela);
-            this.panel_tcbLuminosidadeTela.Name = "panel_tcbLuminosidadeTela";
-            // 
-            // max_tcbLuminosidadeTela
-            // 
-            resources.ApplyResources(this.max_tcbLuminosidadeTela, "max_tcbLuminosidadeTela");
-            this.max_tcbLuminosidadeTela.ForeColor = System.Drawing.Color.Black;
-            this.max_tcbLuminosidadeTela.Name = "max_tcbLuminosidadeTela";
-            // 
-            // min_tcbLuminosidadeTela
-            // 
-            resources.ApplyResources(this.min_tcbLuminosidadeTela, "min_tcbLuminosidadeTela");
-            this.min_tcbLuminosidadeTela.ForeColor = System.Drawing.Color.Black;
-            this.min_tcbLuminosidadeTela.Name = "min_tcbLuminosidadeTela";
-            // 
-            // lblIntervaloFlash
-            // 
-            resources.ApplyResources(this.lblIntervaloFlash, "lblIntervaloFlash");
-            this.lblIntervaloFlash.ForeColor = System.Drawing.Color.Black;
-            this.lblIntervaloFlash.Name = "lblIntervaloFlash";
-            // 
-            // tlpIntervalo
-            // 
-            resources.ApplyResources(this.tlpIntervalo, "tlpIntervalo");
-            this.tlpIntervalo.Controls.Add(this.lblMinimo, 0, 0);
-            this.tlpIntervalo.Controls.Add(this.nudMinimo, 0, 1);
-            this.tlpIntervalo.Controls.Add(this.lblMaximo, 1, 0);
-            this.tlpIntervalo.Controls.Add(this.nudMaximo, 1, 1);
-            this.tlpIntervalo.Name = "tlpIntervalo";
-            // 
-            // lblMinimo
-            // 
-            resources.ApplyResources(this.lblMinimo, "lblMinimo");
-            this.lblMinimo.ForeColor = System.Drawing.Color.Black;
-            this.lblMinimo.Name = "lblMinimo";
-            // 
-            // nudMinimo
-            // 
-            this.nudMinimo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(208)))), ((int)(((byte)(218)))));
-            resources.ApplyResources(this.nudMinimo, "nudMinimo");
-            this.nudMinimo.ForeColor = System.Drawing.Color.White;
-            this.nudMinimo.Maximum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nudMinimo.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.nudMinimo.Name = "nudMinimo";
-            this.nudMinimo.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.nudMinimo.ValueChanged += new System.EventHandler(this.nudMinimo_ValueChanged);
-            // 
-            // panel_tcbVermelhoCritico
-            // 
-            resources.ApplyResources(this.panel_tcbVermelhoCritico, "panel_tcbVermelhoCritico");
-            this.panel_tcbVermelhoCritico.Controls.Add(this.tcbVermelhoCritico);
-            this.panel_tcbVermelhoCritico.Controls.Add(this.max_tcbVermelhoCritico);
-            this.panel_tcbVermelhoCritico.Controls.Add(this.min_tcbVermelhoCritico);
-            this.panel_tcbVermelhoCritico.Name = "panel_tcbVermelhoCritico";
-            // 
-            // max_tcbVermelhoCritico
-            // 
-            resources.ApplyResources(this.max_tcbVermelhoCritico, "max_tcbVermelhoCritico");
-            this.max_tcbVermelhoCritico.ForeColor = System.Drawing.Color.Black;
-            this.max_tcbVermelhoCritico.Name = "max_tcbVermelhoCritico";
-            // 
-            // min_tcbVermelhoCritico
-            // 
-            resources.ApplyResources(this.min_tcbVermelhoCritico, "min_tcbVermelhoCritico");
-            this.min_tcbVermelhoCritico.ForeColor = System.Drawing.Color.Black;
-            this.min_tcbVermelhoCritico.Name = "min_tcbVermelhoCritico";
-            // 
-            // panelFooter
-            // 
-            this.panelFooter.Controls.Add(this.lblAviso);
-            resources.ApplyResources(this.panelFooter, "panelFooter");
-            this.panelFooter.ForeColor = System.Drawing.Color.Red;
-            this.panelFooter.Name = "panelFooter";
-            // 
-            // lblAviso
-            // 
-            resources.ApplyResources(this.lblAviso, "lblAviso");
-            this.lblAviso.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblAviso.Name = "lblAviso";
+            resources.ApplyResources(this.btnResetarPadroes, "btnResetarPadroes");
+            this.btnResetarPadroes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnResetarPadroes.Depth = 0;
+            this.btnResetarPadroes.HighEmphasis = true;
+            this.btnResetarPadroes.Icon = null;
+            this.btnResetarPadroes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnResetarPadroes.Name = "btnResetarPadroes";
+            this.btnResetarPadroes.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnResetarPadroes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnResetarPadroes.UseAccentColor = true;
+            this.btnResetarPadroes.UseVisualStyleBackColor = true;
             // 
             // PoryGuard
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.panelFooter);
-            this.Controls.Add(this.tlpMain);
-            this.Controls.Add(this.panelHeader);
-            this.ForeColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.btnResetarPadroes);
+            this.Controls.Add(this.mlblAviso);
+            this.Controls.Add(this.cardAjustes);
+            this.Controls.Add(this.cardSensibilidade);
+            this.Controls.Add(this.cardOtimizacao);
+            this.Controls.Add(this.mcbInicioAutomatico);
+            this.Controls.Add(this.mswAtivo);
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_None;
             this.MaximizeBox = false;
             this.Name = "PoryGuard";
+            this.Sizable = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PoryGuard_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.tcbOpacidade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudOpacidade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbQuadrantes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudQuadrantes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeQuadrante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeQuadrante)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbLuminosidadeTela)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLuminosidadeTela)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudVermelhoCritico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcbVermelhoCritico)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMaximo)).EndInit();
-            this.panelHeader.ResumeLayout(false);
-            this.panelHeader.PerformLayout();
-            this.tlpMain.ResumeLayout(false);
-            this.tlpMain.PerformLayout();
-            this.panel_tcbOpacidade.ResumeLayout(false);
-            this.panel_tcbOpacidade.PerformLayout();
-            this.panel_tcbQuadrantes.ResumeLayout(false);
-            this.panel_tcbQuadrantes.PerformLayout();
-            this.panel_tcbLuminosidadeQuadrante.ResumeLayout(false);
-            this.panel_tcbLuminosidadeQuadrante.PerformLayout();
-            this.panel_tcbLuminosidadeTela.ResumeLayout(false);
-            this.panel_tcbLuminosidadeTela.PerformLayout();
-            this.tlpIntervalo.ResumeLayout(false);
-            this.tlpIntervalo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinimo)).EndInit();
-            this.panel_tcbVermelhoCritico.ResumeLayout(false);
-            this.panel_tcbVermelhoCritico.PerformLayout();
-            this.panelFooter.ResumeLayout(false);
-            this.panelFooter.PerformLayout();
+            this.cardSensibilidade.ResumeLayout(false);
+            this.cardSensibilidade.PerformLayout();
+            this.tblSensibilidade.ResumeLayout(false);
+            this.tblSensibilidade.PerformLayout();
+            this.cardAjustes.ResumeLayout(false);
+            this.cardAjustes.PerformLayout();
+            this.tblAjustes.ResumeLayout(false);
+            this.tblAjustes.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.cardOtimizacao.ResumeLayout(false);
+            this.cardOtimizacao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,48 +548,37 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox cbxInicioAutomatico;
-        private System.Windows.Forms.Label lblOpacidade;
-        private System.Windows.Forms.TrackBar tcbOpacidade;
-        private System.Windows.Forms.NumericUpDown nudOpacidade;
-        private System.Windows.Forms.Label lblQuadrantes;
-        private System.Windows.Forms.TrackBar tcbQuadrantes;
-        private System.Windows.Forms.NumericUpDown nudQuadrantes;
-        private System.Windows.Forms.Label lblLuminosidadeQuadrante;
-        private System.Windows.Forms.TrackBar tcbLuminosidadeQuadrante;
-        private System.Windows.Forms.NumericUpDown nudLuminosidadeQuadrante;
-        private System.Windows.Forms.Label lblLuminosidadeTela;
-        private System.Windows.Forms.TrackBar tcbLuminosidadeTela;
-        private System.Windows.Forms.NumericUpDown nudLuminosidadeTela;
-        private System.Windows.Forms.NumericUpDown nudVermelhoCritico;
-        private System.Windows.Forms.TrackBar tcbVermelhoCritico;
-        private System.Windows.Forms.Label lblVermelhoCritico;
-        private System.Windows.Forms.Label lblMaximo;
-        private System.Windows.Forms.NumericUpDown nudMaximo;
-        private System.Windows.Forms.CheckBox cbxLigado;
-        private System.Windows.Forms.Panel panelHeader;
-        private System.Windows.Forms.TableLayoutPanel tlpMain;
-        private System.Windows.Forms.Label lblIntervaloFlash;
-        private System.Windows.Forms.TableLayoutPanel tlpIntervalo;
-        private System.Windows.Forms.Label lblMinimo;
-        private System.Windows.Forms.NumericUpDown nudMinimo;
-        private System.Windows.Forms.Panel panelFooter;
-        private System.Windows.Forms.Label lblAviso;
-        private System.Windows.Forms.Panel panel_tcbVermelhoCritico;
-        private System.Windows.Forms.Label min_tcbVermelhoCritico;
-        private System.Windows.Forms.Label max_tcbVermelhoCritico;
-        private System.Windows.Forms.Panel panel_tcbOpacidade;
-        private System.Windows.Forms.Label max_tcbOpacidade;
-        private System.Windows.Forms.Label min_tcbOpacidade;
-        private System.Windows.Forms.Panel panel_tcbQuadrantes;
-        private System.Windows.Forms.Label max_tcbQuadrantes;
-        private System.Windows.Forms.Label min_tcbQuadrantes;
-        private System.Windows.Forms.Panel panel_tcbLuminosidadeQuadrante;
-        private System.Windows.Forms.Label max_tcbLuminosidadeQuadrante;
-        private System.Windows.Forms.Label min_tcbLuminosidadeQuadrante;
-        private System.Windows.Forms.Panel panel_tcbLuminosidadeTela;
-        private System.Windows.Forms.Label max_tcbLuminosidadeTela;
-        private System.Windows.Forms.Label min_tcbLuminosidadeTela;
+        private MaterialSkin.Controls.MaterialSwitch mswAtivo;
+        private MaterialSkin.Controls.MaterialCheckbox mcbInicioAutomatico;
+        private MaterialSkin.Controls.MaterialCard cardSensibilidade;
+        private MaterialSkin.Controls.MaterialCard cardAjustes;
+        private MaterialSkin.Controls.MaterialLabel mlblTituloSensibilidade;
+        private MaterialSkin.Controls.MaterialLabel mlblTituloAjustes;
+        private System.Windows.Forms.TableLayoutPanel tblSensibilidade;
+        private System.Windows.Forms.TableLayoutPanel tblAjustes;
+        private MaterialSkin.Controls.MaterialLabel mlblAviso;
+        private MaterialSkin.Controls.MaterialLabel lbVermelhoCritico;
+        private MaterialSkin.Controls.MaterialLabel lbLuminosidadeTela;
+        private MaterialSkin.Controls.MaterialLabel lbLuminosidadeQuadrante;
+        private MaterialSkin.Controls.MaterialLabel lbQuadrantes;
+        private MaterialSkin.Controls.MaterialLabel lbOpacidade;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx tcbLuminosidadeTela;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx tcbLuminosidadeQuadrante;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx tcbVermelhoCritico;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx tcbOpacidade;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx tcbQuadrantes;
+        private MaterialSkin.Controls.MaterialTextBox2 mtbVermelhoCritico;
+        private MaterialSkin.Controls.MaterialLabel mlblTituloOtimizacao;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private Syncfusion.Windows.Forms.Tools.RangeSlider rngIntervaloFlash;
+        private MaterialSkin.Controls.MaterialCard cardOtimizacao;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private MaterialSkin.Controls.MaterialTextBox2 mtbQuadrantes;
+        private MaterialSkin.Controls.MaterialTextBox2 mtbLuminosidadeQuadrante;
+        private MaterialSkin.Controls.MaterialTextBox2 mtbLuminosidadeTela;
+        private MaterialSkin.Controls.MaterialTextBox2 mtbOpacidade;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialButton btnResetarPadroes;
     }
 }
 

@@ -220,7 +220,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>900, 750</value>
+    <value>1044, 936</value>
   </data>
   <data name="btnResetarPadroes.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -259,7 +259,7 @@
     <value>Roboto Medium, 14px, style=Bold</value>
   </data>
   <data name="mlblAviso.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 695</value>
+    <value>92, 881</value>
   </data>
   <data name="mlblAviso.Size" type="System.Drawing.Size, System.Drawing">
     <value>860, 40</value>
@@ -288,132 +288,6 @@
   <data name="cardAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
-  <data name="tblAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="tblAjustes.ColumnCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="mtbOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="mtbOpacidade.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="mtbOpacidade.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16px, style=Bold</value>
-  </data>
-  <data name="mtbOpacidade.IconPadding" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="mtbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 3</value>
-  </data>
-  <data name="mtbOpacidade.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="mtbOpacidade.PrefixSuffixText" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="mtbOpacidade.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="mtbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 48</value>
-  </data>
-  <data name="mtbOpacidade.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;mtbOpacidade.Name" xml:space="preserve">
-    <value>mtbOpacidade</value>
-  </data>
-  <data name="&gt;&gt;mtbOpacidade.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mtbOpacidade.Parent" xml:space="preserve">
-    <value>tblAjustes</value>
-  </data>
-  <data name="&gt;&gt;mtbOpacidade.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tcbOpacidade.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="tcbOpacidade.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 3</value>
-  </data>
-  <data name="tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 44</value>
-  </data>
-  <data name="tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tcbOpacidade.Name" xml:space="preserve">
-    <value>tcbOpacidade</value>
-  </data>
-  <data name="&gt;&gt;tcbOpacidade.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=31.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;tcbOpacidade.Parent" xml:space="preserve">
-    <value>tblAjustes</value>
-  </data>
-  <data name="&gt;&gt;tcbOpacidade.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="lbOpacidade.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbOpacidade.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 14px</value>
-  </data>
-  <data name="lbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 15</value>
-  </data>
-  <data name="lbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 19</value>
-  </data>
-  <data name="lbOpacidade.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lbOpacidade.Text" xml:space="preserve">
-    <value>Opacidade da Censura (%)</value>
-  </data>
-  <data name="lbOpacidade.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;lbOpacidade.Name" xml:space="preserve">
-    <value>lbOpacidade</value>
-  </data>
-  <data name="&gt;&gt;lbOpacidade.Type" xml:space="preserve">
-    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;lbOpacidade.Parent" xml:space="preserve">
-    <value>tblAjustes</value>
-  </data>
-  <data name="&gt;&gt;lbOpacidade.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tblAjustes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 65</value>
-  </data>
-  <data name="tblAjustes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="tblAjustes.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tblAjustes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 50</value>
-  </data>
-  <data name="tblAjustes.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;tblAjustes.Name" xml:space="preserve">
     <value>tblAjustes</value>
   </data>
@@ -429,27 +303,6 @@
   <data name="tblAjustes.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="mtbOpacidade" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbOpacidade" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbOpacidade" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,330,Absolute,430,Absolute,70" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="mlblTituloAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="mlblTituloAjustes.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mlblTituloAjustes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="mlblTituloAjustes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
-  </data>
-  <data name="mlblTituloAjustes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 29</value>
-  </data>
-  <data name="mlblTituloAjustes.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="mlblTituloAjustes.Text" xml:space="preserve">
-    <value>Ajuste de Oclusão Visual</value>
-  </data>
   <data name="&gt;&gt;mlblTituloAjustes.Name" xml:space="preserve">
     <value>mlblTituloAjustes</value>
   </data>
@@ -463,13 +316,16 @@
     <value>1</value>
   </data>
   <data name="cardAjustes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 550</value>
+    <value>20, 643</value>
   </data>
   <data name="cardAjustes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
+  <data name="cardAjustes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
   <data name="cardAjustes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 130</value>
+    <value>1004, 130</value>
   </data>
   <data name="cardAjustes.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -489,27 +345,6 @@
   <data name="cardOtimizacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
-  <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 12px, style=Italic</value>
-  </data>
-  <data name="materialLabel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 45</value>
-  </data>
-  <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 14</value>
-  </data>
-  <data name="materialLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="materialLabel1.Text" xml:space="preserve">
-    <value>Definição de flash mínimo e máximo.</value>
-  </data>
   <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
     <value>materialLabel1</value>
   </data>
@@ -520,51 +355,6 @@
     <value>cardOtimizacao</value>
   </data>
   <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="rngIntervaloFlash.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="rngIntervaloFlash.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 7pt</value>
-  </data>
-  <data name="rngIntervaloFlash.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="rngIntervaloFlash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>824, 55</value>
-  </data>
-  <data name="rngIntervaloFlash.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;rngIntervaloFlash.Name" xml:space="preserve">
-    <value>rngIntervaloFlash</value>
-  </data>
-  <data name="&gt;&gt;rngIntervaloFlash.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.RangeSlider, Syncfusion.Tools.Windows, Version=31.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;rngIntervaloFlash.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;rngIntervaloFlash.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 60</value>
-  </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 80</value>
-  </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
@@ -580,28 +370,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="rngIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,88" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="mlblTituloOtimizacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="mlblTituloOtimizacao.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Roboto, 24px, style=Bold</value>
-  </data>
-  <data name="mlblTituloOtimizacao.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mlblTituloOtimizacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
-  </data>
-  <data name="mlblTituloOtimizacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 29</value>
-  </data>
-  <data name="mlblTituloOtimizacao.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="mlblTituloOtimizacao.Text" xml:space="preserve">
-    <value>Otimização de Flash</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="rngIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,80" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="&gt;&gt;mlblTituloOtimizacao.Name" xml:space="preserve">
     <value>mlblTituloOtimizacao</value>
@@ -616,7 +385,7 @@
     <value>2</value>
   </data>
   <data name="cardOtimizacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 90</value>
+    <value>20, 183</value>
   </data>
   <data name="cardOtimizacao.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>15, 15, 15, 15</value>
@@ -625,7 +394,7 @@
     <value>15, 15, 15, 15</value>
   </data>
   <data name="cardOtimizacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 150</value>
+    <value>1004, 150</value>
   </data>
   <data name="cardOtimizacao.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1334,7 +1103,7 @@
     <value>11</value>
   </data>
   <data name="tblSensibilidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 60</value>
+    <value>87, 60</value>
   </data>
   <data name="tblSensibilidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1373,7 +1142,7 @@
     <value>Roboto, 24px, style=Bold</value>
   </data>
   <data name="mlblTituloSensibilidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
+    <value>87, 15</value>
   </data>
   <data name="mlblTituloSensibilidade.Size" type="System.Drawing.Size, System.Drawing">
     <value>357, 29</value>
@@ -1397,13 +1166,16 @@
     <value>1</value>
   </data>
   <data name="cardSensibilidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 255</value>
+    <value>20, 348</value>
   </data>
   <data name="cardSensibilidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
+  <data name="cardSensibilidade.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
   <data name="cardSensibilidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 280</value>
+    <value>1004, 280</value>
   </data>
   <data name="cardSensibilidade.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1419,5 +1191,353 @@
   </data>
   <data name="&gt;&gt;cardSensibilidade.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="tblAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tblAjustes.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.Name" xml:space="preserve">
+    <value>mtbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.Parent" xml:space="preserve">
+    <value>tblAjustes</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Name" xml:space="preserve">
+    <value>tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=31.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Parent" xml:space="preserve">
+    <value>tblAjustes</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.Name" xml:space="preserve">
+    <value>lbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.Parent" xml:space="preserve">
+    <value>tblAjustes</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tblAjustes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 65</value>
+  </data>
+  <data name="tblAjustes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tblAjustes.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tblAjustes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>830, 50</value>
+  </data>
+  <data name="tblAjustes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tblAjustes.Name" xml:space="preserve">
+    <value>tblAjustes</value>
+  </data>
+  <data name="&gt;&gt;tblAjustes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tblAjustes.Parent" xml:space="preserve">
+    <value>cardAjustes</value>
+  </data>
+  <data name="&gt;&gt;tblAjustes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tblAjustes.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="mtbOpacidade" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbOpacidade" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbOpacidade" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,330,Absolute,430,Absolute,70" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="mtbOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="mtbOpacidade.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mtbOpacidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16px, style=Bold</value>
+  </data>
+  <data name="mtbOpacidade.IconPadding" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="mtbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>777, 3</value>
+  </data>
+  <data name="mtbOpacidade.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="mtbOpacidade.PrefixSuffixText" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="mtbOpacidade.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="mtbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 48</value>
+  </data>
+  <data name="mtbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.Name" xml:space="preserve">
+    <value>mtbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox2, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.Parent" xml:space="preserve">
+    <value>tblAjustes</value>
+  </data>
+  <data name="&gt;&gt;mtbOpacidade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tcbOpacidade.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tcbOpacidade.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 3</value>
+  </data>
+  <data name="tcbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 44</value>
+  </data>
+  <data name="tcbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Name" xml:space="preserve">
+    <value>tcbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=31.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.Parent" xml:space="preserve">
+    <value>tblAjustes</value>
+  </data>
+  <data name="&gt;&gt;tcbOpacidade.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lbOpacidade.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbOpacidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="lbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 15</value>
+  </data>
+  <data name="lbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 19</value>
+  </data>
+  <data name="lbOpacidade.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lbOpacidade.Text" xml:space="preserve">
+    <value>Opacidade da Censura (%)</value>
+  </data>
+  <data name="lbOpacidade.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.Name" xml:space="preserve">
+    <value>lbOpacidade</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.Parent" xml:space="preserve">
+    <value>tblAjustes</value>
+  </data>
+  <data name="&gt;&gt;lbOpacidade.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mlblTituloAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mlblTituloAjustes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mlblTituloAjustes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="mlblTituloAjustes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="mlblTituloAjustes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 29</value>
+  </data>
+  <data name="mlblTituloAjustes.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="mlblTituloAjustes.Text" xml:space="preserve">
+    <value>Ajuste de Oclusão Visual</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloAjustes.Name" xml:space="preserve">
+    <value>mlblTituloAjustes</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloAjustes.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloAjustes.Parent" xml:space="preserve">
+    <value>cardAjustes</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloAjustes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mlblTituloOtimizacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mlblTituloOtimizacao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 24px, style=Bold</value>
+  </data>
+  <data name="mlblTituloOtimizacao.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mlblTituloOtimizacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="mlblTituloOtimizacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 29</value>
+  </data>
+  <data name="mlblTituloOtimizacao.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="mlblTituloOtimizacao.Text" xml:space="preserve">
+    <value>Otimização de Flash</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloOtimizacao.Name" xml:space="preserve">
+    <value>mlblTituloOtimizacao</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloOtimizacao.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloOtimizacao.Parent" xml:space="preserve">
+    <value>cardOtimizacao</value>
+  </data>
+  <data name="&gt;&gt;mlblTituloOtimizacao.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.Name" xml:space="preserve">
+    <value>rngIntervaloFlash</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.RangeSlider, Syncfusion.Tools.Windows, Version=31.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 60</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>974, 80</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>cardOtimizacao</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="rngIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,80" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="rngIntervaloFlash.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rngIntervaloFlash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7pt</value>
+  </data>
+  <data name="rngIntervaloFlash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="rngIntervaloFlash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>968, 55</value>
+  </data>
+  <data name="rngIntervaloFlash.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.Name" xml:space="preserve">
+    <value>rngIntervaloFlash</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.RangeSlider, Syncfusion.Tools.Windows, Version=31.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;rngIntervaloFlash.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 12px, style=Italic</value>
+  </data>
+  <data name="materialLabel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 45</value>
+  </data>
+  <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 14</value>
+  </data>
+  <data name="materialLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="materialLabel1.Text" xml:space="preserve">
+    <value>Definição de flash mínimo e máximo.</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
+    <value>materialLabel1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
+    <value>cardOtimizacao</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
 </root>

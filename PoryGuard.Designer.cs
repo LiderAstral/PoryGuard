@@ -58,8 +58,8 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.rngIntervaloFlash = new Syncfusion.Windows.Forms.Tools.RangeSlider();
             this.cardOtimizacao = new MaterialSkin.Controls.MaterialCard();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnResetarPadroes = new MaterialSkin.Controls.MaterialButton();
             this.cardSensibilidade.SuspendLayout();
             this.tblSensibilidade.SuspendLayout();
@@ -79,7 +79,7 @@
             this.mswAtivo.Name = "mswAtivo";
             this.mswAtivo.Ripple = true;
             this.mswAtivo.UseVisualStyleBackColor = true;
-            this.mswAtivo.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
+            this.mswAtivo.CheckedChanged += new System.EventHandler(this.mswAtivo_CheckedChanged);
             // 
             // mcbInicioAutomatico
             // 
@@ -91,7 +91,7 @@
             this.mcbInicioAutomatico.ReadOnly = false;
             this.mcbInicioAutomatico.Ripple = true;
             this.mcbInicioAutomatico.UseVisualStyleBackColor = true;
-            this.mcbInicioAutomatico.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
+            this.mcbInicioAutomatico.CheckedChanged += new System.EventHandler(this.mcbInicioAutomatico_CheckedChanged);
             // 
             // cardSensibilidade
             // 
@@ -215,6 +215,7 @@
             this.tcbQuadrantes.TimerInterval = 100;
             this.tcbQuadrantes.Transparent = true;
             this.tcbQuadrantes.Value = 10;
+            this.tcbQuadrantes.ValueChanged += new System.EventHandler(this.tcbQuadrantes_Scroll);
             this.tcbQuadrantes.Scroll += new System.EventHandler(this.tcbQuadrantes_Scroll);
             // 
             // mtbLuminosidadeTela
@@ -259,6 +260,7 @@
             this.tcbLuminosidadeQuadrante.TimerInterval = 100;
             this.tcbLuminosidadeQuadrante.Transparent = true;
             this.tcbLuminosidadeQuadrante.Value = 5;
+            this.tcbLuminosidadeQuadrante.ValueChanged += new System.EventHandler(this.tcbLuminosidadeQuadrante_Scroll);
             this.tcbLuminosidadeQuadrante.Scroll += new System.EventHandler(this.tcbLuminosidadeQuadrante_Scroll);
             // 
             // tcbVermelhoCritico
@@ -277,6 +279,7 @@
             this.tcbVermelhoCritico.TimerInterval = 100;
             this.tcbVermelhoCritico.Transparent = true;
             this.tcbVermelhoCritico.Value = 5;
+            this.tcbVermelhoCritico.ValueChanged += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
             this.tcbVermelhoCritico.Scroll += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
             // 
             // tcbLuminosidadeTela
@@ -295,6 +298,7 @@
             this.tcbLuminosidadeTela.TimerInterval = 100;
             this.tcbLuminosidadeTela.Transparent = true;
             this.tcbLuminosidadeTela.Value = 5;
+            this.tcbLuminosidadeTela.ValueChanged += new System.EventHandler(this.tcbLuminosidadeTela_Scroll);
             this.tcbLuminosidadeTela.Scroll += new System.EventHandler(this.tcbLuminosidadeTela_Scroll);
             // 
             // lbQuadrantes
@@ -398,6 +402,7 @@
             this.tcbOpacidade.TimerInterval = 100;
             this.tcbOpacidade.Transparent = true;
             this.tcbOpacidade.Value = 10;
+            this.tcbOpacidade.ValueChanged += new System.EventHandler(this.tcbOpacidade_Scroll);
             this.tcbOpacidade.Scroll += new System.EventHandler(this.tcbOpacidade_Scroll);
             // 
             // lbOpacidade
@@ -448,7 +453,7 @@
             // 
             // rngIntervaloFlash
             // 
-            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(824, 55);
+            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(968, 55);
             this.rngIntervaloFlash.CanApplyTheme = false;
             this.rngIntervaloFlash.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             resources.ApplyResources(this.rngIntervaloFlash, "rngIntervaloFlash");
@@ -480,12 +485,6 @@
             this.cardOtimizacao.MouseState = MaterialSkin.MouseState.HOVER;
             this.cardOtimizacao.Name = "cardOtimizacao";
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.BlinkRate = 0;
-            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
-            this.errorProvider1.ContainerControl = this;
-            // 
             // materialLabel1
             // 
             resources.ApplyResources(this.materialLabel1, "materialLabel1");
@@ -494,6 +493,12 @@
             this.errorProvider1.SetIconAlignment(this.materialLabel1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("materialLabel1.IconAlignment"))));
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkRate = 0;
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
             // 
             // btnResetarPadroes
             // 
@@ -508,6 +513,7 @@
             this.btnResetarPadroes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnResetarPadroes.UseAccentColor = true;
             this.btnResetarPadroes.UseVisualStyleBackColor = true;
+            this.btnResetarPadroes.Click += new System.EventHandler(this.btnResetarPadroes_Click);
             // 
             // PoryGuard
             // 

@@ -44,7 +44,7 @@ namespace PoryGuard
             // Menu de contexto
             var menu = new ContextMenuStrip();
             menu.Items.Add("Abrir", null, (s, e) => { Show(); WindowState = FormWindowState.Normal; });
-            menu.Items.Add("Encerrar Aplicação", null, (s, e) => { notifyIcon.Visible = false; Environment.Exit(0); });
+            menu.Items.Add("Encerrar Aplicação", null, (s, e) => { notifyIcon.Visible = false; Application.Exit(); });
             notifyIcon.ContextMenuStrip = menu;
 
             // Configura o MaterialSkinManager
@@ -151,6 +151,8 @@ namespace PoryGuard
 
         private void PoryGuard_FormClosing(object sender, FormClosingEventArgs e)
         {
+            SalvarConfiguracoes();
+
             if (e.CloseReason == CloseReason.UserClosing)
             {
                 e.Cancel = true;
@@ -166,7 +168,6 @@ namespace PoryGuard
                 capturaDeTela = null;
             }
 
-            SalvarConfiguracoes();
         }
 
         private void VerificaLigado()

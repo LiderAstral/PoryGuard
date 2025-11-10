@@ -453,7 +453,7 @@
             // 
             // rngIntervaloFlash
             // 
-            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(968, 55);
+            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(986, 55);
             this.rngIntervaloFlash.CanApplyTheme = false;
             this.rngIntervaloFlash.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             resources.ApplyResources(this.rngIntervaloFlash, "rngIntervaloFlash");

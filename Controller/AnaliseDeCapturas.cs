@@ -62,10 +62,10 @@ namespace PoryGuard.Controller
                 var config = JsonSerializer.Deserialize<ConfiguracaoPersistente>(json);
                 flashMinimo = 2 * config.FlashMinimo;
                 flashMaximo = 2 * config.FlashMaximo;
-                variacao = config.LuminosidadeTela;
-                limiarLuminancia = config.LuminosidadeQuadrante;
+                variacao = (int)(config.LuminosidadeTela * 255f) / 100;
+                limiarLuminancia = (int)(config.LuminosidadeQuadrante * 255f) / 100;
                 subdivisoes = config.Quadrantes;
-                limiarVermelho = config.VermelhoCritico;
+                limiarVermelho = (int)(config.VermelhoCritico * 320f) / 100;
                 opacidadeCensura = (int)(config.Opacidade * 255f) / 100;
             }
             catch (Exception ex)

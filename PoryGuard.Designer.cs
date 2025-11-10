@@ -79,7 +79,7 @@
             this.mswAtivo.Name = "mswAtivo";
             this.mswAtivo.Ripple = true;
             this.mswAtivo.UseVisualStyleBackColor = true;
-            this.mswAtivo.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
+            this.mswAtivo.CheckedChanged += new System.EventHandler(this.mswAtivo_CheckedChanged);
             // 
             // mcbInicioAutomatico
             // 
@@ -91,7 +91,7 @@
             this.mcbInicioAutomatico.ReadOnly = false;
             this.mcbInicioAutomatico.Ripple = true;
             this.mcbInicioAutomatico.UseVisualStyleBackColor = true;
-            this.mcbInicioAutomatico.CheckedChanged += new System.EventHandler(this.cbxLigado_CheckedChanged);
+            this.mcbInicioAutomatico.CheckedChanged += new System.EventHandler(this.mcbInicioAutomatico_CheckedChanged);
             // 
             // cardSensibilidade
             // 
@@ -215,6 +215,7 @@
             this.tcbQuadrantes.TimerInterval = 100;
             this.tcbQuadrantes.Transparent = true;
             this.tcbQuadrantes.Value = 10;
+            this.tcbQuadrantes.ValueChanged += new System.EventHandler(this.tcbQuadrantes_Scroll);
             this.tcbQuadrantes.Scroll += new System.EventHandler(this.tcbQuadrantes_Scroll);
             // 
             // mtbLuminosidadeTela
@@ -259,6 +260,7 @@
             this.tcbLuminosidadeQuadrante.TimerInterval = 100;
             this.tcbLuminosidadeQuadrante.Transparent = true;
             this.tcbLuminosidadeQuadrante.Value = 5;
+            this.tcbLuminosidadeQuadrante.ValueChanged += new System.EventHandler(this.tcbLuminosidadeQuadrante_Scroll);
             this.tcbLuminosidadeQuadrante.Scroll += new System.EventHandler(this.tcbLuminosidadeQuadrante_Scroll);
             // 
             // tcbVermelhoCritico
@@ -277,6 +279,7 @@
             this.tcbVermelhoCritico.TimerInterval = 100;
             this.tcbVermelhoCritico.Transparent = true;
             this.tcbVermelhoCritico.Value = 5;
+            this.tcbVermelhoCritico.ValueChanged += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
             this.tcbVermelhoCritico.Scroll += new System.EventHandler(this.tcbVermelhoCritico_Scroll);
             // 
             // tcbLuminosidadeTela
@@ -295,6 +298,7 @@
             this.tcbLuminosidadeTela.TimerInterval = 100;
             this.tcbLuminosidadeTela.Transparent = true;
             this.tcbLuminosidadeTela.Value = 5;
+            this.tcbLuminosidadeTela.ValueChanged += new System.EventHandler(this.tcbLuminosidadeTela_Scroll);
             this.tcbLuminosidadeTela.Scroll += new System.EventHandler(this.tcbLuminosidadeTela_Scroll);
             // 
             // lbQuadrantes
@@ -398,6 +402,7 @@
             this.tcbOpacidade.TimerInterval = 100;
             this.tcbOpacidade.Transparent = true;
             this.tcbOpacidade.Value = 10;
+            this.tcbOpacidade.ValueChanged += new System.EventHandler(this.tcbOpacidade_Scroll);
             this.tcbOpacidade.Scroll += new System.EventHandler(this.tcbOpacidade_Scroll);
             // 
             // lbOpacidade
@@ -448,8 +453,8 @@
             // 
             // rngIntervaloFlash
             // 
-            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(834, 55);
-            this.rngIntervaloFlash.CanOverrideStyle = true;
+            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(968, 55);
+            this.rngIntervaloFlash.CanApplyTheme = false;
             this.rngIntervaloFlash.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             resources.ApplyResources(this.rngIntervaloFlash, "rngIntervaloFlash");
             this.rngIntervaloFlash.ForeColor = System.Drawing.Color.Black;
@@ -513,7 +518,8 @@
             this.btnResetarPadroes.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnResetarPadroes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnResetarPadroes.UseAccentColor = true;
-            this.btnResetarPadroes.UseVisualStyleBackColor = false;
+            this.btnResetarPadroes.UseVisualStyleBackColor = true;
+            this.btnResetarPadroes.Click += new System.EventHandler(this.btnResetarPadroes_Click);
             // 
             // PoryGuard
             // 

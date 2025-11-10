@@ -3,6 +3,7 @@ using MaterialSkin.Controls;
 using Microsoft.Win32;
 using PoryGuard.Controller;
 using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.WinForms.Controls;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -61,7 +62,30 @@ namespace PoryGuard
                 TextShade.BLACK       // Cor do texto principal
             );
 
+            toolTipInfo.SetToolTip(this.btnInfo_VermelhoCritico,
+                "Define o quão sensível o detector é à cor vermelha.\n" +
+                "Valores mais altos são mais sensíveis.\n");
+
+            toolTipInfo.SetToolTip(this.btnInfo_LuminosidadeTela,
+                "Define o limiar de brilho para a tela inteira.\n" +
+                "Ajuda a detectar flashes que ocupam a tela toda, como\n" +
+                "uma piscada de tela inteira.");
+
+            toolTipInfo.SetToolTip(this.btnInfo_LuminosidadeQuadrante,
+                "Define o limiar de brilho para quadrantes individuais da tela.\n" +
+                "Esta é a principal detecção para flashes menores ou estroboscópicos.");
+
+            toolTipInfo.SetToolTip(this.btnInfo_Quadrantes,
+                "Define em quantos quadrantes a tela será dividida para análise.\n" +
+                "Valores mais altos detectam flashes menores, mas podem\n" +
+                "exigir um pouco mais de processamento.");
+
+            toolTipInfo.SetToolTip(this.btnInfo_Opacidade,
+                "Define o quão escura (opaca) será a censura aplicada sobre a tela.\n" +
+                "100% é totalmente preto, 10% é quase transparente.");
+
             AplicarCoresPory();
+        }
 
         private void VerificarArgumentosInicio()
         {
@@ -83,7 +107,7 @@ namespace PoryGuard
             }
         }
 
-        private void AplicarCoresPorygon()
+        private void AplicarCoresPory()
         {
             Color rosaPory = Color.FromArgb(230, 88, 88);
             Color vermelhoAlerta = Color.FromArgb(192, 57, 43);
@@ -91,7 +115,6 @@ namespace PoryGuard
             Color azulPory = Color.FromArgb(0, 184, 212);
             Color trilhoCinza = Color.FromArgb(224, 224, 224);
 
-            mtbLuminosidadeTela.BackColor = azulPorygon;
             rngIntervaloFlash.VisualStyle = Syncfusion.Windows.Forms.Tools.RangeSlider.RangeSliderStyle.Metro;
             rngIntervaloFlash.ThemeName = "";
             rngIntervaloFlash.ChannelHeight = 4;
@@ -101,6 +124,7 @@ namespace PoryGuard
             rngIntervaloFlash.ThemeStyle.ThumbColor = azulPory;
             rngIntervaloFlash.ThemeStyle.ThumbHoverColor = azulPory;
             rngIntervaloFlash.ThemeStyle.PressedThumbColor = azulPory;
+            mtbLuminosidadeTela.BackColor = azulPory;
 
 
             mlblTituloOtimizacao.ForeColor = rosaPory;

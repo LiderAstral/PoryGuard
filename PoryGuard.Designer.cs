@@ -55,17 +55,23 @@
             this.mlblTituloAjustes = new MaterialSkin.Controls.MaterialLabel();
             this.mlblAviso = new MaterialSkin.Controls.MaterialLabel();
             this.mlblTituloOtimizacao = new MaterialSkin.Controls.MaterialLabel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpFlash = new System.Windows.Forms.TableLayoutPanel();
             this.rngIntervaloFlash = new Syncfusion.Windows.Forms.Tools.RangeSlider();
             this.cardOtimizacao = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.infoFlash = new MaterialSkin.Controls.MaterialLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnResetarPadroes = new MaterialSkin.Controls.MaterialButton();
+            this.toolTipInfo = new System.Windows.Forms.ToolTip(this.components);
+            this.btnInfo_VermelhoCritico = new MaterialSkin.Controls.MaterialButton();
+            this.btnInfo_LuminosidadeTela = new MaterialSkin.Controls.MaterialButton();
+            this.btnInfo_LuminosidadeQuadrante = new MaterialSkin.Controls.MaterialButton();
+            this.btnInfo_Quadrantes = new MaterialSkin.Controls.MaterialButton();
+            this.btnInfo_Opacidade = new MaterialSkin.Controls.MaterialButton();
             this.cardSensibilidade.SuspendLayout();
             this.tblSensibilidade.SuspendLayout();
             this.cardAjustes.SuspendLayout();
             this.tblAjustes.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.tlpFlash.SuspendLayout();
             this.cardOtimizacao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -107,18 +113,22 @@
             // tblSensibilidade
             // 
             resources.ApplyResources(this.tblSensibilidade, "tblSensibilidade");
-            this.tblSensibilidade.Controls.Add(this.mtbQuadrantes, 2, 3);
-            this.tblSensibilidade.Controls.Add(this.mtbVermelhoCritico, 2, 0);
-            this.tblSensibilidade.Controls.Add(this.mtbLuminosidadeQuadrante, 2, 2);
-            this.tblSensibilidade.Controls.Add(this.tcbQuadrantes, 1, 3);
-            this.tblSensibilidade.Controls.Add(this.mtbLuminosidadeTela, 2, 1);
-            this.tblSensibilidade.Controls.Add(this.tcbLuminosidadeQuadrante, 1, 2);
-            this.tblSensibilidade.Controls.Add(this.tcbVermelhoCritico, 1, 0);
-            this.tblSensibilidade.Controls.Add(this.tcbLuminosidadeTela, 1, 1);
+            this.tblSensibilidade.Controls.Add(this.btnInfo_LuminosidadeQuadrante, 1, 2);
+            this.tblSensibilidade.Controls.Add(this.btnInfo_LuminosidadeTela, 1, 1);
+            this.tblSensibilidade.Controls.Add(this.btnInfo_VermelhoCritico, 1, 0);
+            this.tblSensibilidade.Controls.Add(this.mtbQuadrantes, 3, 3);
+            this.tblSensibilidade.Controls.Add(this.mtbVermelhoCritico, 3, 0);
+            this.tblSensibilidade.Controls.Add(this.mtbLuminosidadeQuadrante, 3, 2);
+            this.tblSensibilidade.Controls.Add(this.tcbQuadrantes, 2, 3);
+            this.tblSensibilidade.Controls.Add(this.mtbLuminosidadeTela, 3, 1);
+            this.tblSensibilidade.Controls.Add(this.tcbLuminosidadeQuadrante, 2, 2);
+            this.tblSensibilidade.Controls.Add(this.tcbVermelhoCritico, 2, 0);
+            this.tblSensibilidade.Controls.Add(this.tcbLuminosidadeTela, 2, 1);
             this.tblSensibilidade.Controls.Add(this.lbQuadrantes, 0, 3);
             this.tblSensibilidade.Controls.Add(this.lbVermelhoCritico, 0, 0);
             this.tblSensibilidade.Controls.Add(this.lbLuminosidadeTela, 0, 1);
             this.tblSensibilidade.Controls.Add(this.lbLuminosidadeQuadrante, 0, 2);
+            this.tblSensibilidade.Controls.Add(this.btnInfo_Quadrantes, 1, 3);
             this.tblSensibilidade.Name = "tblSensibilidade";
             // 
             // mtbQuadrantes
@@ -203,7 +213,7 @@
             // 
             resources.ApplyResources(this.tcbQuadrantes, "tcbQuadrantes");
             this.tcbQuadrantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.tcbQuadrantes.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbQuadrantes.BeforeTouchSize = new System.Drawing.Size(414, 44);
             this.tcbQuadrantes.CanApplyTheme = false;
             this.tcbQuadrantes.DecreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbQuadrantes.IncreaseButtonSize = new System.Drawing.Size(30, 30);
@@ -220,8 +230,8 @@
             // 
             // mtbLuminosidadeTela
             // 
-            resources.ApplyResources(this.mtbLuminosidadeTela, "mtbLuminosidadeTela");
             this.mtbLuminosidadeTela.AnimateReadOnly = false;
+            resources.ApplyResources(this.mtbLuminosidadeTela, "mtbLuminosidadeTela");
             this.mtbLuminosidadeTela.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.mtbLuminosidadeTela.Depth = 0;
             this.mtbLuminosidadeTela.HideSelection = false;
@@ -248,7 +258,7 @@
             // 
             resources.ApplyResources(this.tcbLuminosidadeQuadrante, "tcbLuminosidadeQuadrante");
             this.tcbLuminosidadeQuadrante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.tcbLuminosidadeQuadrante.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbLuminosidadeQuadrante.BeforeTouchSize = new System.Drawing.Size(414, 44);
             this.tcbLuminosidadeQuadrante.CanApplyTheme = false;
             this.tcbLuminosidadeQuadrante.DecreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbLuminosidadeQuadrante.IncreaseButtonSize = new System.Drawing.Size(30, 30);
@@ -267,7 +277,7 @@
             // 
             resources.ApplyResources(this.tcbVermelhoCritico, "tcbVermelhoCritico");
             this.tcbVermelhoCritico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.tcbVermelhoCritico.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbVermelhoCritico.BeforeTouchSize = new System.Drawing.Size(414, 44);
             this.tcbVermelhoCritico.CanApplyTheme = false;
             this.tcbVermelhoCritico.DecreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbVermelhoCritico.IncreaseButtonSize = new System.Drawing.Size(30, 30);
@@ -286,7 +296,7 @@
             // 
             resources.ApplyResources(this.tcbLuminosidadeTela, "tcbLuminosidadeTela");
             this.tcbLuminosidadeTela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.tcbLuminosidadeTela.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbLuminosidadeTela.BeforeTouchSize = new System.Drawing.Size(414, 44);
             this.tcbLuminosidadeTela.CanApplyTheme = false;
             this.tcbLuminosidadeTela.DecreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbLuminosidadeTela.IncreaseButtonSize = new System.Drawing.Size(30, 30);
@@ -355,8 +365,9 @@
             // tblAjustes
             // 
             resources.ApplyResources(this.tblAjustes, "tblAjustes");
-            this.tblAjustes.Controls.Add(this.mtbOpacidade, 2, 0);
-            this.tblAjustes.Controls.Add(this.tcbOpacidade, 1, 0);
+            this.tblAjustes.Controls.Add(this.btnInfo_Opacidade, 1, 0);
+            this.tblAjustes.Controls.Add(this.mtbOpacidade, 3, 0);
+            this.tblAjustes.Controls.Add(this.tcbOpacidade, 2, 0);
             this.tblAjustes.Controls.Add(this.lbOpacidade, 0, 0);
             this.tblAjustes.Name = "tblAjustes";
             // 
@@ -390,7 +401,7 @@
             // 
             resources.ApplyResources(this.tcbOpacidade, "tcbOpacidade");
             this.tcbOpacidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.tcbOpacidade.BeforeTouchSize = new System.Drawing.Size(424, 44);
+            this.tcbOpacidade.BeforeTouchSize = new System.Drawing.Size(414, 44);
             this.tcbOpacidade.CanApplyTheme = false;
             this.tcbOpacidade.DecreaseButtonSize = new System.Drawing.Size(30, 30);
             this.tcbOpacidade.IncreaseButtonSize = new System.Drawing.Size(30, 30);
@@ -445,18 +456,18 @@
             this.mlblTituloOtimizacao.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlblTituloOtimizacao.Name = "mlblTituloOtimizacao";
             // 
-            // tableLayoutPanel3
+            // tlpFlash
             // 
-            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.rngIntervaloFlash, 0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            resources.ApplyResources(this.tlpFlash, "tlpFlash");
+            this.tlpFlash.Controls.Add(this.rngIntervaloFlash, 0, 0);
+            this.tlpFlash.Name = "tlpFlash";
             // 
             // rngIntervaloFlash
             // 
-            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(986, 55);
+            resources.ApplyResources(this.rngIntervaloFlash, "rngIntervaloFlash");
+            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(804, 55);
             this.rngIntervaloFlash.CanApplyTheme = false;
             this.rngIntervaloFlash.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
-            resources.ApplyResources(this.rngIntervaloFlash, "rngIntervaloFlash");
             this.rngIntervaloFlash.ForeColor = System.Drawing.Color.Black;
             this.rngIntervaloFlash.Maximum = 30;
             this.rngIntervaloFlash.Minimum = 3;
@@ -481,22 +492,22 @@
             // 
             resources.ApplyResources(this.cardOtimizacao, "cardOtimizacao");
             this.cardOtimizacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cardOtimizacao.Controls.Add(this.materialLabel1);
-            this.cardOtimizacao.Controls.Add(this.tableLayoutPanel3);
+            this.cardOtimizacao.Controls.Add(this.infoFlash);
+            this.cardOtimizacao.Controls.Add(this.tlpFlash);
             this.cardOtimizacao.Controls.Add(this.mlblTituloOtimizacao);
             this.cardOtimizacao.Depth = 0;
             this.cardOtimizacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cardOtimizacao.MouseState = MaterialSkin.MouseState.HOVER;
             this.cardOtimizacao.Name = "cardOtimizacao";
             // 
-            // materialLabel1
+            // infoFlash
             // 
-            resources.ApplyResources(this.materialLabel1, "materialLabel1");
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.SubtleEmphasis;
-            this.errorProvider1.SetIconAlignment(this.materialLabel1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("materialLabel1.IconAlignment"))));
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
+            resources.ApplyResources(this.infoFlash, "infoFlash");
+            this.infoFlash.Depth = 0;
+            this.infoFlash.FontType = MaterialSkin.MaterialSkinManager.fontType.SubtleEmphasis;
+            this.errorProvider1.SetIconAlignment(this.infoFlash, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("infoFlash.IconAlignment"))));
+            this.infoFlash.MouseState = MaterialSkin.MouseState.HOVER;
+            this.infoFlash.Name = "infoFlash";
             // 
             // errorProvider1
             // 
@@ -518,8 +529,82 @@
             this.btnResetarPadroes.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnResetarPadroes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnResetarPadroes.UseAccentColor = true;
-            this.btnResetarPadroes.UseVisualStyleBackColor = true;
+            this.btnResetarPadroes.UseVisualStyleBackColor = false;
             this.btnResetarPadroes.Click += new System.EventHandler(this.btnResetarPadroes_Click);
+            // 
+            // toolTipInfo
+            // 
+            this.toolTipInfo.IsBalloon = true;
+            // 
+            // btnInfo_VermelhoCritico
+            // 
+            resources.ApplyResources(this.btnInfo_VermelhoCritico, "btnInfo_VermelhoCritico");
+            this.btnInfo_VermelhoCritico.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_VermelhoCritico.Depth = 0;
+            this.btnInfo_VermelhoCritico.HighEmphasis = true;
+            this.btnInfo_VermelhoCritico.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_VermelhoCritico.Icon")));
+            this.btnInfo_VermelhoCritico.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_VermelhoCritico.Name = "btnInfo_VermelhoCritico";
+            this.btnInfo_VermelhoCritico.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_VermelhoCritico.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_VermelhoCritico.UseAccentColor = false;
+            this.btnInfo_VermelhoCritico.UseVisualStyleBackColor = true;
+            // 
+            // btnInfo_LuminosidadeTela
+            // 
+            resources.ApplyResources(this.btnInfo_LuminosidadeTela, "btnInfo_LuminosidadeTela");
+            this.btnInfo_LuminosidadeTela.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_LuminosidadeTela.Depth = 0;
+            this.btnInfo_LuminosidadeTela.HighEmphasis = true;
+            this.btnInfo_LuminosidadeTela.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_LuminosidadeTela.Icon")));
+            this.btnInfo_LuminosidadeTela.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_LuminosidadeTela.Name = "btnInfo_LuminosidadeTela";
+            this.btnInfo_LuminosidadeTela.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_LuminosidadeTela.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_LuminosidadeTela.UseAccentColor = false;
+            this.btnInfo_LuminosidadeTela.UseVisualStyleBackColor = true;
+            // 
+            // btnInfo_LuminosidadeQuadrante
+            // 
+            resources.ApplyResources(this.btnInfo_LuminosidadeQuadrante, "btnInfo_LuminosidadeQuadrante");
+            this.btnInfo_LuminosidadeQuadrante.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_LuminosidadeQuadrante.Depth = 0;
+            this.btnInfo_LuminosidadeQuadrante.HighEmphasis = true;
+            this.btnInfo_LuminosidadeQuadrante.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_LuminosidadeQuadrante.Icon")));
+            this.btnInfo_LuminosidadeQuadrante.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_LuminosidadeQuadrante.Name = "btnInfo_LuminosidadeQuadrante";
+            this.btnInfo_LuminosidadeQuadrante.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_LuminosidadeQuadrante.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_LuminosidadeQuadrante.UseAccentColor = false;
+            this.btnInfo_LuminosidadeQuadrante.UseVisualStyleBackColor = true;
+            // 
+            // btnInfo_Quadrantes
+            // 
+            resources.ApplyResources(this.btnInfo_Quadrantes, "btnInfo_Quadrantes");
+            this.btnInfo_Quadrantes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_Quadrantes.Depth = 0;
+            this.btnInfo_Quadrantes.HighEmphasis = true;
+            this.btnInfo_Quadrantes.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_Quadrantes.Icon")));
+            this.btnInfo_Quadrantes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_Quadrantes.Name = "btnInfo_Quadrantes";
+            this.btnInfo_Quadrantes.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_Quadrantes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_Quadrantes.UseAccentColor = false;
+            this.btnInfo_Quadrantes.UseVisualStyleBackColor = true;
+            // 
+            // btnInfo_Opacidade
+            // 
+            resources.ApplyResources(this.btnInfo_Opacidade, "btnInfo_Opacidade");
+            this.btnInfo_Opacidade.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_Opacidade.Depth = 0;
+            this.btnInfo_Opacidade.HighEmphasis = true;
+            this.btnInfo_Opacidade.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_Opacidade.Icon")));
+            this.btnInfo_Opacidade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_Opacidade.Name = "btnInfo_Opacidade";
+            this.btnInfo_Opacidade.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_Opacidade.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_Opacidade.UseAccentColor = false;
+            this.btnInfo_Opacidade.UseVisualStyleBackColor = true;
             // 
             // PoryGuard
             // 
@@ -549,8 +634,8 @@
             this.cardAjustes.PerformLayout();
             this.tblAjustes.ResumeLayout(false);
             this.tblAjustes.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            this.tlpFlash.ResumeLayout(false);
+            this.tlpFlash.PerformLayout();
             this.cardOtimizacao.ResumeLayout(false);
             this.cardOtimizacao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -582,7 +667,7 @@
         private Syncfusion.Windows.Forms.Tools.TrackBarEx tcbQuadrantes;
         private MaterialSkin.Controls.MaterialTextBox2 mtbVermelhoCritico;
         private MaterialSkin.Controls.MaterialLabel mlblTituloOtimizacao;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tlpFlash;
         private Syncfusion.Windows.Forms.Tools.RangeSlider rngIntervaloFlash;
         private MaterialSkin.Controls.MaterialCard cardOtimizacao;
         private System.Windows.Forms.ErrorProvider errorProvider1;
@@ -590,8 +675,14 @@
         private MaterialSkin.Controls.MaterialTextBox2 mtbLuminosidadeQuadrante;
         private MaterialSkin.Controls.MaterialTextBox2 mtbLuminosidadeTela;
         private MaterialSkin.Controls.MaterialTextBox2 mtbOpacidade;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel infoFlash;
         private MaterialSkin.Controls.MaterialButton btnResetarPadroes;
+        private System.Windows.Forms.ToolTip toolTipInfo;
+        private MaterialSkin.Controls.MaterialButton btnInfo_VermelhoCritico;
+        private MaterialSkin.Controls.MaterialButton btnInfo_LuminosidadeQuadrante;
+        private MaterialSkin.Controls.MaterialButton btnInfo_LuminosidadeTela;
+        private MaterialSkin.Controls.MaterialButton btnInfo_Quadrantes;
+        private MaterialSkin.Controls.MaterialButton btnInfo_Opacidade;
     }
 }
 

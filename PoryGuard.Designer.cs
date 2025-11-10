@@ -58,8 +58,8 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.rngIntervaloFlash = new Syncfusion.Windows.Forms.Tools.RangeSlider();
             this.cardOtimizacao = new MaterialSkin.Controls.MaterialCard();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnResetarPadroes = new MaterialSkin.Controls.MaterialButton();
             this.cardSensibilidade.SuspendLayout();
             this.tblSensibilidade.SuspendLayout();
@@ -448,24 +448,28 @@
             // 
             // rngIntervaloFlash
             // 
-            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(824, 55);
-            this.rngIntervaloFlash.CanApplyTheme = false;
+            this.rngIntervaloFlash.BeforeTouchSize = new System.Drawing.Size(834, 55);
+            this.rngIntervaloFlash.CanOverrideStyle = true;
             this.rngIntervaloFlash.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             resources.ApplyResources(this.rngIntervaloFlash, "rngIntervaloFlash");
             this.rngIntervaloFlash.ForeColor = System.Drawing.Color.Black;
-            this.rngIntervaloFlash.HighlightedThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
             this.rngIntervaloFlash.Maximum = 30;
             this.rngIntervaloFlash.Minimum = 3;
             this.rngIntervaloFlash.Name = "rngIntervaloFlash";
-            this.rngIntervaloFlash.PushedThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(86)))), ((int)(((byte)(148)))));
             this.rngIntervaloFlash.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
             this.rngIntervaloFlash.ShowLabels = true;
             this.rngIntervaloFlash.SliderMax = 30;
             this.rngIntervaloFlash.SliderMin = 3;
             this.rngIntervaloFlash.SliderSize = new System.Drawing.Size(8, 21);
             this.rngIntervaloFlash.ThemeName = "Metro";
+            this.rngIntervaloFlash.ThemeStyle.ChannelColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.rngIntervaloFlash.ThemeStyle.PressedThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(212)))));
+            this.rngIntervaloFlash.ThemeStyle.RangeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(212)))));
+            this.rngIntervaloFlash.ThemeStyle.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(212)))));
+            this.rngIntervaloFlash.ThemeStyle.ThumbHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(212)))));
+            this.rngIntervaloFlash.ThemeStyle.TickColor = System.Drawing.Color.DimGray;
             this.rngIntervaloFlash.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.rngIntervaloFlash.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.rngIntervaloFlash.TickColor = System.Drawing.Color.DimGray;
             this.rngIntervaloFlash.VisualStyle = Syncfusion.Windows.Forms.Tools.RangeSlider.RangeSliderStyle.Metro;
             // 
             // cardOtimizacao
@@ -480,12 +484,6 @@
             this.cardOtimizacao.MouseState = MaterialSkin.MouseState.HOVER;
             this.cardOtimizacao.Name = "cardOtimizacao";
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.BlinkRate = 0;
-            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
-            this.errorProvider1.ContainerControl = this;
-            // 
             // materialLabel1
             // 
             resources.ApplyResources(this.materialLabel1, "materialLabel1");
@@ -495,11 +493,19 @@
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkRate = 0;
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
+            // 
             // btnResetarPadroes
             // 
             resources.ApplyResources(this.btnResetarPadroes, "btnResetarPadroes");
+            this.btnResetarPadroes.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnResetarPadroes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnResetarPadroes.Depth = 0;
+            this.btnResetarPadroes.ForeColor = System.Drawing.Color.Transparent;
             this.btnResetarPadroes.HighEmphasis = true;
             this.btnResetarPadroes.Icon = null;
             this.btnResetarPadroes.MouseState = MaterialSkin.MouseState.HOVER;
@@ -507,12 +513,13 @@
             this.btnResetarPadroes.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnResetarPadroes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnResetarPadroes.UseAccentColor = true;
-            this.btnResetarPadroes.UseVisualStyleBackColor = true;
+            this.btnResetarPadroes.UseVisualStyleBackColor = false;
             // 
             // PoryGuard
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.btnResetarPadroes);
             this.Controls.Add(this.mlblAviso);

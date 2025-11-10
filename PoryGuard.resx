@@ -157,7 +157,7 @@
     <value>True</value>
   </data>
   <data name="mcbInicioAutomatico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>730, 40</value>
+    <value>750, 40</value>
   </data>
   <data name="mcbInicioAutomatico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -187,7 +187,7 @@
     <value>5</value>
   </data>
   <data name="cardSensibilidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
+    <value>None</value>
   </data>
   <data name="tblSensibilidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -196,7 +196,7 @@
     <value>3</value>
   </data>
   <data name="mtbQuadrantes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Left</value>
   </data>
   <data name="mtbQuadrantes.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -220,7 +220,7 @@
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>900, 750</value>
+    <value>910, 750</value>
   </data>
   <data name="btnResetarPadroes.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -229,7 +229,7 @@
     <value>560, 40</value>
   </data>
   <data name="btnResetarPadroes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="btnResetarPadroes.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 36</value>
@@ -259,10 +259,10 @@
     <value>Roboto Medium, 14px, style=Bold</value>
   </data>
   <data name="mlblAviso.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 695</value>
+    <value>25, 690</value>
   </data>
   <data name="mlblAviso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 40</value>
+    <value>870, 45</value>
   </data>
   <data name="mlblAviso.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -286,7 +286,7 @@
     <value>1</value>
   </data>
   <data name="cardAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
+    <value>None</value>
   </data>
   <data name="tblAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -295,7 +295,7 @@
     <value>3</value>
   </data>
   <data name="mtbOpacidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Left</value>
   </data>
   <data name="mtbOpacidade.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -307,10 +307,10 @@
     <value>5</value>
   </data>
   <data name="mtbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 3</value>
+    <value>760, 1</value>
   </data>
-  <data name="mtbOpacidade.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="mtbOpacidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="mtbOpacidade.PrefixSuffixText" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -373,7 +373,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="lbOpacidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 15</value>
+    <value>23, 15</value>
   </data>
   <data name="lbOpacidade.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 19</value>
@@ -400,10 +400,13 @@
     <value>2</value>
   </data>
   <data name="tblAjustes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 65</value>
+    <value>22, 65</value>
   </data>
   <data name="tblAjustes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tblAjustes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 0, 0, 0</value>
   </data>
   <data name="tblAjustes.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -427,7 +430,7 @@
     <value>0</value>
   </data>
   <data name="tblAjustes.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="mtbOpacidade" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbOpacidade" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbOpacidade" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,330,Absolute,430,Absolute,70" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="mtbOpacidade" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbOpacidade" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbOpacidade" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,310,Absolute,430,Absolute,70" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="mlblTituloAjustes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -439,7 +442,7 @@
     <value>Roboto, 24px, style=Bold</value>
   </data>
   <data name="mlblTituloAjustes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
+    <value>22, 15</value>
   </data>
   <data name="mlblTituloAjustes.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 29</value>
@@ -463,13 +466,16 @@
     <value>1</value>
   </data>
   <data name="cardAjustes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 550</value>
+    <value>25, 550</value>
   </data>
   <data name="cardAjustes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
+  <data name="cardAjustes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 10, 14</value>
+  </data>
   <data name="cardAjustes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 130</value>
+    <value>870, 130</value>
   </data>
   <data name="cardAjustes.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -487,7 +493,10 @@
     <value>2</value>
   </data>
   <data name="cardOtimizacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
+    <value>None</value>
+  </data>
+  <data name="materialLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -499,7 +508,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 45</value>
+    <value>20, 50</value>
   </data>
   <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 14</value>
@@ -509,6 +518,9 @@
   </data>
   <data name="materialLabel1.Text" xml:space="preserve">
     <value>Definição de flash mínimo e máximo.</value>
+  </data>
+  <data name="materialLabel1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
     <value>materialLabel1</value>
@@ -538,7 +550,7 @@
     <value>3, 3</value>
   </data>
   <data name="rngIntervaloFlash.Size" type="System.Drawing.Size, System.Drawing">
-    <value>824, 55</value>
+    <value>834, 55</value>
   </data>
   <data name="rngIntervaloFlash.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -562,7 +574,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>830, 80</value>
+    <value>840, 80</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -580,7 +592,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="rngIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,88" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="rngIntervaloFlash" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,20" /&gt;&lt;Rows Styles="Percent,100,Absolute,80" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="mlblTituloOtimizacao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -592,7 +604,7 @@
     <value>NoControl</value>
   </data>
   <data name="mlblTituloOtimizacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
+    <value>20, 15</value>
   </data>
   <data name="mlblTituloOtimizacao.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 29</value>
@@ -616,16 +628,16 @@
     <value>2</value>
   </data>
   <data name="cardOtimizacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 90</value>
+    <value>25, 90</value>
   </data>
   <data name="cardOtimizacao.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>15, 15, 15, 15</value>
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="cardOtimizacao.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>15, 15, 15, 15</value>
   </data>
   <data name="cardOtimizacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 150</value>
+    <value>870, 150</value>
   </data>
   <data name="cardOtimizacao.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -929,7 +941,10 @@
     <value>5</value>
   </data>
   <data name="mtbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 153</value>
+    <value>760, 151</value>
+  </data>
+  <data name="mtbQuadrantes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="mtbQuadrantes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -959,7 +974,7 @@
     <value>0</value>
   </data>
   <data name="mtbVermelhoCritico.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+    <value>Left</value>
   </data>
   <data name="mtbVermelhoCritico.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -971,7 +986,10 @@
     <value>5</value>
   </data>
   <data name="mtbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 3</value>
+    <value>760, 1</value>
+  </data>
+  <data name="mtbVermelhoCritico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="mtbVermelhoCritico.PrefixSuffixText" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -998,7 +1016,7 @@
     <value>1</value>
   </data>
   <data name="mtbLuminosidadeQuadrante.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Left</value>
   </data>
   <data name="mtbLuminosidadeQuadrante.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -1010,7 +1028,10 @@
     <value>5</value>
   </data>
   <data name="mtbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 103</value>
+    <value>760, 101</value>
+  </data>
+  <data name="mtbLuminosidadeQuadrante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="mtbLuminosidadeQuadrante.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -1067,7 +1088,7 @@
     <value>3</value>
   </data>
   <data name="mtbLuminosidadeTela.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Left</value>
   </data>
   <data name="mtbLuminosidadeTela.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -1079,7 +1100,10 @@
     <value>5</value>
   </data>
   <data name="mtbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 53</value>
+    <value>760, 51</value>
+  </data>
+  <data name="mtbLuminosidadeTela.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
   <data name="mtbLuminosidadeTela.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -1199,7 +1223,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="lbQuadrantes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 165</value>
+    <value>23, 165</value>
   </data>
   <data name="lbQuadrantes.Size" type="System.Drawing.Size, System.Drawing">
     <value>258, 19</value>
@@ -1235,7 +1259,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="lbVermelhoCritico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 15</value>
+    <value>23, 15</value>
   </data>
   <data name="lbVermelhoCritico.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 19</value>
@@ -1271,7 +1295,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="lbLuminosidadeTela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 65</value>
+    <value>23, 65</value>
   </data>
   <data name="lbLuminosidadeTela.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 19</value>
@@ -1307,7 +1331,7 @@
     <value>Roboto, 14px</value>
   </data>
   <data name="lbLuminosidadeQuadrante.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 115</value>
+    <value>23, 115</value>
   </data>
   <data name="lbLuminosidadeQuadrante.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 19</value>
@@ -1334,10 +1358,13 @@
     <value>11</value>
   </data>
   <data name="tblSensibilidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 60</value>
+    <value>22, 60</value>
   </data>
   <data name="tblSensibilidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tblSensibilidade.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 0, 0, 0</value>
   </data>
   <data name="tblSensibilidade.RowCount" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1361,7 +1388,7 @@
     <value>0</value>
   </data>
   <data name="tblSensibilidade.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="mtbQuadrantes" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="mtbVermelhoCritico" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="mtbLuminosidadeQuadrante" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbQuadrantes" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="mtbLuminosidadeTela" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbLuminosidadeQuadrante" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tcbVermelhoCritico" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tcbLuminosidadeTela" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbQuadrantes" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbVermelhoCritico" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbLuminosidadeTela" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbLuminosidadeQuadrante" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,330,Absolute,430,Absolute,70" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="mtbQuadrantes" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="mtbVermelhoCritico" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="mtbLuminosidadeQuadrante" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbQuadrantes" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="mtbLuminosidadeTela" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="tcbLuminosidadeQuadrante" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tcbVermelhoCritico" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="tcbLuminosidadeTela" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbQuadrantes" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbVermelhoCritico" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbLuminosidadeTela" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbLuminosidadeQuadrante" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,310,Absolute,430,Absolute,70" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="mlblTituloSensibilidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1373,7 +1400,7 @@
     <value>Roboto, 24px, style=Bold</value>
   </data>
   <data name="mlblTituloSensibilidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
+    <value>22, 15</value>
   </data>
   <data name="mlblTituloSensibilidade.Size" type="System.Drawing.Size, System.Drawing">
     <value>357, 29</value>
@@ -1397,13 +1424,16 @@
     <value>1</value>
   </data>
   <data name="cardSensibilidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 255</value>
+    <value>25, 255</value>
   </data>
   <data name="cardSensibilidade.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
+  <data name="cardSensibilidade.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 10, 14</value>
+  </data>
   <data name="cardSensibilidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 280</value>
+    <value>870, 280</value>
   </data>
   <data name="cardSensibilidade.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>

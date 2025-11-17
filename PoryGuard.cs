@@ -63,26 +63,25 @@ namespace PoryGuard
             );
 
             toolTipInfo.SetToolTip(this.btnInfo_VermelhoCritico,
-                "Define o quão sensível o detector é à cor vermelha.\n" +
-                "Valores mais altos são mais sensíveis.\n");
+                "Define o quão sensível o detector é à variação de cor vermelha saturada.\n" +
+                "Valores mais baixos são mais sensíveis. Valores de 5 à 80%.");
 
             toolTipInfo.SetToolTip(this.btnInfo_LuminosidadeTela,
-                "Define o limiar de brilho para a tela inteira.\n" +
-                "Ajuda a detectar flashes que ocupam a tela toda, como\n" +
-                "uma piscada de tela inteira.");
+                "Define o quão sensível o detector é à variação de luminância da tela.\n" +
+                "Valores mais baixos são mais sensíveis. Valores de 5 à 80%.");
 
             toolTipInfo.SetToolTip(this.btnInfo_LuminosidadeQuadrante,
-                "Define o limiar de brilho para quadrantes individuais da tela.\n" +
-                "Esta é a principal detecção para flashes menores ou estroboscópicos.");
+                "Define o quão sensível o detector é à variação de luminância em um pixel no espaço amostral.\n" +
+                "Valores mais baixos são mais sensíveis. Valores de 5 à 80%.");
 
             toolTipInfo.SetToolTip(this.btnInfo_Quadrantes,
-                "Define em quantos quadrantes a tela será dividida para análise.\n" +
-                "Valores mais altos detectam flashes menores, mas podem\n" +
-                "exigir um pouco mais de processamento.");
+                "Define em quantos quadrantes a tela será dividida para análise no eixo horizontal.\n" +
+                "Valores mais altos detectam flashes menores, mas podem exigirum pouco mais de processamento.\n" +
+                "Valores de 10 à 50%.");
 
             toolTipInfo.SetToolTip(this.btnInfo_Opacidade,
                 "Define o quão escura (opaca) será a censura aplicada sobre a tela.\n" +
-                "100% é totalmente preto, 10% é quase transparente.");
+                "Valores de 10 à 100%. Ou seja, 100% é totalmente preto, 10% é quase transparente.");
 
             AplicarCoresPory();
         }

@@ -64,4 +64,4 @@ O projeto visa mitigar os riscos causados por estímulos visuais perigosos, como
 
 ## 📬 Contato
 
-Desenvolvido por [LiderAstral](https://github.com/LiderAstral)  
+Desenvolvido por [LiderAstral](https://github.com/LiderAstral), [RafaelaTonon](https://github.com/RafaelaTonon).

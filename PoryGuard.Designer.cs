@@ -34,6 +34,9 @@
             this.mcbInicioAutomatico = new MaterialSkin.Controls.MaterialCheckbox();
             this.cardSensibilidade = new MaterialSkin.Controls.MaterialCard();
             this.tblSensibilidade = new System.Windows.Forms.TableLayoutPanel();
+            this.btnInfo_LuminosidadeQuadrante = new MaterialSkin.Controls.MaterialButton();
+            this.btnInfo_LuminosidadeTela = new MaterialSkin.Controls.MaterialButton();
+            this.btnInfo_VermelhoCritico = new MaterialSkin.Controls.MaterialButton();
             this.mtbQuadrantes = new MaterialSkin.Controls.MaterialTextBox2();
             this.mtbVermelhoCritico = new MaterialSkin.Controls.MaterialTextBox2();
             this.mtbLuminosidadeQuadrante = new MaterialSkin.Controls.MaterialTextBox2();
@@ -46,9 +49,11 @@
             this.lbVermelhoCritico = new MaterialSkin.Controls.MaterialLabel();
             this.lbLuminosidadeTela = new MaterialSkin.Controls.MaterialLabel();
             this.lbLuminosidadeQuadrante = new MaterialSkin.Controls.MaterialLabel();
+            this.btnInfo_Quadrantes = new MaterialSkin.Controls.MaterialButton();
             this.mlblTituloSensibilidade = new MaterialSkin.Controls.MaterialLabel();
             this.cardAjustes = new MaterialSkin.Controls.MaterialCard();
             this.tblAjustes = new System.Windows.Forms.TableLayoutPanel();
+            this.btnInfo_Opacidade = new MaterialSkin.Controls.MaterialButton();
             this.mtbOpacidade = new MaterialSkin.Controls.MaterialTextBox2();
             this.tcbOpacidade = new Syncfusion.Windows.Forms.Tools.TrackBarEx(10, 100);
             this.lbOpacidade = new MaterialSkin.Controls.MaterialLabel();
@@ -62,11 +67,6 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnResetarPadroes = new MaterialSkin.Controls.MaterialButton();
             this.toolTipInfo = new System.Windows.Forms.ToolTip(this.components);
-            this.btnInfo_VermelhoCritico = new MaterialSkin.Controls.MaterialButton();
-            this.btnInfo_LuminosidadeTela = new MaterialSkin.Controls.MaterialButton();
-            this.btnInfo_LuminosidadeQuadrante = new MaterialSkin.Controls.MaterialButton();
-            this.btnInfo_Quadrantes = new MaterialSkin.Controls.MaterialButton();
-            this.btnInfo_Opacidade = new MaterialSkin.Controls.MaterialButton();
             this.cardSensibilidade.SuspendLayout();
             this.tblSensibilidade.SuspendLayout();
             this.cardAjustes.SuspendLayout();
@@ -96,6 +96,7 @@
             this.mcbInicioAutomatico.Name = "mcbInicioAutomatico";
             this.mcbInicioAutomatico.ReadOnly = false;
             this.mcbInicioAutomatico.Ripple = true;
+            this.toolTipInfo.SetToolTip(this.mcbInicioAutomatico, resources.GetString("mcbInicioAutomatico.ToolTip"));
             this.mcbInicioAutomatico.UseVisualStyleBackColor = true;
             this.mcbInicioAutomatico.CheckedChanged += new System.EventHandler(this.mcbInicioAutomatico_CheckedChanged);
             // 
@@ -130,6 +131,48 @@
             this.tblSensibilidade.Controls.Add(this.lbLuminosidadeQuadrante, 0, 2);
             this.tblSensibilidade.Controls.Add(this.btnInfo_Quadrantes, 1, 3);
             this.tblSensibilidade.Name = "tblSensibilidade";
+            // 
+            // btnInfo_LuminosidadeQuadrante
+            // 
+            resources.ApplyResources(this.btnInfo_LuminosidadeQuadrante, "btnInfo_LuminosidadeQuadrante");
+            this.btnInfo_LuminosidadeQuadrante.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_LuminosidadeQuadrante.Depth = 0;
+            this.btnInfo_LuminosidadeQuadrante.HighEmphasis = true;
+            this.btnInfo_LuminosidadeQuadrante.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_LuminosidadeQuadrante.Icon")));
+            this.btnInfo_LuminosidadeQuadrante.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_LuminosidadeQuadrante.Name = "btnInfo_LuminosidadeQuadrante";
+            this.btnInfo_LuminosidadeQuadrante.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_LuminosidadeQuadrante.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_LuminosidadeQuadrante.UseAccentColor = false;
+            this.btnInfo_LuminosidadeQuadrante.UseVisualStyleBackColor = true;
+            // 
+            // btnInfo_LuminosidadeTela
+            // 
+            resources.ApplyResources(this.btnInfo_LuminosidadeTela, "btnInfo_LuminosidadeTela");
+            this.btnInfo_LuminosidadeTela.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_LuminosidadeTela.Depth = 0;
+            this.btnInfo_LuminosidadeTela.HighEmphasis = true;
+            this.btnInfo_LuminosidadeTela.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_LuminosidadeTela.Icon")));
+            this.btnInfo_LuminosidadeTela.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_LuminosidadeTela.Name = "btnInfo_LuminosidadeTela";
+            this.btnInfo_LuminosidadeTela.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_LuminosidadeTela.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_LuminosidadeTela.UseAccentColor = false;
+            this.btnInfo_LuminosidadeTela.UseVisualStyleBackColor = true;
+            // 
+            // btnInfo_VermelhoCritico
+            // 
+            resources.ApplyResources(this.btnInfo_VermelhoCritico, "btnInfo_VermelhoCritico");
+            this.btnInfo_VermelhoCritico.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_VermelhoCritico.Depth = 0;
+            this.btnInfo_VermelhoCritico.HighEmphasis = true;
+            this.btnInfo_VermelhoCritico.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_VermelhoCritico.Icon")));
+            this.btnInfo_VermelhoCritico.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_VermelhoCritico.Name = "btnInfo_VermelhoCritico";
+            this.btnInfo_VermelhoCritico.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_VermelhoCritico.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_VermelhoCritico.UseAccentColor = false;
+            this.btnInfo_VermelhoCritico.UseVisualStyleBackColor = true;
             // 
             // mtbQuadrantes
             // 
@@ -339,6 +382,20 @@
             this.lbLuminosidadeQuadrante.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbLuminosidadeQuadrante.Name = "lbLuminosidadeQuadrante";
             // 
+            // btnInfo_Quadrantes
+            // 
+            resources.ApplyResources(this.btnInfo_Quadrantes, "btnInfo_Quadrantes");
+            this.btnInfo_Quadrantes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_Quadrantes.Depth = 0;
+            this.btnInfo_Quadrantes.HighEmphasis = true;
+            this.btnInfo_Quadrantes.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_Quadrantes.Icon")));
+            this.btnInfo_Quadrantes.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_Quadrantes.Name = "btnInfo_Quadrantes";
+            this.btnInfo_Quadrantes.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_Quadrantes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_Quadrantes.UseAccentColor = false;
+            this.btnInfo_Quadrantes.UseVisualStyleBackColor = true;
+            // 
             // mlblTituloSensibilidade
             // 
             resources.ApplyResources(this.mlblTituloSensibilidade, "mlblTituloSensibilidade");
@@ -370,6 +427,20 @@
             this.tblAjustes.Controls.Add(this.tcbOpacidade, 2, 0);
             this.tblAjustes.Controls.Add(this.lbOpacidade, 0, 0);
             this.tblAjustes.Name = "tblAjustes";
+            // 
+            // btnInfo_Opacidade
+            // 
+            resources.ApplyResources(this.btnInfo_Opacidade, "btnInfo_Opacidade");
+            this.btnInfo_Opacidade.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnInfo_Opacidade.Depth = 0;
+            this.btnInfo_Opacidade.HighEmphasis = true;
+            this.btnInfo_Opacidade.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_Opacidade.Icon")));
+            this.btnInfo_Opacidade.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnInfo_Opacidade.Name = "btnInfo_Opacidade";
+            this.btnInfo_Opacidade.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnInfo_Opacidade.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btnInfo_Opacidade.UseAccentColor = false;
+            this.btnInfo_Opacidade.UseVisualStyleBackColor = true;
             // 
             // mtbOpacidade
             // 
@@ -527,6 +598,7 @@
             this.btnResetarPadroes.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnResetarPadroes.Name = "btnResetarPadroes";
             this.btnResetarPadroes.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.toolTipInfo.SetToolTip(this.btnResetarPadroes, resources.GetString("btnResetarPadroes.ToolTip"));
             this.btnResetarPadroes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnResetarPadroes.UseAccentColor = true;
             this.btnResetarPadroes.UseVisualStyleBackColor = false;
@@ -536,82 +608,12 @@
             // 
             this.toolTipInfo.IsBalloon = true;
             // 
-            // btnInfo_VermelhoCritico
-            // 
-            resources.ApplyResources(this.btnInfo_VermelhoCritico, "btnInfo_VermelhoCritico");
-            this.btnInfo_VermelhoCritico.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnInfo_VermelhoCritico.Depth = 0;
-            this.btnInfo_VermelhoCritico.HighEmphasis = true;
-            this.btnInfo_VermelhoCritico.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_VermelhoCritico.Icon")));
-            this.btnInfo_VermelhoCritico.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnInfo_VermelhoCritico.Name = "btnInfo_VermelhoCritico";
-            this.btnInfo_VermelhoCritico.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnInfo_VermelhoCritico.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.btnInfo_VermelhoCritico.UseAccentColor = false;
-            this.btnInfo_VermelhoCritico.UseVisualStyleBackColor = true;
-            // 
-            // btnInfo_LuminosidadeTela
-            // 
-            resources.ApplyResources(this.btnInfo_LuminosidadeTela, "btnInfo_LuminosidadeTela");
-            this.btnInfo_LuminosidadeTela.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnInfo_LuminosidadeTela.Depth = 0;
-            this.btnInfo_LuminosidadeTela.HighEmphasis = true;
-            this.btnInfo_LuminosidadeTela.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_LuminosidadeTela.Icon")));
-            this.btnInfo_LuminosidadeTela.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnInfo_LuminosidadeTela.Name = "btnInfo_LuminosidadeTela";
-            this.btnInfo_LuminosidadeTela.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnInfo_LuminosidadeTela.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.btnInfo_LuminosidadeTela.UseAccentColor = false;
-            this.btnInfo_LuminosidadeTela.UseVisualStyleBackColor = true;
-            // 
-            // btnInfo_LuminosidadeQuadrante
-            // 
-            resources.ApplyResources(this.btnInfo_LuminosidadeQuadrante, "btnInfo_LuminosidadeQuadrante");
-            this.btnInfo_LuminosidadeQuadrante.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnInfo_LuminosidadeQuadrante.Depth = 0;
-            this.btnInfo_LuminosidadeQuadrante.HighEmphasis = true;
-            this.btnInfo_LuminosidadeQuadrante.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_LuminosidadeQuadrante.Icon")));
-            this.btnInfo_LuminosidadeQuadrante.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnInfo_LuminosidadeQuadrante.Name = "btnInfo_LuminosidadeQuadrante";
-            this.btnInfo_LuminosidadeQuadrante.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnInfo_LuminosidadeQuadrante.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.btnInfo_LuminosidadeQuadrante.UseAccentColor = false;
-            this.btnInfo_LuminosidadeQuadrante.UseVisualStyleBackColor = true;
-            // 
-            // btnInfo_Quadrantes
-            // 
-            resources.ApplyResources(this.btnInfo_Quadrantes, "btnInfo_Quadrantes");
-            this.btnInfo_Quadrantes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnInfo_Quadrantes.Depth = 0;
-            this.btnInfo_Quadrantes.HighEmphasis = true;
-            this.btnInfo_Quadrantes.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_Quadrantes.Icon")));
-            this.btnInfo_Quadrantes.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnInfo_Quadrantes.Name = "btnInfo_Quadrantes";
-            this.btnInfo_Quadrantes.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnInfo_Quadrantes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.btnInfo_Quadrantes.UseAccentColor = false;
-            this.btnInfo_Quadrantes.UseVisualStyleBackColor = true;
-            // 
-            // btnInfo_Opacidade
-            // 
-            resources.ApplyResources(this.btnInfo_Opacidade, "btnInfo_Opacidade");
-            this.btnInfo_Opacidade.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnInfo_Opacidade.Depth = 0;
-            this.btnInfo_Opacidade.HighEmphasis = true;
-            this.btnInfo_Opacidade.Icon = ((System.Drawing.Image)(resources.GetObject("btnInfo_Opacidade.Icon")));
-            this.btnInfo_Opacidade.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnInfo_Opacidade.Name = "btnInfo_Opacidade";
-            this.btnInfo_Opacidade.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnInfo_Opacidade.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.btnInfo_Opacidade.UseAccentColor = false;
-            this.btnInfo_Opacidade.UseVisualStyleBackColor = true;
-            // 
             // PoryGuard
             // 
-            resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.btnResetarPadroes);
             this.Controls.Add(this.mlblAviso);
             this.Controls.Add(this.cardAjustes);
@@ -619,7 +621,7 @@
             this.Controls.Add(this.cardOtimizacao);
             this.Controls.Add(this.mcbInicioAutomatico);
             this.Controls.Add(this.mswAtivo);
-            this.ForeColor = System.Drawing.Color.Transparent;
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_None;
             this.MaximizeBox = false;
